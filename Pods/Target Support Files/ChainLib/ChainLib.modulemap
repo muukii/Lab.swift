@@ -1,0 +1,6 @@
+framework module ChainLib {
+  umbrella header "ChainLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

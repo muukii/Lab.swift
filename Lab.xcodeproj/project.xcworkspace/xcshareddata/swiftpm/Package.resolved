@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "SwiftDate",
-        "repositoryURL": "https://github.com/malcommac/SwiftDate.git",
+        "repositoryURL": "git@github.com:malcommac/SwiftDate.git",
         "state": {
           "branch": null,
           "revision": "6190d0cefff3013e77ed567e6b074f324e5c5bf5",

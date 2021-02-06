@@ -1,0 +1,32 @@
+PODS:
+  - ChainLib (1.0.0)
+  - RxSwift (6.0.0)
+  - SwiftDate (6.3.1)
+  - Verge (8.6.0):
+    - Verge/Store (= 8.6.0)
+  - Verge/ObjcBridge (8.6.0)
+  - Verge/Store (8.6.0):
+    - Verge/ObjcBridge
+
+DEPENDENCIES:
+  - ChainLib
+  - RxSwift
+  - SwiftDate
+  - Verge
+
+SPEC REPOS:
+  trunk:
+    - ChainLib
+    - RxSwift
+    - SwiftDate
+    - Verge
+
+SPEC CHECKSUMS:
+  ChainLib: 0153385f2d094a43bb970e3227f32162577cf839
+  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
+  SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
+  Verge: e5f68ca102ba06cfd921c1df717b13899a461f8e
+
+PODFILE CHECKSUM: 5398d71b50c6c0845e9685ebad73bce31213deb7
+
+COCOAPODS: 1.10.1
