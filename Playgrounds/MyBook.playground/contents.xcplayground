@@ -104,5 +104,7 @@
         <page name='Date'/>
         <page name='AnyCollection'/>
         <page name='ReadonlyRef'/>
+        <page name='MultipleKeysDictionary'/>
+        <page name='Status'/>
     </pages>
 </playground>

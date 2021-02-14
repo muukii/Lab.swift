@@ -8,14 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1EF65400D674173B7813C4A1 /* Pods_Lab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9EB2A0E48E437D20C1B512 /* Pods_Lab.framework */; };
-		4B6102DE25C992320058D264 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6102DD25C992320058D264 /* MyView.swift */; };
+		4BB3FCF925D919C500496104 /* SwiftUIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB3FCF725D919C500496104 /* SwiftUIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BB3FD0625D919E200496104 /* MaterialShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E55C025D9183300E8769F /* MaterialShadow.swift */; };
+		4BB3FD0725D919E200496104 /* NeonDarkColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0E81725D7FD4A00BA46FC /* NeonDarkColor.swift */; };
+		4BB3FD0825D919E200496104 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6102DD25C992320058D264 /* MyView.swift */; };
 		4BDAB5D625BFBBA600E6CC35 /* Lab.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDAB5D425BFBBA600E6CC35 /* Lab.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B6102DA25C991F20058D264 /* SwiftUI.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftUI.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B6102DD25C992320058D264 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		4B6E55C025D9183300E8769F /* MaterialShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialShadow.swift; sourceTree = "<group>"; };
 		4BB3670725CEF807001C5B7E /* RxSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwift.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4BB3FCF525D919C500496104 /* SwiftUIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BB3FCF725D919C500496104 /* SwiftUIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftUIComponents.h; sourceTree = "<group>"; };
+		4BB3FCF825D919C500496104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD0E81725D7FD4A00BA46FC /* NeonDarkColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonDarkColor.swift; sourceTree = "<group>"; };
 		4BDAB5D125BFBBA600E6CC35 /* Lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDAB5D425BFBBA600E6CC35 /* Lab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lab.h; sourceTree = "<group>"; };
 		4BDAB5D525BFBBA600E6CC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -26,6 +34,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4BB3FCF225D919C500496104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BDAB5CE25BFBBA600E6CC35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,8 +56,20 @@
 			isa = PBXGroup;
 			children = (
 				4B6102DD25C992320058D264 /* MyView.swift */,
+				4B6E55C025D9183300E8769F /* MaterialShadow.swift */,
+				4BD0E81725D7FD4A00BA46FC /* NeonDarkColor.swift */,
 			);
 			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		4BB3FCF625D919C500496104 /* SwiftUIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4B6102DC25C992260058D264 /* SwiftUI */,
+				4BB3FCF725D919C500496104 /* SwiftUIComponents.h */,
+				4BB3FCF825D919C500496104 /* Info.plist */,
+			);
+			path = SwiftUIComponents;
 			sourceTree = "<group>";
 		};
 		4BDAB5C725BFBBA600E6CC35 = {
@@ -50,6 +77,7 @@
 			children = (
 				4BDAB5DD25BFBBAE00E6CC35 /* Playgrounds */,
 				4BDAB5D325BFBBA600E6CC35 /* Lab */,
+				4BB3FCF625D919C500496104 /* SwiftUIComponents */,
 				4BDAB5D225BFBBA600E6CC35 /* Products */,
 				F80E1E3FCABE15037812BE6A /* Pods */,
 				53A4B2A5C95F74EF22B9C97E /* Frameworks */,
@@ -60,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				4BDAB5D125BFBBA600E6CC35 /* Lab.framework */,
+				4BB3FCF525D919C500496104 /* SwiftUIComponents.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +96,6 @@
 		4BDAB5D325BFBBA600E6CC35 /* Lab */ = {
 			isa = PBXGroup;
 			children = (
-				4B6102DC25C992260058D264 /* SwiftUI */,
 				4BDAB5D425BFBBA600E6CC35 /* Lab.h */,
 				4BDAB5D525BFBBA600E6CC35 /* Info.plist */,
 			);
@@ -104,6 +132,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4BB3FCF025D919C500496104 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BB3FCF925D919C500496104 /* SwiftUIComponents.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BDAB5CC25BFBBA600E6CC35 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +151,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4BB3FCF425D919C500496104 /* SwiftUIComponents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BB3FCFC25D919C500496104 /* Build configuration list for PBXNativeTarget "SwiftUIComponents" */;
+			buildPhases = (
+				4BB3FCF025D919C500496104 /* Headers */,
+				4BB3FCF125D919C500496104 /* Sources */,
+				4BB3FCF225D919C500496104 /* Frameworks */,
+				4BB3FCF325D919C500496104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUIComponents;
+			productName = SwiftUIComponents;
+			productReference = 4BB3FCF525D919C500496104 /* SwiftUIComponents.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		4BDAB5D025BFBBA600E6CC35 /* Lab */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BDAB5D925BFBBA600E6CC35 /* Build configuration list for PBXNativeTarget "Lab" */;
@@ -142,6 +196,9 @@
 			attributes = {
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					4BB3FCF425D919C500496104 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					4BDAB5D025BFBBA600E6CC35 = {
 						CreatedOnToolsVersion = 12.3;
 						LastSwiftMigration = 1240;
@@ -162,11 +219,19 @@
 			projectRoot = "";
 			targets = (
 				4BDAB5D025BFBBA600E6CC35 /* Lab */,
+				4BB3FCF425D919C500496104 /* SwiftUIComponents */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4BB3FCF325D919C500496104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BDAB5CF25BFBBA600E6CC35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,17 +267,74 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4BB3FCF125D919C500496104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BB3FD0825D919E200496104 /* MyView.swift in Sources */,
+				4BB3FD0625D919E200496104 /* MaterialShadow.swift in Sources */,
+				4BB3FD0725D919E200496104 /* NeonDarkColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BDAB5CD25BFBBA600E6CC35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B6102DE25C992320058D264 /* MyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		4BB3FCFA25D919C500496104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftUIComponents/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.muukii.SwiftUIComponents;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BB3FCFB25D919C500496104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftUIComponents/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.muukii.SwiftUIComponents;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4BDAB5D725BFBBA600E6CC35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -389,6 +511,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4BB3FCFC25D919C500496104 /* Build configuration list for PBXNativeTarget "SwiftUIComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BB3FCFA25D919C500496104 /* Debug */,
+				4BB3FCFB25D919C500496104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4BDAB5CB25BFBBA600E6CC35 /* Build configuration list for PBXProject "Lab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
