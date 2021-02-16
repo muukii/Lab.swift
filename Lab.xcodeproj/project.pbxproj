@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1EF65400D674173B7813C4A1 /* Pods_Lab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9EB2A0E48E437D20C1B512 /* Pods_Lab.framework */; };
+		4B988C2D25DA59DD00DDB23D /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B988C2C25DA59DD00DDB23D /* Color+.swift */; };
 		4BB3FCF925D919C500496104 /* SwiftUIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB3FCF725D919C500496104 /* SwiftUIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BB3FD0625D919E200496104 /* MaterialShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E55C025D9183300E8769F /* MaterialShadow.swift */; };
 		4BB3FD0725D919E200496104 /* NeonDarkColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0E81725D7FD4A00BA46FC /* NeonDarkColor.swift */; };
@@ -18,7 +19,9 @@
 /* Begin PBXFileReference section */
 		4B6102DA25C991F20058D264 /* SwiftUI.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftUI.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B6102DD25C992320058D264 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		4B6AD1F325DB77AD00EE84DD /* Swift-2021.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Swift-2021.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B6E55C025D9183300E8769F /* MaterialShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialShadow.swift; sourceTree = "<group>"; };
+		4B988C2C25DA59DD00DDB23D /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		4BB3670725CEF807001C5B7E /* RxSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwift.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4BB3FCF525D919C500496104 /* SwiftUIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB3FCF725D919C500496104 /* SwiftUIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftUIComponents.h; sourceTree = "<group>"; };
@@ -27,7 +30,7 @@
 		4BDAB5D125BFBBA600E6CC35 /* Lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDAB5D425BFBBA600E6CC35 /* Lab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lab.h; sourceTree = "<group>"; };
 		4BDAB5D525BFBBA600E6CC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BDAB5DE25BFBBBE00E6CC35 /* MyBook.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyBook.playground; sourceTree = "<group>"; };
+		4BDAB5DE25BFBBBE00E6CC35 /* Swift-2020.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Swift-2020.playground"; sourceTree = "<group>"; };
 		4C9EB2A0E48E437D20C1B512 /* Pods_Lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D668A8CFBA65CE2AC300FF3 /* Pods-Lab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab.release.xcconfig"; path = "Target Support Files/Pods-Lab/Pods-Lab.release.xcconfig"; sourceTree = "<group>"; };
 		853739952066864B292A55FC /* Pods-Lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab.debug.xcconfig"; path = "Target Support Files/Pods-Lab/Pods-Lab.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 				4B6102DD25C992320058D264 /* MyView.swift */,
 				4B6E55C025D9183300E8769F /* MaterialShadow.swift */,
 				4BD0E81725D7FD4A00BA46FC /* NeonDarkColor.swift */,
+				4B988C2C25DA59DD00DDB23D /* Color+.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -105,7 +109,8 @@
 		4BDAB5DD25BFBBAE00E6CC35 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				4BDAB5DE25BFBBBE00E6CC35 /* MyBook.playground */,
+				4B6AD1F325DB77AD00EE84DD /* Swift-2021.playground */,
+				4BDAB5DE25BFBBBE00E6CC35 /* Swift-2020.playground */,
 				4B6102DA25C991F20058D264 /* SwiftUI.playground */,
 				4BB3670725CEF807001C5B7E /* RxSwift.playground */,
 			);
@@ -272,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BB3FD0825D919E200496104 /* MyView.swift in Sources */,
+				4B988C2D25DA59DD00DDB23D /* Color+.swift in Sources */,
 				4BB3FD0625D919E200496104 /* MaterialShadow.swift in Sources */,
 				4BB3FD0725D919E200496104 /* NeonDarkColor.swift in Sources */,
 			);
