@@ -7,5 +7,6 @@
         <page name='Move semantics'/>
         <page name='Locale'/>
         <page name='Untitled Page'/>
+        <page name='UIView-transform-frame'/>
     </pages>
 </playground>
