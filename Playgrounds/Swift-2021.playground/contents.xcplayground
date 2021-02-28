@@ -4,5 +4,8 @@
         <page name='Untitled Page 2'/>
         <page name='Dev'/>
         <page name='ThreadDictionary'/>
+        <page name='Move semantics'/>
+        <page name='Locale'/>
+        <page name='Untitled Page'/>
     </pages>
 </playground>
