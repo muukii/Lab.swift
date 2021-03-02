@@ -8,5 +8,6 @@
         <page name='Locale'/>
         <page name='Untitled Page'/>
         <page name='UIView-transform-frame'/>
+        <page name='DateParse'/>
     </pages>
 </playground>
