@@ -9,5 +9,9 @@
         <page name='Untitled Page'/>
         <page name='UIView-transform-frame'/>
         <page name='DateParse'/>
+        <page name='Untitled Page 3'/>
+        <page name='Intersection'/>
+        <page name='Resize'/>
+        <page name='dynamicMemberLookup'/>
     </pages>
 </playground>
