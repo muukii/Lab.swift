@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		4BB3FD0625D919E200496104 /* MaterialShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E55C025D9183300E8769F /* MaterialShadow.swift */; };
 		4BB3FD0725D919E200496104 /* NeonDarkColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0E81725D7FD4A00BA46FC /* NeonDarkColor.swift */; };
 		4BB3FD0825D919E200496104 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6102DD25C992320058D264 /* MyView.swift */; };
+		4BDA4FE225F62E5D00CAED6B /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 4BDA4FE125F62E5D00CAED6B /* Logging */; };
 		4BDAB5D625BFBBA600E6CC35 /* Lab.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDAB5D425BFBBA600E6CC35 /* Lab.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BDA4FE225F62E5D00CAED6B /* Logging in Frameworks */,
 				1EF65400D674173B7813C4A1 /* Pods_Lab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +194,9 @@
 			dependencies = (
 			);
 			name = Lab;
+			packageProductDependencies = (
+				4BDA4FE125F62E5D00CAED6B /* Logging */,
+			);
 			productName = Lab;
 			productReference = 4BDAB5D125BFBBA600E6CC35 /* Lab.framework */;
 			productType = "com.apple.product-type.framework";
@@ -222,6 +227,9 @@
 				Base,
 			);
 			mainGroup = 4BDAB5C725BFBBA600E6CC35;
+			packageReferences = (
+				4BDA4FE025F62E5D00CAED6B /* XCRemoteSwiftPackageReference "swift-log" */,
+			);
 			productRefGroup = 4BDAB5D225BFBBA600E6CC35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -549,6 +557,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BDA4FE025F62E5D00CAED6B /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BDA4FE125F62E5D00CAED6B /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BDA4FE025F62E5D00CAED6B /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BDAB5C825BFBBA600E6CC35 /* Project object */;
 }
