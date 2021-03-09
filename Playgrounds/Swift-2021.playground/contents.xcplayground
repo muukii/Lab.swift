@@ -14,5 +14,6 @@
         <page name='Resize'/>
         <page name='dynamicMemberLookup'/>
         <page name='Error'/>
+        <page name='ImageIO'/>
     </pages>
 </playground>
