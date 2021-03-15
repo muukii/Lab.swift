@@ -1,7 +1,42 @@
 PODS:
   - ChainLib (1.0.0)
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
+    - PINCache/Core
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.1)
+  - PINRemoteImage/Core (3.0.3):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.3):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.3):
+    - PINCache (~> 3.0.3)
+    - PINRemoteImage/Core
   - RxSwift (6.0.0)
   - SwiftDate (6.3.1)
+  - Texture (3.0.0):
+    - Texture/AssetsLibrary (= 3.0.0)
+    - Texture/Core (= 3.0.0)
+    - Texture/MapKit (= 3.0.0)
+    - Texture/Photos (= 3.0.0)
+    - Texture/PINRemoteImage (= 3.0.0)
+    - Texture/Video (= 3.0.0)
+  - Texture/AssetsLibrary (3.0.0):
+    - Texture/Core
+  - Texture/Core (3.0.0)
+  - Texture/MapKit (3.0.0):
+    - Texture/Core
+  - Texture/Photos (3.0.0):
+    - Texture/Core
+  - Texture/PINRemoteImage (3.0.0):
+    - PINRemoteImage/iOS (~> 3.0.0)
+    - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (3.0.0):
+    - Texture/Core
   - Verge (8.6.0):
     - Verge/Store (= 8.6.0)
   - Verge/ObjcBridge (8.6.0)
@@ -12,21 +47,30 @@ DEPENDENCIES:
   - ChainLib
   - RxSwift
   - SwiftDate
+  - Texture
   - Verge
 
 SPEC REPOS:
   trunk:
     - ChainLib
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
     - RxSwift
     - SwiftDate
+    - Texture
     - Verge
 
 SPEC CHECKSUMS:
   ChainLib: 0153385f2d094a43bb970e3227f32162577cf839
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
+  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
   RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
+  Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
   Verge: e5f68ca102ba06cfd921c1df717b13899a461f8e
 
-PODFILE CHECKSUM: 5398d71b50c6c0845e9685ebad73bce31213deb7
+PODFILE CHECKSUM: bff9e90e4e58e863bad6bddc979efd8b66a9d80e
 
 COCOAPODS: 1.10.1

@@ -9,4 +9,5 @@ target "Lab" do
   pod "RxSwift"
   pod "ChainLib"
   pod "SwiftDate"
+  pod "Texture"
 end
