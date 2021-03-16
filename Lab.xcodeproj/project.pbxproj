@@ -24,6 +24,7 @@
 		4B6102DD25C992320058D264 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		4B6AD1F325DB77AD00EE84DD /* Swift-2021.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Swift-2021.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B6E55C025D9183300E8769F /* MaterialShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialShadow.swift; sourceTree = "<group>"; };
+		4B94D1F026005A72008A16D8 /* 2021-macOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "2021-macOS.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B988C2C25DA59DD00DDB23D /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		4BAA484425DE5BBD001D4FDF /* MatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixView.swift; sourceTree = "<group>"; };
 		4BB3670725CEF807001C5B7E /* RxSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwift.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -116,6 +117,7 @@
 		4BDAB5DD25BFBBAE00E6CC35 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				4B94D1F026005A72008A16D8 /* 2021-macOS.playground */,
 				4B6AD1F325DB77AD00EE84DD /* Swift-2021.playground */,
 				4BDAB5DE25BFBBBE00E6CC35 /* Swift-2020.playground */,
 				4B6102DA25C991F20058D264 /* SwiftUI.playground */,

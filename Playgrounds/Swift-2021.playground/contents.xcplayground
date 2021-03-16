@@ -15,5 +15,8 @@
         <page name='dynamicMemberLookup'/>
         <page name='Error'/>
         <page name='ImageIO'/>
+        <page name='Render'/>
+        <page name='ResultBuilder'/>
+        <page name='JohnSundell-Files'/>
     </pages>
 </playground>
