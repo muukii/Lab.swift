@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1EF65400D674173B7813C4A1 /* Pods_Lab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9EB2A0E48E437D20C1B512 /* Pods_Lab.framework */; };
+		4B94D1ED26005A02008A16D8 /* Files in Frameworks */ = {isa = PBXBuildFile; productRef = 4B94D1EC26005A02008A16D8 /* Files */; };
 		4B988C2D25DA59DD00DDB23D /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B988C2C25DA59DD00DDB23D /* Color+.swift */; };
 		4BAA484525DE5BBD001D4FDF /* MatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAA484425DE5BBD001D4FDF /* MatrixView.swift */; };
 		4BB3FCF925D919C500496104 /* SwiftUIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB3FCF725D919C500496104 /* SwiftUIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B94D1ED26005A02008A16D8 /* Files in Frameworks */,
 				4BDA4FE225F62E5D00CAED6B /* Logging in Frameworks */,
 				1EF65400D674173B7813C4A1 /* Pods_Lab.framework in Frameworks */,
 			);
@@ -196,6 +198,7 @@
 			name = Lab;
 			packageProductDependencies = (
 				4BDA4FE125F62E5D00CAED6B /* Logging */,
+				4B94D1EC26005A02008A16D8 /* Files */,
 			);
 			productName = Lab;
 			productReference = 4BDAB5D125BFBBA600E6CC35 /* Lab.framework */;
@@ -229,6 +232,7 @@
 			mainGroup = 4BDAB5C725BFBBA600E6CC35;
 			packageReferences = (
 				4BDA4FE025F62E5D00CAED6B /* XCRemoteSwiftPackageReference "swift-log" */,
+				4B94D1EB26005A02008A16D8 /* XCRemoteSwiftPackageReference "Files" */,
 			);
 			productRefGroup = 4BDAB5D225BFBBA600E6CC35 /* Products */;
 			projectDirPath = "";
@@ -559,6 +563,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4B94D1EB26005A02008A16D8 /* XCRemoteSwiftPackageReference "Files" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:JohnSundell/Files.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
 		4BDA4FE025F62E5D00CAED6B /* XCRemoteSwiftPackageReference "swift-log" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:apple/swift-log.git";
@@ -570,6 +582,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4B94D1EC26005A02008A16D8 /* Files */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B94D1EB26005A02008A16D8 /* XCRemoteSwiftPackageReference "Files" */;
+			productName = Files;
+		};
 		4BDA4FE125F62E5D00CAED6B /* Logging */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4BDA4FE025F62E5D00CAED6B /* XCRemoteSwiftPackageReference "swift-log" */;
