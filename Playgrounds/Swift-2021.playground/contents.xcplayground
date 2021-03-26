@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' executeOnSourceChanges='true'>
     <pages>
+        <page name='JohnSundell-Files'/>
         <page name='Untitled Page 2'/>
         <page name='Dev'/>
         <page name='ThreadDictionary'/>
@@ -17,6 +18,9 @@
         <page name='ImageIO'/>
         <page name='Render'/>
         <page name='ResultBuilder'/>
-        <page name='JohnSundell-Files'/>
+        <page name='Function PropertyWrapper'/>
+        <page name='UIScrollView-content-size'/>
+        <page name='Self'/>
+        <page name='ConstraintCrop'/>
     </pages>
 </playground>
