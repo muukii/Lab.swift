@@ -15,6 +15,7 @@
 		4BB3FD0625D919E200496104 /* MaterialShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E55C025D9183300E8769F /* MaterialShadow.swift */; };
 		4BB3FD0725D919E200496104 /* NeonDarkColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0E81725D7FD4A00BA46FC /* NeonDarkColor.swift */; };
 		4BB3FD0825D919E200496104 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6102DD25C992320058D264 /* MyView.swift */; };
+		4BB6A4E8260DA59D002A8809 /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 4BB6A4E7260DA59D002A8809 /* TinyConstraints */; };
 		4BDA4FE225F62E5D00CAED6B /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 4BDA4FE125F62E5D00CAED6B /* Logging */; };
 		4BDAB5D625BFBBA600E6CC35 /* Lab.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDAB5D425BFBBA600E6CC35 /* Lab.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 				4B94D1ED26005A02008A16D8 /* Files in Frameworks */,
 				4BDA4FE225F62E5D00CAED6B /* Logging in Frameworks */,
 				1EF65400D674173B7813C4A1 /* Pods_Lab.framework in Frameworks */,
+				4BB6A4E8260DA59D002A8809 /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +201,7 @@
 			packageProductDependencies = (
 				4BDA4FE125F62E5D00CAED6B /* Logging */,
 				4B94D1EC26005A02008A16D8 /* Files */,
+				4BB6A4E7260DA59D002A8809 /* TinyConstraints */,
 			);
 			productName = Lab;
 			productReference = 4BDAB5D125BFBBA600E6CC35 /* Lab.framework */;
@@ -233,6 +236,7 @@
 			packageReferences = (
 				4BDA4FE025F62E5D00CAED6B /* XCRemoteSwiftPackageReference "swift-log" */,
 				4B94D1EB26005A02008A16D8 /* XCRemoteSwiftPackageReference "Files" */,
+				4BB6A4E6260DA59D002A8809 /* XCRemoteSwiftPackageReference "TinyConstraints" */,
 			);
 			productRefGroup = 4BDAB5D225BFBBA600E6CC35 /* Products */;
 			projectDirPath = "";
@@ -571,6 +575,14 @@
 				minimumVersion = 4.2.0;
 			};
 		};
+		4BB6A4E6260DA59D002A8809 /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:roberthein/TinyConstraints.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
 		4BDA4FE025F62E5D00CAED6B /* XCRemoteSwiftPackageReference "swift-log" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:apple/swift-log.git";
@@ -586,6 +598,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4B94D1EB26005A02008A16D8 /* XCRemoteSwiftPackageReference "Files" */;
 			productName = Files;
+		};
+		4BB6A4E7260DA59D002A8809 /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BB6A4E6260DA59D002A8809 /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
 		};
 		4BDA4FE125F62E5D00CAED6B /* Logging */ = {
 			isa = XCSwiftPackageProductDependency;

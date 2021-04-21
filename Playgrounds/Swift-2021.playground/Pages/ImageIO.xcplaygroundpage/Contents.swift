@@ -8,7 +8,7 @@ func size(of imageSource: CGImageSource) -> CGSize? {
   guard let properties = CGImageSourceCopyPropertiesAtIndex(imageSource, 0, propertiesOptions) as? [CFString: Any] else {
     return nil
   }
-  
+
   guard
     let width = properties[kCGImagePropertyPixelWidth] as? CGFloat,
     let height = properties[kCGImagePropertyPixelHeight] as? CGFloat
@@ -17,7 +17,6 @@ func size(of imageSource: CGImageSource) -> CGSize? {
   }
   return CGSize(width: width, height: height)
 }
-
 
 func writeImageToTmpDirectory(image: UIImage) -> URL? {
   let directory = NSTemporaryDirectory()
@@ -62,3 +61,11 @@ let scaledImage = CGImageSourceCreateThumbnailAtIndex(
 let originalImage = CGImageSourceCreateImageAtIndex(imageSource, 0, [:] as CFDictionary)
 
 scaledImage
+
+let data = NSMutableData()
+
+import MobileCoreServices
+
+2 % 3
+1 % 3
+3 % 3

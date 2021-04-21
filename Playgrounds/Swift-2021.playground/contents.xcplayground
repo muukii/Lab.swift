@@ -22,5 +22,8 @@
         <page name='UIScrollView-content-size'/>
         <page name='Self'/>
         <page name='ConstraintCrop'/>
+        <page name='DisplayP3Draw'/>
+        <page name='set'/>
+        <page name='Regex'/>
     </pages>
 </playground>
