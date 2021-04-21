@@ -17,6 +17,7 @@
 		4BB3FD0625D919E200496104 /* MaterialShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E55C025D9183300E8769F /* MaterialShadow.swift */; };
 		4BB3FD0725D919E200496104 /* NeonDarkColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0E81725D7FD4A00BA46FC /* NeonDarkColor.swift */; };
 		4BB3FD0825D919E200496104 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6102DD25C992320058D264 /* MyView.swift */; };
+		4BB405062630619600CA8D9A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB405052630619600CA8D9A /* Card.swift */; };
 		4BB6A4E8260DA59D002A8809 /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 4BB6A4E7260DA59D002A8809 /* TinyConstraints */; };
 		4BDA4FE225F62E5D00CAED6B /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 4BDA4FE125F62E5D00CAED6B /* Logging */; };
 		4BDAB5D625BFBBA600E6CC35 /* Lab.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDAB5D425BFBBA600E6CC35 /* Lab.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +36,7 @@
 		4BB3FCF525D919C500496104 /* SwiftUIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB3FCF725D919C500496104 /* SwiftUIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftUIComponents.h; sourceTree = "<group>"; };
 		4BB3FCF825D919C500496104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BB405052630619600CA8D9A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		4BD0E81725D7FD4A00BA46FC /* NeonDarkColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonDarkColor.swift; sourceTree = "<group>"; };
 		4BDAB5D125BFBBA600E6CC35 /* Lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDAB5D425BFBBA600E6CC35 /* Lab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lab.h; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				4B988C2C25DA59DD00DDB23D /* Color+.swift */,
 				4BAA484425DE5BBD001D4FDF /* MatrixView.swift */,
 				4B76829E2630532000AC3575 /* AnimationTemplate.swift */,
+				4BB405052630619600CA8D9A /* Card.swift */,
 				4B7682A226305E6600AC3575 /* OneTimeAnimationView.swift */,
 			);
 			path = SwiftUI;
@@ -308,6 +311,7 @@
 				4BB3FD0625D919E200496104 /* MaterialShadow.swift in Sources */,
 				4B76829F2630532000AC3575 /* AnimationTemplate.swift in Sources */,
 				4BB3FD0725D919E200496104 /* NeonDarkColor.swift in Sources */,
+				4BB405062630619600CA8D9A /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

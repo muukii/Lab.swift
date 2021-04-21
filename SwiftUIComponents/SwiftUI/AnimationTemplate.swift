@@ -1,12 +1,6 @@
 import SwiftUI
 
-
-
 enum Preview: PreviewProvider {
-
-  static var platform: PreviewPlatform? {
-    return .iOS
-  }
 
   static var previews: some View {
     Group {

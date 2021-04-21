@@ -22,7 +22,7 @@ struct OneTimeAnimationView<Content: View>: View {
       Text(title)
         .font(.headline)
       Button(wasAnimated ? "Revert" : "Animate") {
-        withAnimation(.spring(response: 0.3, dampingFraction: 1, blendDuration: 0)) {
+        withAnimation(.spring(response: 0.6, dampingFraction: 1, blendDuration: 2)) {
           wasAnimated.toggle()
         }
       }
