@@ -1,6 +1,12 @@
 import SwiftUI
 
+
+
 enum Preview: PreviewProvider {
+
+  static var platform: PreviewPlatform? {
+    return .iOS
+  }
 
   static var previews: some View {
     Group {
@@ -37,6 +43,7 @@ enum Preview: PreviewProvider {
               anchor: .top,
               isSource: true
             )
+            .offset(x: 10.0, y: 100.0)
             .frame(width: 100, height: 100)
         }
       }
@@ -44,23 +51,22 @@ enum Preview: PreviewProvider {
       OneTimeAnimationView(title: "Move") { wasAnimated, namespace in
         if wasAnimated {
           Rectangle()
-            .frame(width: 10, height: 10)
             .id("A")
-          //            .matchedGeometryEffect(id: "10", in: namespace)
+            .frame(width: 10, height: 10)
         } else {
           Rectangle()
-
-            .frame(width: 30, height: 10)
             .id("A")
-          //            .matchedGeometryEffect(id: "10", in: namespace)
+            .frame(width: 30, height: 10)
         }
       }
 
       OneTimeAnimationView { wasAnimated, _ in
         Rectangle()
-          .frame(width: wasAnimated ? 100 : 10, height: 10)
+          .frame(width: wasAnimated ? CGFloat(100) : CGFloat(10), height: 10)
       }
 
     }
+    .previewLayout(.fixed(width: 300, height: 300))
+
   }
 }
