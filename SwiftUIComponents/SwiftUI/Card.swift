@@ -20,28 +20,28 @@ enum Card_1619012242: PreviewProvider {
           }
           VStack {
             if wasAnimated {
-              ZStack(alignment: .trailing) {
+              ZStack(alignment: .leading) {
                 RoundedRectangle(cornerRadius: 25.0, style: .continuous)
                   .matchedGeometryEffect(id: "1", in: namespace)
                   .foregroundColor(.init(white: 0, opacity: 0.6))
                   .frame(width: 100)
-                  .offset(x: 10.0, y: 0)
+                  .offset(x: 30.0, y: 0)
                   .aspectRatio(3 / 4, contentMode: .fit)
                 RoundedRectangle(cornerRadius: 25.0, style: .continuous)
                   .matchedGeometryEffect(id: "2", in: namespace)
                   .foregroundColor(.init(white: 0, opacity: 0.6))
                   .frame(width: 120)
-                  .offset(x: 20.0, y: 0)
+                  .offset(x: 40.0, y: 0)
                   .aspectRatio(3 / 4, contentMode: .fit)
                 RoundedRectangle(cornerRadius: 25.0, style: .continuous)
                   .matchedGeometryEffect(id: "3", in: namespace)
                   .foregroundColor(.init(white: 0, opacity: 0.6))
                   .aspectRatio(3 / 4, contentMode: .fit)
                   .frame(width: 140)
-                  .offset(x: 120, y: 0)
+                  .offset(x: 200, y: 0)
               }
             } else {
-              ZStack(alignment: .trailing) {
+              ZStack(alignment: .leading) {
                 RoundedRectangle(cornerRadius: 25.0, style: .continuous)
                   .matchedGeometryEffect(id: "1", in: namespace)
                   .foregroundColor(.init(white: 0, opacity: 0.6))
