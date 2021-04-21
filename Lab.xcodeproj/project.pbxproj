@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1EF65400D674173B7813C4A1 /* Pods_Lab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9EB2A0E48E437D20C1B512 /* Pods_Lab.framework */; };
+		4B76829F2630532000AC3575 /* AnimationTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76829E2630532000AC3575 /* AnimationTemplate.swift */; };
+		4B7682A326305E6600AC3575 /* OneTimeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7682A226305E6600AC3575 /* OneTimeAnimationView.swift */; };
 		4B94D1ED26005A02008A16D8 /* Files in Frameworks */ = {isa = PBXBuildFile; productRef = 4B94D1EC26005A02008A16D8 /* Files */; };
 		4B988C2D25DA59DD00DDB23D /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B988C2C25DA59DD00DDB23D /* Color+.swift */; };
 		4BAA484525DE5BBD001D4FDF /* MatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAA484425DE5BBD001D4FDF /* MatrixView.swift */; };
@@ -25,6 +27,8 @@
 		4B6102DD25C992320058D264 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		4B6AD1F325DB77AD00EE84DD /* Swift-2021.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Swift-2021.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B6E55C025D9183300E8769F /* MaterialShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialShadow.swift; sourceTree = "<group>"; };
+		4B76829E2630532000AC3575 /* AnimationTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTemplate.swift; sourceTree = "<group>"; };
+		4B7682A226305E6600AC3575 /* OneTimeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeAnimationView.swift; sourceTree = "<group>"; };
 		4B988C2C25DA59DD00DDB23D /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		4BAA484425DE5BBD001D4FDF /* MatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixView.swift; sourceTree = "<group>"; };
 		4BB3670725CEF807001C5B7E /* RxSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwift.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -71,6 +75,8 @@
 				4BD0E81725D7FD4A00BA46FC /* NeonDarkColor.swift */,
 				4B988C2C25DA59DD00DDB23D /* Color+.swift */,
 				4BAA484425DE5BBD001D4FDF /* MatrixView.swift */,
+				4B76829E2630532000AC3575 /* AnimationTemplate.swift */,
+				4B7682A226305E6600AC3575 /* OneTimeAnimationView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -298,7 +304,9 @@
 				4BAA484525DE5BBD001D4FDF /* MatrixView.swift in Sources */,
 				4BB3FD0825D919E200496104 /* MyView.swift in Sources */,
 				4B988C2D25DA59DD00DDB23D /* Color+.swift in Sources */,
+				4B7682A326305E6600AC3575 /* OneTimeAnimationView.swift in Sources */,
 				4BB3FD0625D919E200496104 /* MaterialShadow.swift in Sources */,
+				4B76829F2630532000AC3575 /* AnimationTemplate.swift in Sources */,
 				4BB3FD0725D919E200496104 /* NeonDarkColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
