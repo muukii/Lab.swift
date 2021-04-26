@@ -25,5 +25,7 @@
         <page name='DisplayP3Draw'/>
         <page name='set'/>
         <page name='Regex'/>
+        <page name='Logger'/>
+        <page name='Optional'/>
     </pages>
 </playground>
