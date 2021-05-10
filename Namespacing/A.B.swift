@@ -1,0 +1,3 @@
+extension A {
+  enum B {}
+}

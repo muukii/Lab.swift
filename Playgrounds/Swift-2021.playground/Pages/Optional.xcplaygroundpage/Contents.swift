@@ -1,6 +1,10 @@
 
-var maybe: Int? = 1
-maybe? += 1
+var a: Int? = 3
+var b: Int? = 1
 
-maybe?.nonzeroBitCount
-
+switch (a, b) {
+case (.some(let value), _), (_, .some(let value)):
+  print(value)
+default:
+  break
+}

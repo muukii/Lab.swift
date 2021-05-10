@@ -27,5 +27,7 @@
         <page name='Regex'/>
         <page name='Logger'/>
         <page name='Optional'/>
+        <page name='Filter'/>
+        <page name='enum-static-var'/>
     </pages>
 </playground>
