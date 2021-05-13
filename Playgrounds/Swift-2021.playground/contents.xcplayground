@@ -29,5 +29,6 @@
         <page name='Optional'/>
         <page name='Filter'/>
         <page name='enum-static-var'/>
+        <page name='ZStackView'/>
     </pages>
 </playground>
