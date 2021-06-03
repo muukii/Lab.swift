@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' buildActiveScheme='true' executeOnSourceChanges='true'>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true'>
     <pages>
         <page name='JohnSundell-Files'/>
         <page name='Untitled Page 2'/>
@@ -30,5 +30,14 @@
         <page name='Filter'/>
         <page name='enum-static-var'/>
         <page name='ZStackView'/>
+        <page name='UIViewController+NavigationItem'/>
+        <page name='transform+concat'/>
+        <page name='ios version'/>
+        <page name='UInt'/>
+        <page name='Remove items from Set'/>
+        <page name='AccessibilitySettings'/>
+        <page name='casting'/>
+        <page name='dsohandle'/>
+        <page name='UIScrollView+ContentInset+exchange'/>
     </pages>
 </playground>
