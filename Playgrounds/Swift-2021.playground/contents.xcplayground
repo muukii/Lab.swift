@@ -51,5 +51,8 @@
         <page name='mystery-circle'/>
         <page name='Protocol'/>
         <page name='enum-name'/>
+        <page name='inner-func'/>
+        <page name='String-Interpolation'/>
+        <page name='Mirror'/>
     </pages>
 </playground>
