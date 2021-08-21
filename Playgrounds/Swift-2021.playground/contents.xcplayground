@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' buildActiveScheme='true'>
+<playground version='6.0' target-platform='macos' buildActiveScheme='true'>
     <pages>
         <page name='JohnSundell-Files'/>
         <page name='Untitled Page 2'/>
@@ -39,5 +39,17 @@
         <page name='casting'/>
         <page name='dsohandle'/>
         <page name='UIScrollView+ContentInset+exchange'/>
+        <page name='MatchedTransitionAnimator'/>
+        <page name='Layer of UIStackView'/>
+        <page name='PropertyWrapperCodable'/>
+        <page name='NeColor'/>
+        <page name='DynamicStruct'/>
+        <page name='encode-text'/>
+        <page name='UIButton enabled'/>
+        <page name='Untitled Page 4'/>
+        <page name='Error-localized-description'/>
+        <page name='mystery-circle'/>
+        <page name='Protocol'/>
+        <page name='enum-name'/>
     </pages>
 </playground>

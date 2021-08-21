@@ -3,5 +3,6 @@
     <pages>
         <page name='concurrency'/>
         <page name='Untitled Page'/>
+        <page name='Maybe'/>
     </pages>
 </playground>

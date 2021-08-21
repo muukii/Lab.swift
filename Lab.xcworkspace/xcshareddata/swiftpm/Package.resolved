@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "MondrianLayout",
+        "repositoryURL": "https://github.com/muukii/MondrianLayout.git",
+        "state": {
+          "branch": null,
+          "revision": "3d94b2524f4f237899b8cc802e907bca2924e154",
+          "version": "0.0.11"
+        }
+      },
+      {
         "package": "swift-log",
         "repositoryURL": "git@github.com:apple/swift-log.git",
         "state": {
