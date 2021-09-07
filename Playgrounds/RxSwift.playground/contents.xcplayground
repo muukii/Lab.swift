@@ -4,5 +4,6 @@
         <page name='concurrency'/>
         <page name='Untitled Page'/>
         <page name='Maybe'/>
+        <page name='zip'/>
     </pages>
 </playground>
