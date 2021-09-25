@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' buildActiveScheme='true'>
+<playground version='6.0' target-platform='macos'>
     <pages>
         <page name='JohnSundell-Files'/>
         <page name='Untitled Page 2'/>
@@ -57,5 +57,9 @@
         <page name='TextFileRewrite'/>
         <page name='DeviceCheck'/>
         <page name='CustomNSError'/>
+        <page name='tab-image'/>
+        <page name='html'/>
+        <page name='structural'/>
+        <page name='UIView-Transition'/>
     </pages>
 </playground>

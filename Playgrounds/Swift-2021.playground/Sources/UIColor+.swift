@@ -1,4 +1,5 @@
 
+#if canImport(UIKit)
 import UIKit
 
 // imported from https://github.com/zenangst/Hue
@@ -91,3 +92,4 @@ extension UIColor {
   }
 }
 
+#endif

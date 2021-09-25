@@ -37,6 +37,10 @@
 		4BC64F6C26B1A0EE0091CE9A /* MondrianLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC64F6B26B1A0EE0091CE9A /* MondrianLayout */; };
 		4BC64F6F26B1A2210091CE9A /* RevealServer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC64F6D26B1A2130091CE9A /* RevealServer.xcframework */; };
 		4BC64F7026B1A2210091CE9A /* RevealServer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC64F6D26B1A2130091CE9A /* RevealServer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BC6D47226FDCF2B00E7D5C0 /* Verge in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC6D47126FDCF2B00E7D5C0 /* Verge */; };
+		4BC6D47426FDCF2B00E7D5C0 /* VergeORM in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC6D47326FDCF2B00E7D5C0 /* VergeORM */; };
+		4BC6D47626FDCF2B00E7D5C0 /* VergeRx in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC6D47526FDCF2B00E7D5C0 /* VergeRx */; };
+		4BC6D47826FDCF2B00E7D5C0 /* VergeTiny in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC6D47726FDCF2B00E7D5C0 /* VergeTiny */; };
 		4BC713B826367A200073CEC4 /* Namespacing.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC713B626367A200073CEC4 /* Namespacing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BC713BD26367A2C0073CEC4 /* A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC713BC26367A2C0073CEC4 /* A.swift */; };
 		4BC713BF26367A410073CEC4 /* A.B.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC713BE26367A410073CEC4 /* A.B.swift */; };
@@ -162,7 +166,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC6D47226FDCF2B00E7D5C0 /* Verge in Frameworks */,
 				4B94D1ED26005A02008A16D8 /* Files in Frameworks */,
+				4BC6D47826FDCF2B00E7D5C0 /* VergeTiny in Frameworks */,
+				4BC6D47626FDCF2B00E7D5C0 /* VergeRx in Frameworks */,
+				4BC6D47426FDCF2B00E7D5C0 /* VergeORM in Frameworks */,
 				4BDA4FE225F62E5D00CAED6B /* Logging in Frameworks */,
 				1EF65400D674173B7813C4A1 /* Pods_Lab.framework in Frameworks */,
 				4BC64F6A26B1A0D80091CE9A /* MondrianLayout in Frameworks */,
@@ -464,6 +472,10 @@
 				4B94D1EC26005A02008A16D8 /* Files */,
 				4BB6A4E7260DA59D002A8809 /* TinyConstraints */,
 				4BC64F6926B1A0D80091CE9A /* MondrianLayout */,
+				4BC6D47126FDCF2B00E7D5C0 /* Verge */,
+				4BC6D47326FDCF2B00E7D5C0 /* VergeORM */,
+				4BC6D47526FDCF2B00E7D5C0 /* VergeRx */,
+				4BC6D47726FDCF2B00E7D5C0 /* VergeTiny */,
 			);
 			productName = Lab;
 			productReference = 4BDAB5D125BFBBA600E6CC35 /* Lab.framework */;
@@ -514,6 +526,7 @@
 				4B94D1EB26005A02008A16D8 /* XCRemoteSwiftPackageReference "Files" */,
 				4BB6A4E6260DA59D002A8809 /* XCRemoteSwiftPackageReference "TinyConstraints" */,
 				4BC64F6826B1A0D80091CE9A /* XCRemoteSwiftPackageReference "MondrianLayout" */,
+				4BC6D47026FDCF2B00E7D5C0 /* XCRemoteSwiftPackageReference "Verge" */,
 			);
 			productRefGroup = 4BDAB5D225BFBBA600E6CC35 /* Products */;
 			projectDirPath = "";
@@ -1184,6 +1197,14 @@
 				minimumVersion = 0.0.11;
 			};
 		};
+		4BC6D47026FDCF2B00E7D5C0 /* XCRemoteSwiftPackageReference "Verge" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VergeGroup/Verge.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 		4BDA4FE025F62E5D00CAED6B /* XCRemoteSwiftPackageReference "swift-log" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:apple/swift-log.git";
@@ -1214,6 +1235,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4BC64F6826B1A0D80091CE9A /* XCRemoteSwiftPackageReference "MondrianLayout" */;
 			productName = MondrianLayout;
+		};
+		4BC6D47126FDCF2B00E7D5C0 /* Verge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BC6D47026FDCF2B00E7D5C0 /* XCRemoteSwiftPackageReference "Verge" */;
+			productName = Verge;
+		};
+		4BC6D47326FDCF2B00E7D5C0 /* VergeORM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BC6D47026FDCF2B00E7D5C0 /* XCRemoteSwiftPackageReference "Verge" */;
+			productName = VergeORM;
+		};
+		4BC6D47526FDCF2B00E7D5C0 /* VergeRx */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BC6D47026FDCF2B00E7D5C0 /* XCRemoteSwiftPackageReference "Verge" */;
+			productName = VergeRx;
+		};
+		4BC6D47726FDCF2B00E7D5C0 /* VergeTiny */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BC6D47026FDCF2B00E7D5C0 /* XCRemoteSwiftPackageReference "Verge" */;
+			productName = VergeTiny;
 		};
 		4BDA4FE125F62E5D00CAED6B /* Logging */ = {
 			isa = XCSwiftPackageProductDependency;

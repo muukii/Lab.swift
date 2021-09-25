@@ -10,3 +10,6 @@ guard let matched = regex.firstMatch(in: string, options: [], range: NSRange(loc
 
 (string as NSString).substring(with: matched.range(at: 1))
 
+func hasMatches(regex: NSRegularExpression, string: String) -> Bool {
+  return regex.firstMatch(in: string, options: [], range: NSRange(location: 0, length: string.count)) != nil
+}

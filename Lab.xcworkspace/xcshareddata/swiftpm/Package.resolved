@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "7c17a6ccca06b5c107cfa4284e634562ddaf5951",
+          "version": "6.2.0"
+        }
+      },
+      {
         "package": "swift-log",
         "repositoryURL": "git@github.com:apple/swift-log.git",
         "state": {
@@ -35,6 +44,15 @@
           "branch": null,
           "revision": "f413ea53b886de81b925eeb37a14538fe6ae4912",
           "version": "4.0.1"
+        }
+      },
+      {
+        "package": "Verge",
+        "repositoryURL": "https://github.com/VergeGroup/Verge.git",
+        "state": {
+          "branch": null,
+          "revision": "3f9dca1d48d9381f4d05a923dd4ca59d77d1b4a6",
+          "version": "8.13.0"
         }
       }
     ]
