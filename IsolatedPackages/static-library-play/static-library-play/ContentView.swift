@@ -22,6 +22,10 @@ struct ContentView: View {
               print(String(reflecting: ModularA.Muukii()))
               print(String(reflecting: NonModularB.Muukii()))
 
+              print(Unmanaged.passUnretained(Bundle.init(for: ModularA.Muukii.self)).toOpaque())
+              print(Unmanaged.passUnretained(Bundle.init(for: NonModularB.Muukii.self)).toOpaque())
+              print(Unmanaged.passUnretained(Bundle.main).toOpaque())
+
             }
     }
 
