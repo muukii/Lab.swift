@@ -10,6 +10,17 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     Form {
+      Text(
+        Strings(
+          ja: "日本語 {{ name }}",
+          ko: "韓国語　{{ name }}",
+          zh_Hant: "中国語 {{ name }}"
+        ).string(
+            parameters: [
+              "name": "muukii"
+            ]
+          )
+      )
       Text(LocalizedStringKey("language"))
       Text("\(Locale.preferredLanguages.description)")
       Text("\(UserDefaults.standard.value(forKey: "AppleLanguages").debugDescription)")

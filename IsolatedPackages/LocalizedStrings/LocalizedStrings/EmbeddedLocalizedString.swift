@@ -60,11 +60,13 @@ public struct StringsTemplate<LanguageSet: LanguageSetType> {
 
   public func rawString() -> StaticString {
 
-    guard let firstLanguage = Locale.preferredLanguages.first else {
+    let allLanguages = Locale.preferredLanguages.map(Locale.init(identifier:))
+
+    guard let firstLanguage = allLanguages.first else {
       fatalError()
     }
 
-    return storage.first { $0.key.identifier == firstLanguage }?.value ?? storage.first?.value ?? "_l10n_not_available_"
+    return storage.first { $0.key.identifier == firstLanguage.languageCode }?.value ?? storage.first?.value ?? "_l10n_not_available_"
 
   }
 
@@ -75,17 +77,23 @@ public struct SupportedLanguages: LanguageSetType {
   public static let instance = SupportedLanguages()
 
   public let ja = Language(identifier: "ja")
+  public let ko = Language(identifier: "ko")
+  public let zh_Hant = Language(identifier: "zh-Hant")
 }
 
 typealias Strings = StringsTemplate<SupportedLanguages>
 
 extension Strings {
   public init(
-    ja: StaticString
+    ja: StaticString,
+    ko: StaticString,
+    zh_Hant: StaticString
   ) {
 
     var instance = Self.makeDraft()
     instance.ja = ja
+    instance.ko = ko
+    instance.zh_Hant = zh_Hant
     self = instance
 
   }

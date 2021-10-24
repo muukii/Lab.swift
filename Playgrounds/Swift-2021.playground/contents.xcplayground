@@ -67,5 +67,6 @@
         <page name='CALayerContentsFormat'/>
         <page name='RefreshControl'/>
         <page name='keypath-dynamic-memberlookup'/>
+        <page name='weak'/>
     </pages>
 </playground>
