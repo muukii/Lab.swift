@@ -68,5 +68,7 @@
         <page name='RefreshControl'/>
         <page name='keypath-dynamic-memberlookup'/>
         <page name='weak'/>
+        <page name='blend-filter'/>
+        <page name='layer-transform'/>
     </pages>
 </playground>
