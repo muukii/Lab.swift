@@ -70,5 +70,9 @@
         <page name='weak'/>
         <page name='blend-filter'/>
         <page name='layer-transform'/>
+        <page name='Untitled Page 6'/>
+        <page name='lazy'/>
+        <page name='Format Transform'/>
+        <page name='Layer layout'/>
     </pages>
 </playground>

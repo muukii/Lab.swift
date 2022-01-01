@@ -7,69 +7,90 @@
 
 import XCTest
 
-public actor AsyncStorage<Value> {
-
-  public var value: Value
-
-  public init(_ value: Value) {
-    self.value = value
-  }
-
-  public func read() async -> Value {
-    print("Read", Thread.current)
-    return value
-  }
-
-  public func update(_ mutate: (inout Value) -> Void) async {
-    print("Update", Thread.current)
-    mutate(&value)
-  }
-}
-
-struct State {
-  var count: Int = 0
-}
-
-func _run() async -> String {
-  print("Run", Thread.current)
-  return "Value"
-}
-
 final class Test: XCTestCase {
 
-  let storage = AsyncStorage<State>(.init())
+  func test_reentrancy() async {
 
-  func test_1() async {
-    async let state1 = storage.read()
-    async let state2 = storage.read()
-    async let state3 = storage.read()
+    actor MyActor {
 
-    print(await storage.value.count)
+      var values: [String] = []
 
-    await storage.update {
-      $0.count += 1
+      func operation() async {
+
+        values.append("In")
+        try! await Task.sleep(nanoseconds: 2 * 1_000_000_000)
+        values.append("Out")
+
+      }
+
     }
 
-    print(await [state1, state2, state3])
-  }
+    let actor = MyActor()
 
-  func test_async_let() async {
+    await withTaskGroup(of: Void.self) { group in
 
-    async let v1 = _run()
-    async let v2 = _run()
-    async let v3 = _run()
+      for _ in 0..<10 {
+        group.addTask {
+          await actor.operation()
+        }
+      }
 
-//    print(await [v1, v2, v3])
+    }
 
-  }
-
-  func test_await_let() async {
-
-    let v1 = await _run()
-    let v2 = await _run()
-    let v3 = await _run()
-
-    //    print(await [v1, v2, v3])
+    print(await actor.values)
 
   }
+
+  func test_task_inheritance() async {
+
+    final class MyController {
+
+      /// owned by MainActor
+      @MainActor
+      func entrypoint() async {
+
+        print("Entry", Thread.current)
+
+        /// inherits context - runs on MainActor
+        _ = await Task {
+          print("entrypoint.task", Thread.current) // Main
+        }
+        .result
+
+        /// calls a function that is not owned by MainActor
+        /// It might block MainThread. it's up to the body of the function.
+        /// If blocking occurred, wrapping with `Task.detached`.
+        await subFunction()
+      }
+
+      /// owned by no one@
+      func subFunction() async {
+
+        /**
+         Here is nothing the context of concurrency since this function is not owned by anyone.
+         Using Task dispatches on background.
+         Task.detached would be same behavior. (probably)
+         */
+
+        print("subFunction", Thread.current)
+        _ = await Task {
+          print("subFunction.task", Thread.current)
+        }
+        .result
+
+        _ = await Task.detached {
+          print("subFunction.task.detached", Thread.current)
+        }
+        .result
+      }
+
+    }
+
+    let controller = MyController()
+
+    await controller.entrypoint()
+
+
+  }
+
 }

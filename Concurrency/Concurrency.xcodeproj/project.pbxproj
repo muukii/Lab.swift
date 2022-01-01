@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B16554127304097003B930B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16554027304097003B930B /* Storage.swift */; };
+		4B165549273040F4003B930B /* AsyncVerge.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B165548273040F4003B930B /* AsyncVerge.h */; };
+		4B16554B273040F4003B930B /* AsyncVerge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B16554A273040F4003B930B /* AsyncVerge.m */; };
 		4B93659A272C4DA500100D60 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B936599272C4DA500100D60 /* main.swift */; };
 		4B9365A7272C4F4000100D60 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9365A6272C4F4000100D60 /* Test.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B16554027304097003B930B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		4B165546273040F4003B930B /* libAsyncVerge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAsyncVerge.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B165548273040F4003B930B /* AsyncVerge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncVerge.h; sourceTree = "<group>"; };
+		4B16554A273040F4003B930B /* AsyncVerge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncVerge.m; sourceTree = "<group>"; };
 		4B936596272C4DA500100D60 /* Concurrency */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Concurrency; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B936599272C4DA500100D60 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4B9365A4272C4F4000100D60 /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +38,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4B165544273040F4003B930B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B936593272C4DA500100D60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,11 +62,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B165547273040F4003B930B /* AsyncVerge */ = {
+			isa = PBXGroup;
+			children = (
+				4B165548273040F4003B930B /* AsyncVerge.h */,
+				4B16554A273040F4003B930B /* AsyncVerge.m */,
+			);
+			path = AsyncVerge;
+			sourceTree = "<group>";
+		};
 		4B93658D272C4DA500100D60 = {
 			isa = PBXGroup;
 			children = (
 				4B936598272C4DA500100D60 /* Concurrency */,
 				4B9365A5272C4F4000100D60 /* Test */,
+				4B165547273040F4003B930B /* AsyncVerge */,
 				4B936597272C4DA500100D60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +86,7 @@
 			children = (
 				4B936596272C4DA500100D60 /* Concurrency */,
 				4B9365A4272C4F4000100D60 /* Test.xctest */,
+				4B165546273040F4003B930B /* libAsyncVerge.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				4B936599272C4DA500100D60 /* main.swift */,
+				4B16554027304097003B930B /* Storage.swift */,
 			);
 			path = Concurrency;
 			sourceTree = "<group>";
@@ -84,7 +110,35 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		4B165542273040F4003B930B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B165549273040F4003B930B /* AsyncVerge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		4B165545273040F4003B930B /* AsyncVerge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B16554C273040F4003B930B /* Build configuration list for PBXNativeTarget "AsyncVerge" */;
+			buildPhases = (
+				4B165542273040F4003B930B /* Headers */,
+				4B165543273040F4003B930B /* Sources */,
+				4B165544273040F4003B930B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsyncVerge;
+			productName = AsyncVerge;
+			productReference = 4B165546273040F4003B930B /* libAsyncVerge.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		4B936595272C4DA500100D60 /* Concurrency */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B93659D272C4DA500100D60 /* Build configuration list for PBXNativeTarget "Concurrency" */;
@@ -129,6 +183,9 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					4B165545273040F4003B930B = {
+						CreatedOnToolsVersion = 13.2;
+					};
 					4B936595272C4DA500100D60 = {
 						CreatedOnToolsVersion = 13.2;
 					};
@@ -152,6 +209,7 @@
 			targets = (
 				4B936595272C4DA500100D60 /* Concurrency */,
 				4B9365A3272C4F4000100D60 /* Test */,
+				4B165545273040F4003B930B /* AsyncVerge */,
 			);
 		};
 /* End PBXProject section */
@@ -167,11 +225,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4B165543273040F4003B930B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B16554B273040F4003B930B /* AsyncVerge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B936592272C4DA500100D60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4B93659A272C4DA500100D60 /* main.swift in Sources */,
+				4B16554127304097003B930B /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +253,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		4B16554D273040F4003B930B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4B16554E273040F4003B930B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		4B93659B272C4DA500100D60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -350,6 +437,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4B16554C273040F4003B930B /* Build configuration list for PBXNativeTarget "AsyncVerge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B16554D273040F4003B930B /* Debug */,
+				4B16554E273040F4003B930B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4B936591272C4DA500100D60 /* Build configuration list for PBXProject "Concurrency" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
