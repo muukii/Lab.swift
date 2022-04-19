@@ -2,7 +2,7 @@
 
 import Foundation
 
-var str = "Kawa no nakani ishi ga aruyo"
+var str = "print(\"Hello world\")"
 
 let a = str.unicodeScalars.map { c -> String in
   if CharacterSet.whitespaces.contains(c) {

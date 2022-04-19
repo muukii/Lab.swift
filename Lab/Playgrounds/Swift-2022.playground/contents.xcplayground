@@ -5,5 +5,27 @@
         <page name='Untitled Page'/>
         <page name='CALayer+blur'/>
         <page name='PresentationTree'/>
+        <page name='Untitled Page 2'/>
+        <page name='snapshot'/>
+        <page name='Untitled Page 3'/>
+        <page name='RenderShadow'/>
+        <page name='Split'/>
+        <page name='PrintTable'/>
+        <page name='Untitled Page 4'/>
+        <page name='Description'/>
+        <page name='PrettyPrintDictionary'/>
+        <page name='OnelineDescription'/>
+        <page name='escaping'/>
+        <page name='print table'/>
+        <page name='emoji-tower'/>
+        <page name='division'/>
+        <page name='concurrency'/>
+        <page name='withEnviroment'/>
+        <page name='AnyKeyPath'/>
+        <page name='TypeName'/>
+        <page name='Untitled Page 5'/>
+        <page name='Untitled Page 6'/>
+        <page name='compare date'/>
+        <page name='countdown'/>
     </pages>
 </playground>

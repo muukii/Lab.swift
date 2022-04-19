@@ -19,3 +19,6 @@ private func decode(_ key: String) -> String {
 decode("Z2F1c3NpYW5CbHVy")
 
 encodeText("gaussianBlur", 1)
+
+encodeText("CAPortalLayer", 1)
+

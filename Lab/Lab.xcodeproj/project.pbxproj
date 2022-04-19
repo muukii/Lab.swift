@@ -38,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B44A41B27E1278D00E54B95 /* Concurrency.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Concurrency.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B55834526706EEB001ED3A8 /* Xcode13.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Xcode13.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B6102DA25C991F20058D264 /* SwiftUI.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftUI.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B6102DD25C992320058D264 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		4BB3FCF725D919C500496104 /* SwiftUIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftUIComponents.h; sourceTree = "<group>"; };
 		4BB3FCF825D919C500496104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BB405052630619600CA8D9A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		4BB786B627C8DFC000ED3D51 /* SlackEmojiRenderer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SlackEmojiRenderer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4BC64F6D26B1A2130091CE9A /* RevealServer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RevealServer.xcframework; sourceTree = "<group>"; };
 		4BC713B426367A200073CEC4 /* Namespacing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Namespacing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC713B626367A200073CEC4 /* Namespacing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Namespacing.h; sourceTree = "<group>"; };
@@ -193,6 +195,8 @@
 				4BDAB5DE25BFBBBE00E6CC35 /* Swift-2020.playground */,
 				4B6102DA25C991F20058D264 /* SwiftUI.playground */,
 				4BB3670725CEF807001C5B7E /* RxSwift.playground */,
+				4BB786B627C8DFC000ED3D51 /* SlackEmojiRenderer.playground */,
+				4B44A41B27E1278D00E54B95 /* Concurrency.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
