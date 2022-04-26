@@ -27,5 +27,7 @@
         <page name='Untitled Page 6'/>
         <page name='compare date'/>
         <page name='countdown'/>
+        <page name='UIImage+template'/>
+        <page name='capture-list'/>
     </pages>
 </playground>

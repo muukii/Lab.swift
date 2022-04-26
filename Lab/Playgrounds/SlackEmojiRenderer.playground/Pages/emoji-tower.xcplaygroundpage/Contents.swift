@@ -15,4 +15,4 @@ func makeTower(emoji: String, height: Int) -> String {
   return lines.joined(separator: "\n")
 }
 
-print(makeTower(emoji: ":euro:", height: 10))
+print(makeTower(emoji: ":loading-517:", height: 10))

@@ -1,7 +1,10 @@
-//: [Previous](@previous)
+import UIKit
 
-import Foundation
+let image = UIImage()
 
-var greeting = "Hello, playground"
+print(image)
 
-//: [Next](@next)
+print(image.withRenderingMode(.alwaysTemplate))
+
+print(image)
+
