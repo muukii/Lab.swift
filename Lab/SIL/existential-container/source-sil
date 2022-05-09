@@ -12,16 +12,16 @@ enum Identifier : Hashable {
   var hashValue: Int { get }
 }
 
-@_hasStorage @_hasInitialValue let value: AnyHashable { get }
+@_hasStorage @_hasInitialValue let muukii: AnyHashable { get }
 
-// value
-sil_global hidden [let] @$s6source5values11AnyHashableVvp : $AnyHashable
+// muukii
+sil_global hidden [let] @$s6source6muukiis11AnyHashableVvp : $AnyHashable
 
 // main
 sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
 bb0(%0 : $Int32, %1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>):
-  alloc_global @$s6source5values11AnyHashableVvp  // id: %2
-  %3 = global_addr @$s6source5values11AnyHashableVvp : $*AnyHashable // user: %15
+  alloc_global @$s6source6muukiis11AnyHashableVvp // id: %2
+  %3 = global_addr @$s6source6muukiis11AnyHashableVvp : $*AnyHashable // user: %15
   %4 = integer_literal $Builtin.Int64, 6513249    // user: %5
   %5 = struct $UInt64 (%4 : $Builtin.Int64)       // user: %8
   %6 = integer_literal $Builtin.Int64, -2089670227099910144 // user: %7

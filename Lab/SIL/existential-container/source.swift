@@ -3,4 +3,4 @@ enum Identifier: Hashable {
   case integer(Int)
 }
 
-let value = "abc" as AnyHashable
+let muukii = "abc" as AnyHashable
