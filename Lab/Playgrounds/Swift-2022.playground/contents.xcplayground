@@ -29,5 +29,6 @@
         <page name='countdown'/>
         <page name='UIImage+template'/>
         <page name='capture-list'/>
+        <page name='TypedHashable'/>
     </pages>
 </playground>
