@@ -21,285 +21,481 @@ sil_global hidden [let] @$s6source5values11AnyHashableVvp : $AnyHashable
 sil @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
 bb0(%0 : $Int32, %1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>):
   alloc_global @$s6source5values11AnyHashableVvp  // id: %2
-  %3 = global_addr @$s6source5values11AnyHashableVvp : $*AnyHashable // user: %13
-  %4 = alloc_stack $String                        // users: %11, %15, %14, %13
-  %5 = string_literal utf8 "abc"                  // user: %10
-  %6 = integer_literal $Builtin.Word, 3           // user: %10
-  %7 = integer_literal $Builtin.Int1, -1          // user: %10
-  %8 = metatype $@thin String.Type                // user: %10
-  // function_ref String.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:)
-  %9 = function_ref @$sSS21_builtinStringLiteral17utf8CodeUnitCount7isASCIISSBp_BwBi1_tcfC : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %10
-  %10 = apply %9(%5, %6, %7, %8) : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %11
-  store %10 to %4 : $*String                      // id: %11
-  // function_ref _convertToAnyHashable<A>(_:)
-  %12 = function_ref @$ss21_convertToAnyHashableys0cD0VxSHRzlF : $@convention(thin) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0) -> @out AnyHashable // user: %13
-  %13 = apply %12<String>(%3, %4) : $@convention(thin) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0) -> @out AnyHashable
-  destroy_addr %4 : $*String                      // id: %14
-  dealloc_stack %4 : $*String                     // id: %15
-  %16 = integer_literal $Builtin.Int32, 0         // user: %17
-  %17 = struct $Int32 (%16 : $Builtin.Int32)      // user: %18
-  return %17 : $Int32                             // id: %18
+  %3 = global_addr @$s6source5values11AnyHashableVvp : $*AnyHashable // user: %15
+  %4 = integer_literal $Builtin.Int64, 6513249    // user: %5
+  %5 = struct $UInt64 (%4 : $Builtin.Int64)       // user: %8
+  %6 = integer_literal $Builtin.Int64, -2089670227099910144 // user: %7
+  %7 = value_to_bridge_object %6 : $Builtin.Int64 // user: %8
+  %8 = struct $_StringObject (%5 : $UInt64, %7 : $Builtin.BridgeObject) // user: %9
+  %9 = struct $_StringGuts (%8 : $_StringObject)  // user: %10
+  %10 = struct $String (%9 : $_StringGuts)        // user: %13
+  %11 = metatype $@thin AnyHashable.Type          // user: %15
+  %12 = alloc_stack $String                       // users: %16, %15, %13
+  store %10 to %12 : $*String                     // id: %13
+  // function_ref AnyHashable.init<A>(_:)
+  %14 = function_ref @$ss11AnyHashableVyABxcSHRzlufC : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (@in τ_0_0, @thin AnyHashable.Type) -> @out AnyHashable // user: %15
+  %15 = apply %14<String>(%3, %12, %11) : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (@in τ_0_0, @thin AnyHashable.Type) -> @out AnyHashable
+  dealloc_stack %12 : $*String                    // id: %16
+  %17 = integer_literal $Builtin.Int32, 0         // user: %18
+  %18 = struct $Int32 (%17 : $Builtin.Int32)      // user: %19
+  return %18 : $Int32                             // id: %19
 } // end sil function 'main'
 
 // Identifier.hash(into:)
 sil hidden @$s6source10IdentifierO4hash4intoys6HasherVz_tF : $@convention(method) (@inout Hasher, @guaranteed Identifier) -> () {
-// %0 "hasher"                                    // users: %39, %32, %19, %12, %2
+// %0 "hasher"                                    // users: %10, %12, %19, %22, %2
 // %1 "self"                                      // users: %4, %3
 bb0(%0 : $*Hasher, %1 : $Identifier):
   debug_value %0 : $*Hasher, var, name "hasher", argno 1, implicit, expr op_deref // id: %2
   debug_value %1 : $Identifier, let, name "self", argno 2, implicit // id: %3
   switch_enum %1 : $Identifier, case #Identifier.string!enumelt: bb1, case #Identifier.integer!enumelt: bb2 // id: %4
 
-// %5                                             // users: %24, %18, %7, %6
+// %5                                             // users: %12, %6
 bb1(%5 : $String):                                // Preds: bb0
-  retain_value %5 : $String                       // id: %6
-  debug_value %5 : $String, let, name "a0"        // id: %7
-  %8 = integer_literal $Builtin.Int64, 0          // user: %9
-  %9 = struct $Int (%8 : $Builtin.Int64)          // user: %11
-  %10 = alloc_stack $Int                          // users: %11, %16, %14
-  store %9 to %10 : $*Int                         // id: %11
-  %12 = begin_access [modify] [static] %0 : $*Hasher // users: %15, %14
-  // function_ref Hasher.combine<A>(_:)
-  %13 = function_ref @$ss6HasherV7combineyyxSHRzlF : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0, @inout Hasher) -> () // user: %14
-  %14 = apply %13<Int>(%10, %12) : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0, @inout Hasher) -> ()
-  end_access %12 : $*Hasher                       // id: %15
-  dealloc_stack %10 : $*Int                       // id: %16
-  %17 = alloc_stack $String                       // users: %18, %23, %21
-  store %5 to %17 : $*String                      // id: %18
-  %19 = begin_access [modify] [static] %0 : $*Hasher // users: %22, %21
-  // function_ref Hasher.combine<A>(_:)
-  %20 = function_ref @$ss6HasherV7combineyyxSHRzlF : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0, @inout Hasher) -> () // user: %21
-  %21 = apply %20<String>(%17, %19) : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0, @inout Hasher) -> ()
-  end_access %19 : $*Hasher                       // id: %22
-  dealloc_stack %17 : $*String                    // id: %23
-  release_value %5 : $String                      // id: %24
-  br bb3                                          // id: %25
+  debug_value %5 : $String, let, name "a0"        // id: %6
+  %7 = integer_literal $Builtin.Int64, 0          // user: %8
+  %8 = struct $UInt (%7 : $Builtin.Int64)         // user: %10
+  // function_ref Hasher._combine(_:)
+  %9 = function_ref @$ss6HasherV8_combineyySuF : $@convention(method) (UInt, @inout Hasher) -> () // user: %10
+  %10 = apply %9(%8, %0) : $@convention(method) (UInt, @inout Hasher) -> ()
+  // function_ref String.hash(into:)
+  %11 = function_ref @$sSS4hash4intoys6HasherVz_tF : $@convention(method) (@inout Hasher, @guaranteed String) -> () // user: %12
+  %12 = apply %11(%0, %5) : $@convention(method) (@inout Hasher, @guaranteed String) -> ()
+  br bb3                                          // id: %13
 
-// %26                                            // users: %38, %27
-bb2(%26 : $Int):                                  // Preds: bb0
-  debug_value %26 : $Int, let, name "a0"          // id: %27
-  %28 = integer_literal $Builtin.Int64, 1         // user: %29
-  %29 = struct $Int (%28 : $Builtin.Int64)        // user: %31
-  %30 = alloc_stack $Int                          // users: %31, %36, %34
-  store %29 to %30 : $*Int                        // id: %31
-  %32 = begin_access [modify] [static] %0 : $*Hasher // users: %35, %34
-  // function_ref Hasher.combine<A>(_:)
-  %33 = function_ref @$ss6HasherV7combineyyxSHRzlF : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0, @inout Hasher) -> () // user: %34
-  %34 = apply %33<Int>(%30, %32) : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0, @inout Hasher) -> ()
-  end_access %32 : $*Hasher                       // id: %35
-  dealloc_stack %30 : $*Int                       // id: %36
-  %37 = alloc_stack $Int                          // users: %38, %43, %41
-  store %26 to %37 : $*Int                        // id: %38
-  %39 = begin_access [modify] [static] %0 : $*Hasher // users: %42, %41
-  // function_ref Hasher.combine<A>(_:)
-  %40 = function_ref @$ss6HasherV7combineyyxSHRzlF : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0, @inout Hasher) -> () // user: %41
-  %41 = apply %40<Int>(%37, %39) : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0, @inout Hasher) -> ()
-  end_access %39 : $*Hasher                       // id: %42
-  dealloc_stack %37 : $*Int                       // id: %43
-  br bb3                                          // id: %44
+// %14                                            // users: %20, %15
+bb2(%14 : $Int):                                  // Preds: bb0
+  debug_value %14 : $Int, let, name "a0"          // id: %15
+  %16 = integer_literal $Builtin.Int64, 1         // user: %17
+  %17 = struct $UInt (%16 : $Builtin.Int64)       // user: %19
+  // function_ref Hasher._combine(_:)
+  %18 = function_ref @$ss6HasherV8_combineyySuF : $@convention(method) (UInt, @inout Hasher) -> () // users: %22, %19
+  %19 = apply %18(%17, %0) : $@convention(method) (UInt, @inout Hasher) -> ()
+  %20 = struct_extract %14 : $Int, #Int._value    // user: %21
+  %21 = struct $UInt (%20 : $Builtin.Int64)       // user: %22
+  %22 = apply %18(%21, %0) : $@convention(method) (UInt, @inout Hasher) -> ()
+  br bb3                                          // id: %23
 
 bb3:                                              // Preds: bb2 bb1
-  %45 = tuple ()                                  // user: %46
-  return %45 : $()                                // id: %46
+  %24 = tuple ()                                  // user: %25
+  return %24 : $()                                // id: %25
 } // end sil function '$s6source10IdentifierO4hash4intoys6HasherVz_tF'
-
-// Int.init(_builtinIntegerLiteral:)
-sil public_external [transparent] @$sSi22_builtinIntegerLiteralSiBI_tcfC : $@convention(method) (Builtin.IntLiteral, @thin Int.Type) -> Int {
-// %0                                             // user: %2
-bb0(%0 : $Builtin.IntLiteral, %1 : $@thin Int.Type):
-  %2 = builtin "s_to_s_checked_trunc_IntLiteral_Int64"(%0 : $Builtin.IntLiteral) : $(Builtin.Int64, Builtin.Int1) // user: %3
-  %3 = tuple_extract %2 : $(Builtin.Int64, Builtin.Int1), 0 // user: %4
-  %4 = struct $Int (%3 : $Builtin.Int64)          // user: %5
-  return %4 : $Int                                // id: %5
-} // end sil function '$sSi22_builtinIntegerLiteralSiBI_tcfC'
-
-// Hasher.combine<A>(_:)
-sil [always_inline] @$ss6HasherV7combineyyxSHRzlF : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0, @inout Hasher) -> ()
 
 // static Identifier.__derived_enum_equals(_:_:)
 sil hidden @$s6source10IdentifierO21__derived_enum_equalsySbAC_ACtFZ : $@convention(method) (@guaranteed Identifier, @guaranteed Identifier, @thin Identifier.Type) -> Bool {
-// %0 "a"                                         // users: %9, %8, %6, %3
-// %1 "b"                                         // users: %35, %11, %8, %7, %4
+// %0 "a"                                         // users: %6, %3
+// %1 "b"                                         // users: %44, %8, %4
 // %2 "self"                                      // user: %5
 bb0(%0 : $Identifier, %1 : $Identifier, %2 : $@thin Identifier.Type):
   debug_value %0 : $Identifier, let, name "a", argno 1, implicit // id: %3
   debug_value %1 : $Identifier, let, name "b", argno 2, implicit // id: %4
   debug_value %2 : $@thin Identifier.Type, let, name "self", argno 3, implicit // id: %5
-  retain_value %0 : $Identifier                   // id: %6
-  retain_value %1 : $Identifier                   // id: %7
-  %8 = tuple (%0 : $Identifier, %1 : $Identifier) // users: %53, %48, %44, %31, %25
-  switch_enum %0 : $Identifier, case #Identifier.string!enumelt: bb1, case #Identifier.integer!enumelt: bb6 // id: %9
+  switch_enum %0 : $Identifier, case #Identifier.string!enumelt: bb1, case #Identifier.integer!enumelt: bb12 // id: %6
 
-// %10                                            // users: %30, %24, %18, %15, %13
-bb1(%10 : $String):                               // Preds: bb0
-  switch_enum %1 : $Identifier, case #Identifier.string!enumelt: bb2, default bb5 // #Identifier.integer!enumelt; id: %11
+// %7                                             // users: %11, %10
+bb1(%7 : $String):                                // Preds: bb0
+  switch_enum %1 : $Identifier, case #Identifier.string!enumelt: bb2, case #Identifier.integer!enumelt: bb11, forwarding: @owned // id: %8
 
-// %12                                            // users: %29, %23, %18, %14
-bb2(%12 : $String):                               // Preds: bb1
-  retain_value %10 : $String                      // id: %13
-  retain_value %12 : $String                      // id: %14
-  debug_value %10 : $String, let, name "l0"       // id: %15
-  %16 = metatype $@thin String.Type               // user: %18
-  // function_ref static String.== infix(_:_:)
-  %17 = function_ref @$sSS2eeoiySbSS_SStFZ : $@convention(method) (@guaranteed String, @guaranteed String, @thin String.Type) -> Bool // user: %18
-  %18 = apply %17(%10, %12, %16) : $@convention(method) (@guaranteed String, @guaranteed String, @thin String.Type) -> Bool // user: %19
-  %19 = struct_extract %18 : $Bool, #Bool._value  // user: %20
+// %9                                             // user: %12
+bb2(%9 : $String):                                // Preds: bb1
+  debug_value %7 : $String, let, name "l0"        // id: %10
+  %11 = struct_extract %7 : $String, #String._guts // users: %35, %13
+  %12 = struct_extract %9 : $String, #String._guts // users: %35, %15
+  %13 = struct_extract %11 : $_StringGuts, #_StringGuts._object // users: %21, %14
+  %14 = struct_extract %13 : $_StringObject, #_StringObject._countAndFlagsBits // user: %17
+  %15 = struct_extract %12 : $_StringGuts, #_StringGuts._object // users: %23, %16
+  %16 = struct_extract %15 : $_StringObject, #_StringObject._countAndFlagsBits // user: %18
+  %17 = struct_extract %14 : $UInt64, #UInt64._value // user: %19
+  %18 = struct_extract %16 : $UInt64, #UInt64._value // user: %19
+  %19 = builtin "cmp_eq_Int64"(%17 : $Builtin.Int64, %18 : $Builtin.Int64) : $Builtin.Int1 // user: %20
   cond_br %19, bb3, bb4                           // id: %20
 
 bb3:                                              // Preds: bb2
-  %21 = integer_literal $Builtin.Int1, -1         // user: %22
-  %22 = struct $Bool (%21 : $Builtin.Int1)        // user: %26
-  release_value %12 : $String                     // id: %23
-  release_value %10 : $String                     // id: %24
-  release_value %8 : $(Identifier, Identifier)    // id: %25
-  br bb12(%22 : $Bool)                            // id: %26
+  %21 = struct_extract %13 : $_StringObject, #_StringObject._object // user: %22
+  %22 = unchecked_trivial_bit_cast %21 : $Builtin.BridgeObject to $UInt64 // user: %25
+  %23 = struct_extract %15 : $_StringObject, #_StringObject._object // user: %24
+  %24 = unchecked_trivial_bit_cast %23 : $Builtin.BridgeObject to $UInt64 // user: %26
+  %25 = struct_extract %22 : $UInt64, #UInt64._value // user: %27
+  %26 = struct_extract %24 : $UInt64, #UInt64._value // user: %27
+  %27 = builtin "cmp_eq_Int64"(%25 : $Builtin.Int64, %26 : $Builtin.Int64) : $Builtin.Int1 // user: %28
+  cond_br %27, bb5, bb6                           // id: %28
 
 bb4:                                              // Preds: bb2
-  %27 = integer_literal $Builtin.Int1, 0          // user: %28
-  %28 = struct $Bool (%27 : $Builtin.Int1)        // user: %32
-  release_value %12 : $String                     // id: %29
-  release_value %10 : $String                     // id: %30
-  release_value %8 : $(Identifier, Identifier)    // id: %31
-  br bb12(%28 : $Bool)                            // id: %32
+  br bb8                                          // id: %29
 
-bb5:                                              // Preds: bb1
-  br bb11                                         // id: %33
+bb5:                                              // Preds: bb3
+  br bb9                                          // id: %30
 
-// %34                                            // users: %38, %37
-bb6(%34 : $Int):                                  // Preds: bb0
-  switch_enum %1 : $Identifier, case #Identifier.integer!enumelt: bb7, default bb10 // #Identifier.string!enumelt; id: %35
+bb6:                                              // Preds: bb3
+  br bb8                                          // id: %31
 
-// %36                                            // user: %39
-bb7(%36 : $Int):                                  // Preds: bb6
-  debug_value %34 : $Int, let, name "l0"          // id: %37
-  %38 = struct_extract %34 : $Int, #Int._value    // user: %40
-  %39 = struct_extract %36 : $Int, #Int._value    // user: %40
-  %40 = builtin "cmp_eq_Int64"(%38 : $Builtin.Int64, %39 : $Builtin.Int64) : $Builtin.Int1 // user: %41
-  cond_br %40, bb8, bb9                           // id: %41
+bb7:                                              // Preds: bb8
+  br bb9                                          // id: %32
 
-bb8:                                              // Preds: bb7
-  %42 = integer_literal $Builtin.Int1, -1         // user: %43
-  %43 = struct $Bool (%42 : $Builtin.Int1)        // user: %45
-  release_value %8 : $(Identifier, Identifier)    // id: %44
-  br bb12(%43 : $Bool)                            // id: %45
+bb8:                                              // Preds: bb4 bb6
+  %33 = enum $_StringComparisonResult, #_StringComparisonResult.equal!enumelt // user: %35
+  // function_ref _stringCompareWithSmolCheck(_:_:expecting:)
+  %34 = function_ref @$ss27_stringCompareWithSmolCheck__9expectingSbs11_StringGutsV_ADs01_G16ComparisonResultOtF : $@convention(thin) (@guaranteed _StringGuts, @guaranteed _StringGuts, _StringComparisonResult) -> Bool // user: %35
+  %35 = apply %34(%11, %12, %33) : $@convention(thin) (@guaranteed _StringGuts, @guaranteed _StringGuts, _StringComparisonResult) -> Bool // user: %36
+  %36 = struct_extract %35 : $Bool, #Bool._value  // user: %37
+  cond_br %36, bb7, bb10                          // id: %37
 
-bb9:                                              // Preds: bb7
-  %46 = integer_literal $Builtin.Int1, 0          // user: %47
-  %47 = struct $Bool (%46 : $Builtin.Int1)        // user: %49
-  release_value %8 : $(Identifier, Identifier)    // id: %48
-  br bb12(%47 : $Bool)                            // id: %49
+bb9:                                              // Preds: bb5 bb7
+  %38 = integer_literal $Builtin.Int1, -1         // user: %39
+  br bb18(%38 : $Builtin.Int1)                    // id: %39
 
-bb10:                                             // Preds: bb6
-  br bb11                                         // id: %50
+bb10:                                             // Preds: bb8
+  %40 = integer_literal $Builtin.Int1, 0          // user: %41
+  br bb18(%40 : $Builtin.Int1)                    // id: %41
 
-bb11:                                             // Preds: bb10 bb5
-  %51 = integer_literal $Builtin.Int1, 0          // user: %52
-  %52 = struct $Bool (%51 : $Builtin.Int1)        // user: %54
-  release_value %8 : $(Identifier, Identifier)    // id: %53
-  br bb12(%52 : $Bool)                            // id: %54
+bb11:                                             // Preds: bb1
+  br bb17                                         // id: %42
 
-// %55                                            // user: %56
-bb12(%55 : $Bool):                                // Preds: bb11 bb8 bb9 bb3 bb4
-  return %55 : $Bool                              // id: %56
+// %43                                            // users: %47, %46
+bb12(%43 : $Int):                                 // Preds: bb0
+  switch_enum %1 : $Identifier, case #Identifier.integer!enumelt: bb13, case #Identifier.string!enumelt: bb16, forwarding: @owned // id: %44
+
+// %45                                            // user: %48
+bb13(%45 : $Int):                                 // Preds: bb12
+  debug_value %43 : $Int, let, name "l0"          // id: %46
+  %47 = struct_extract %43 : $Int, #Int._value    // user: %49
+  %48 = struct_extract %45 : $Int, #Int._value    // user: %49
+  %49 = builtin "cmp_eq_Int64"(%47 : $Builtin.Int64, %48 : $Builtin.Int64) : $Builtin.Int1 // user: %50
+  cond_br %49, bb14, bb15                         // id: %50
+
+bb14:                                             // Preds: bb13
+  %51 = integer_literal $Builtin.Int1, -1         // user: %52
+  br bb18(%51 : $Builtin.Int1)                    // id: %52
+
+bb15:                                             // Preds: bb13
+  %53 = integer_literal $Builtin.Int1, 0          // user: %54
+  br bb18(%53 : $Builtin.Int1)                    // id: %54
+
+bb16:                                             // Preds: bb12
+  br bb17                                         // id: %55
+
+bb17:                                             // Preds: bb16 bb11
+  %56 = integer_literal $Builtin.Int1, 0          // user: %57
+  br bb18(%56 : $Builtin.Int1)                    // id: %57
+
+// %58                                            // user: %59
+bb18(%58 : $Builtin.Int1):                        // Preds: bb17 bb14 bb15 bb9 bb10
+  %59 = struct $Bool (%58 : $Builtin.Int1)        // user: %60
+  return %59 : $Bool                              // id: %60
 } // end sil function '$s6source10IdentifierO21__derived_enum_equalsySbAC_ACtFZ'
-
-// Bool.init(_builtinBooleanLiteral:)
-sil public_external [transparent] @$sSb22_builtinBooleanLiteralSbBi1__tcfC : $@convention(method) (Builtin.Int1, @thin Bool.Type) -> Bool {
-// %0                                             // user: %2
-bb0(%0 : $Builtin.Int1, %1 : $@thin Bool.Type):
-  %2 = struct $Bool (%0 : $Builtin.Int1)          // user: %3
-  return %2 : $Bool                               // id: %3
-} // end sil function '$sSb22_builtinBooleanLiteralSbBi1__tcfC'
-
-// static String.== infix(_:_:)
-sil [always_inline] [readonly] [_semantics "string.equals"] @$sSS2eeoiySbSS_SStFZ : $@convention(method) (@guaranteed String, @guaranteed String, @thin String.Type) -> Bool
-
-// static Int.== infix(_:_:)
-sil public_external [transparent] @$sSi2eeoiySbSi_SitFZ : $@convention(method) (Int, Int, @thin Int.Type) -> Bool {
-// %0                                             // user: %3
-// %1                                             // user: %4
-bb0(%0 : $Int, %1 : $Int, %2 : $@thin Int.Type):
-  %3 = struct_extract %0 : $Int, #Int._value      // user: %5
-  %4 = struct_extract %1 : $Int, #Int._value      // user: %5
-  %5 = builtin "cmp_eq_Int64"(%3 : $Builtin.Int64, %4 : $Builtin.Int64) : $Builtin.Int1 // user: %6
-  %6 = struct $Bool (%5 : $Builtin.Int1)          // user: %7
-  return %6 : $Bool                               // id: %7
-} // end sil function '$sSi2eeoiySbSi_SitFZ'
 
 // Identifier.hashValue.getter
 sil hidden @$s6source10IdentifierO9hashValueSivg : $@convention(method) (@guaranteed Identifier) -> Int {
-// %0 "self"                                      // users: %3, %1
+// %0 "self"                                      // users: %10, %11, %1
 bb0(%0 : $Identifier):
   debug_value %0 : $Identifier, let, name "self", argno 1, implicit // id: %1
-  %2 = alloc_stack $Identifier                    // users: %3, %6, %5
-  store %0 to %2 : $*Identifier                   // id: %3
-  // function_ref _hashValue<A>(for:)
-  %4 = function_ref @$ss10_hashValue3forSix_tSHRzlF : $@convention(thin) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0) -> Int // user: %5
-  %5 = apply %4<Identifier>(%2) : $@convention(thin) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0) -> Int // user: %7
-  dealloc_stack %2 : $*Identifier                 // id: %6
-  return %5 : $Int                                // id: %7
-} // end sil function '$s6source10IdentifierO9hashValueSivg'
+  %2 = integer_literal $Builtin.Int64, 0          // users: %14, %3
+  %3 = struct $Int (%2 : $Builtin.Int64)          // user: %7
+  %4 = alloc_stack $Hasher                        // users: %28, %25, %32, %31, %18, %16, %9, %8
+  %5 = metatype $@thin Hasher.Type                // user: %7
+  // function_ref Hasher.init(_seed:)
+  %6 = function_ref @$ss6HasherV5_seedABSi_tcfC : $@convention(method) (Int, @thin Hasher.Type) -> Hasher // user: %7
+  %7 = apply %6(%3, %5) : $@convention(method) (Int, @thin Hasher.Type) -> Hasher // user: %8
+  store %7 to %4 : $*Hasher                       // id: %8
+  debug_value %4 : $*Hasher, var, name "hasher", argno 1, implicit, expr op_deref // id: %9
+  debug_value %0 : $Identifier, let, name "self", argno 2, implicit // id: %10
+  switch_enum %0 : $Identifier, case #Identifier.string!enumelt: bb1, case #Identifier.integer!enumelt: bb2 // id: %11
 
-// _hashValue<A>(for:)
-sil [always_inline] @$ss10_hashValue3forSix_tSHRzlF : $@convention(thin) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0) -> Int
+// %12                                            // users: %18, %13
+bb1(%12 : $String):                               // Preds: bb0
+  debug_value %12 : $String, let, name "a0"       // id: %13
+  %14 = struct $UInt (%2 : $Builtin.Int64)        // user: %16
+  // function_ref Hasher._combine(_:)
+  %15 = function_ref @$ss6HasherV8_combineyySuF : $@convention(method) (UInt, @inout Hasher) -> () // user: %16
+  %16 = apply %15(%14, %4) : $@convention(method) (UInt, @inout Hasher) -> ()
+  // function_ref String.hash(into:)
+  %17 = function_ref @$sSS4hash4intoys6HasherVz_tF : $@convention(method) (@inout Hasher, @guaranteed String) -> () // user: %18
+  %18 = apply %17(%4, %12) : $@convention(method) (@inout Hasher, @guaranteed String) -> ()
+  br bb3                                          // id: %19
+
+// %20                                            // users: %26, %21
+bb2(%20 : $Int):                                  // Preds: bb0
+  debug_value %20 : $Int, let, name "a0"          // id: %21
+  %22 = integer_literal $Builtin.Int64, 1         // user: %23
+  %23 = struct $UInt (%22 : $Builtin.Int64)       // user: %25
+  // function_ref Hasher._combine(_:)
+  %24 = function_ref @$ss6HasherV8_combineyySuF : $@convention(method) (UInt, @inout Hasher) -> () // users: %28, %25
+  %25 = apply %24(%23, %4) : $@convention(method) (UInt, @inout Hasher) -> ()
+  %26 = struct_extract %20 : $Int, #Int._value    // user: %27
+  %27 = struct $UInt (%26 : $Builtin.Int64)       // user: %28
+  %28 = apply %24(%27, %4) : $@convention(method) (UInt, @inout Hasher) -> ()
+  br bb3                                          // id: %29
+
+bb3:                                              // Preds: bb2 bb1
+  // function_ref Hasher._finalize()
+  %30 = function_ref @$ss6HasherV9_finalizeSiyF : $@convention(method) (@inout Hasher) -> Int // user: %31
+  %31 = apply %30(%4) : $@convention(method) (@inout Hasher) -> Int // user: %33
+  dealloc_stack %4 : $*Hasher                     // id: %32
+  return %31 : $Int                               // id: %33
+} // end sil function '$s6source10IdentifierO9hashValueSivg'
 
 // protocol witness for Hashable.hashValue.getter in conformance Identifier
 sil private [transparent] [thunk] @$s6source10IdentifierOSHAASH9hashValueSivgTW : $@convention(witness_method: Hashable) (@in_guaranteed Identifier) -> Int {
 // %0                                             // user: %1
 bb0(%0 : $*Identifier):
-  %1 = load %0 : $*Identifier                     // user: %3
-  // function_ref Identifier.hashValue.getter
-  %2 = function_ref @$s6source10IdentifierO9hashValueSivg : $@convention(method) (@guaranteed Identifier) -> Int // user: %3
-  %3 = apply %2(%1) : $@convention(method) (@guaranteed Identifier) -> Int // user: %4
-  return %3 : $Int                                // id: %4
+  %1 = load %0 : $*Identifier                     // users: %12, %11, %2
+  debug_value %1 : $Identifier, let, name "self", argno 1, implicit // id: %2
+  %3 = integer_literal $Builtin.Int64, 0          // users: %15, %4
+  %4 = struct $Int (%3 : $Builtin.Int64)          // user: %8
+  %5 = alloc_stack $Hasher                        // users: %29, %26, %33, %32, %19, %17, %10, %9
+  %6 = metatype $@thin Hasher.Type                // user: %8
+  // function_ref Hasher.init(_seed:)
+  %7 = function_ref @$ss6HasherV5_seedABSi_tcfC : $@convention(method) (Int, @thin Hasher.Type) -> Hasher // user: %8
+  %8 = apply %7(%4, %6) : $@convention(method) (Int, @thin Hasher.Type) -> Hasher // user: %9
+  store %8 to %5 : $*Hasher                       // id: %9
+  debug_value %5 : $*Hasher, var, name "hasher", argno 1, implicit, expr op_deref // id: %10
+  debug_value %1 : $Identifier, let, name "self", argno 2, implicit // id: %11
+  switch_enum %1 : $Identifier, case #Identifier.string!enumelt: bb1, case #Identifier.integer!enumelt: bb2 // id: %12
+
+// %13                                            // users: %19, %14
+bb1(%13 : $String):                               // Preds: bb0
+  debug_value %13 : $String, let, name "a0"       // id: %14
+  %15 = struct $UInt (%3 : $Builtin.Int64)        // user: %17
+  // function_ref Hasher._combine(_:)
+  %16 = function_ref @$ss6HasherV8_combineyySuF : $@convention(method) (UInt, @inout Hasher) -> () // user: %17
+  %17 = apply %16(%15, %5) : $@convention(method) (UInt, @inout Hasher) -> ()
+  // function_ref String.hash(into:)
+  %18 = function_ref @$sSS4hash4intoys6HasherVz_tF : $@convention(method) (@inout Hasher, @guaranteed String) -> () // user: %19
+  %19 = apply %18(%5, %13) : $@convention(method) (@inout Hasher, @guaranteed String) -> ()
+  br bb3                                          // id: %20
+
+// %21                                            // users: %27, %22
+bb2(%21 : $Int):                                  // Preds: bb0
+  debug_value %21 : $Int, let, name "a0"          // id: %22
+  %23 = integer_literal $Builtin.Int64, 1         // user: %24
+  %24 = struct $UInt (%23 : $Builtin.Int64)       // user: %26
+  // function_ref Hasher._combine(_:)
+  %25 = function_ref @$ss6HasherV8_combineyySuF : $@convention(method) (UInt, @inout Hasher) -> () // users: %29, %26
+  %26 = apply %25(%24, %5) : $@convention(method) (UInt, @inout Hasher) -> ()
+  %27 = struct_extract %21 : $Int, #Int._value    // user: %28
+  %28 = struct $UInt (%27 : $Builtin.Int64)       // user: %29
+  %29 = apply %25(%28, %5) : $@convention(method) (UInt, @inout Hasher) -> ()
+  br bb3                                          // id: %30
+
+bb3:                                              // Preds: bb2 bb1
+  // function_ref Hasher._finalize()
+  %31 = function_ref @$ss6HasherV9_finalizeSiyF : $@convention(method) (@inout Hasher) -> Int // user: %32
+  %32 = apply %31(%5) : $@convention(method) (@inout Hasher) -> Int // user: %34
+  dealloc_stack %5 : $*Hasher                     // id: %33
+  return %32 : $Int                               // id: %34
 } // end sil function '$s6source10IdentifierOSHAASH9hashValueSivgTW'
 
 // protocol witness for Hashable.hash(into:) in conformance Identifier
 sil private [transparent] [thunk] @$s6source10IdentifierOSHAASH4hash4intoys6HasherVz_tFTW : $@convention(witness_method: Hashable) (@inout Hasher, @in_guaranteed Identifier) -> () {
-// %0                                             // user: %4
+// %0                                             // users: %23, %20, %13, %11, %3
 // %1                                             // user: %2
 bb0(%0 : $*Hasher, %1 : $*Identifier):
-  %2 = load %1 : $*Identifier                     // user: %4
-  // function_ref Identifier.hash(into:)
-  %3 = function_ref @$s6source10IdentifierO4hash4intoys6HasherVz_tF : $@convention(method) (@inout Hasher, @guaranteed Identifier) -> () // user: %4
-  %4 = apply %3(%0, %2) : $@convention(method) (@inout Hasher, @guaranteed Identifier) -> ()
-  %5 = tuple ()                                   // user: %6
-  return %5 : $()                                 // id: %6
+  %2 = load %1 : $*Identifier                     // users: %5, %4
+  debug_value %0 : $*Hasher, var, name "hasher", argno 1, implicit, expr op_deref // id: %3
+  debug_value %2 : $Identifier, let, name "self", argno 2, implicit // id: %4
+  switch_enum %2 : $Identifier, case #Identifier.string!enumelt: bb1, case #Identifier.integer!enumelt: bb2 // id: %5
+
+// %6                                             // users: %13, %7
+bb1(%6 : $String):                                // Preds: bb0
+  debug_value %6 : $String, let, name "a0"        // id: %7
+  %8 = integer_literal $Builtin.Int64, 0          // user: %9
+  %9 = struct $UInt (%8 : $Builtin.Int64)         // user: %11
+  // function_ref Hasher._combine(_:)
+  %10 = function_ref @$ss6HasherV8_combineyySuF : $@convention(method) (UInt, @inout Hasher) -> () // user: %11
+  %11 = apply %10(%9, %0) : $@convention(method) (UInt, @inout Hasher) -> ()
+  // function_ref String.hash(into:)
+  %12 = function_ref @$sSS4hash4intoys6HasherVz_tF : $@convention(method) (@inout Hasher, @guaranteed String) -> () // user: %13
+  %13 = apply %12(%0, %6) : $@convention(method) (@inout Hasher, @guaranteed String) -> ()
+  br bb3                                          // id: %14
+
+// %15                                            // users: %21, %16
+bb2(%15 : $Int):                                  // Preds: bb0
+  debug_value %15 : $Int, let, name "a0"          // id: %16
+  %17 = integer_literal $Builtin.Int64, 1         // user: %18
+  %18 = struct $UInt (%17 : $Builtin.Int64)       // user: %20
+  // function_ref Hasher._combine(_:)
+  %19 = function_ref @$ss6HasherV8_combineyySuF : $@convention(method) (UInt, @inout Hasher) -> () // users: %23, %20
+  %20 = apply %19(%18, %0) : $@convention(method) (UInt, @inout Hasher) -> ()
+  %21 = struct_extract %15 : $Int, #Int._value    // user: %22
+  %22 = struct $UInt (%21 : $Builtin.Int64)       // user: %23
+  %23 = apply %19(%22, %0) : $@convention(method) (UInt, @inout Hasher) -> ()
+  br bb3                                          // id: %24
+
+bb3:                                              // Preds: bb2 bb1
+  %25 = tuple ()                                  // user: %26
+  return %25 : $()                                // id: %26
 } // end sil function '$s6source10IdentifierOSHAASH4hash4intoys6HasherVz_tFTW'
 
 // protocol witness for Hashable._rawHashValue(seed:) in conformance Identifier
 sil private [transparent] [thunk] [always_inline] @$s6source10IdentifierOSHAASH13_rawHashValue4seedS2i_tFTW : $@convention(witness_method: Hashable) (Int, @in_guaranteed Identifier) -> Int {
-// %0                                             // user: %3
-// %1                                             // user: %3
+// %0                                             // user: %6
+// %1                                             // user: %2
 bb0(%0 : $Int, %1 : $*Identifier):
-  // function_ref Hashable._rawHashValue(seed:)
-  %2 = function_ref @$sSHsE13_rawHashValue4seedS2i_tF : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (Int, @in_guaranteed τ_0_0) -> Int // user: %3
-  %3 = apply %2<Identifier>(%0, %1) : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (Int, @in_guaranteed τ_0_0) -> Int // user: %4
-  return %3 : $Int                                // id: %4
-} // end sil function '$s6source10IdentifierOSHAASH13_rawHashValue4seedS2i_tFTW'
+  %2 = load %1 : $*Identifier                     // users: %10, %9
+  %3 = alloc_stack $Hasher                        // users: %28, %25, %32, %31, %18, %16, %8, %7
+  %4 = metatype $@thin Hasher.Type                // user: %6
+  // function_ref Hasher.init(_seed:)
+  %5 = function_ref @$ss6HasherV5_seedABSi_tcfC : $@convention(method) (Int, @thin Hasher.Type) -> Hasher // user: %6
+  %6 = apply %5(%0, %4) : $@convention(method) (Int, @thin Hasher.Type) -> Hasher // user: %7
+  store %6 to %3 : $*Hasher                       // id: %7
+  debug_value %3 : $*Hasher, var, name "hasher", argno 1, implicit, expr op_deref // id: %8
+  debug_value %2 : $Identifier, let, name "self", argno 2, implicit // id: %9
+  switch_enum %2 : $Identifier, case #Identifier.string!enumelt: bb1, case #Identifier.integer!enumelt: bb2 // id: %10
 
-// Hashable._rawHashValue(seed:)
-sil [always_inline] @$sSHsE13_rawHashValue4seedS2i_tF : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (Int, @in_guaranteed τ_0_0) -> Int
+// %11                                            // users: %18, %12
+bb1(%11 : $String):                               // Preds: bb0
+  debug_value %11 : $String, let, name "a0"       // id: %12
+  %13 = integer_literal $Builtin.Int64, 0         // user: %14
+  %14 = struct $UInt (%13 : $Builtin.Int64)       // user: %16
+  // function_ref Hasher._combine(_:)
+  %15 = function_ref @$ss6HasherV8_combineyySuF : $@convention(method) (UInt, @inout Hasher) -> () // user: %16
+  %16 = apply %15(%14, %3) : $@convention(method) (UInt, @inout Hasher) -> ()
+  // function_ref String.hash(into:)
+  %17 = function_ref @$sSS4hash4intoys6HasherVz_tF : $@convention(method) (@inout Hasher, @guaranteed String) -> () // user: %18
+  %18 = apply %17(%3, %11) : $@convention(method) (@inout Hasher, @guaranteed String) -> ()
+  br bb3                                          // id: %19
+
+// %20                                            // users: %26, %21
+bb2(%20 : $Int):                                  // Preds: bb0
+  debug_value %20 : $Int, let, name "a0"          // id: %21
+  %22 = integer_literal $Builtin.Int64, 1         // user: %23
+  %23 = struct $UInt (%22 : $Builtin.Int64)       // user: %25
+  // function_ref Hasher._combine(_:)
+  %24 = function_ref @$ss6HasherV8_combineyySuF : $@convention(method) (UInt, @inout Hasher) -> () // users: %28, %25
+  %25 = apply %24(%23, %3) : $@convention(method) (UInt, @inout Hasher) -> ()
+  %26 = struct_extract %20 : $Int, #Int._value    // user: %27
+  %27 = struct $UInt (%26 : $Builtin.Int64)       // user: %28
+  %28 = apply %24(%27, %3) : $@convention(method) (UInt, @inout Hasher) -> ()
+  br bb3                                          // id: %29
+
+bb3:                                              // Preds: bb2 bb1
+  // function_ref Hasher._finalize()
+  %30 = function_ref @$ss6HasherV9_finalizeSiyF : $@convention(method) (@inout Hasher) -> Int // user: %31
+  %31 = apply %30(%3) : $@convention(method) (@inout Hasher) -> Int // user: %33
+  dealloc_stack %3 : $*Hasher                     // id: %32
+  return %31 : $Int                               // id: %33
+} // end sil function '$s6source10IdentifierOSHAASH13_rawHashValue4seedS2i_tFTW'
 
 // protocol witness for static Equatable.== infix(_:_:) in conformance Identifier
 sil private [transparent] [thunk] @$s6source10IdentifierOSQAASQ2eeoiySbx_xtFZTW : $@convention(witness_method: Equatable) (@in_guaranteed Identifier, @in_guaranteed Identifier, @thick Identifier.Type) -> Bool {
 // %0                                             // user: %3
 // %1                                             // user: %4
 bb0(%0 : $*Identifier, %1 : $*Identifier, %2 : $@thick Identifier.Type):
-  %3 = load %0 : $*Identifier                     // user: %7
-  %4 = load %1 : $*Identifier                     // user: %7
-  %5 = metatype $@thin Identifier.Type            // user: %7
-  // function_ref static Identifier.__derived_enum_equals(_:_:)
-  %6 = function_ref @$s6source10IdentifierO21__derived_enum_equalsySbAC_ACtFZ : $@convention(method) (@guaranteed Identifier, @guaranteed Identifier, @thin Identifier.Type) -> Bool // user: %7
-  %7 = apply %6(%3, %4, %5) : $@convention(method) (@guaranteed Identifier, @guaranteed Identifier, @thin Identifier.Type) -> Bool // user: %8
-  return %7 : $Bool                               // id: %8
+  %3 = load %0 : $*Identifier                     // users: %7, %5
+  %4 = load %1 : $*Identifier                     // users: %11, %9, %6
+  debug_value %3 : $Identifier, let, name "a", argno 1, implicit // id: %5
+  debug_value %4 : $Identifier, let, name "b", argno 2, implicit // id: %6
+  switch_enum %3 : $Identifier, case #Identifier.string!enumelt: bb1, case #Identifier.integer!enumelt: bb2 // id: %7
+
+// %8                                             // users: %14, %13
+bb1(%8 : $String):                                // Preds: bb0
+  switch_enum %4 : $Identifier, case #Identifier.string!enumelt: bb3, case #Identifier.integer!enumelt: bb4 // id: %9
+
+// %10                                            // users: %53, %52
+bb2(%10 : $Int):                                  // Preds: bb0
+  switch_enum %4 : $Identifier, case #Identifier.integer!enumelt: bb15, case #Identifier.string!enumelt: bb16 // id: %11
+
+// %12                                            // user: %15
+bb3(%12 : $String):                               // Preds: bb1
+  debug_value %8 : $String, let, name "l0"        // id: %13
+  %14 = struct_extract %8 : $String, #String._guts // users: %43, %16
+  %15 = struct_extract %12 : $String, #String._guts // users: %43, %18
+  %16 = struct_extract %14 : $_StringGuts, #_StringGuts._object // users: %25, %17
+  %17 = struct_extract %16 : $_StringObject, #_StringObject._countAndFlagsBits // user: %20
+  %18 = struct_extract %15 : $_StringGuts, #_StringGuts._object // users: %27, %19
+  %19 = struct_extract %18 : $_StringObject, #_StringObject._countAndFlagsBits // user: %21
+  %20 = struct_extract %17 : $UInt64, #UInt64._value // user: %22
+  %21 = struct_extract %19 : $UInt64, #UInt64._value // user: %22
+  %22 = builtin "cmp_eq_Int64"(%20 : $Builtin.Int64, %21 : $Builtin.Int64) : $Builtin.Int1 // user: %23
+  cond_br %22, bb5, bb6                           // id: %23
+
+bb4:                                              // Preds: bb1
+  br bb14                                         // id: %24
+
+bb5:                                              // Preds: bb3
+  %25 = struct_extract %16 : $_StringObject, #_StringObject._object // user: %26
+  %26 = unchecked_trivial_bit_cast %25 : $Builtin.BridgeObject to $UInt64 // user: %29
+  %27 = struct_extract %18 : $_StringObject, #_StringObject._object // user: %28
+  %28 = unchecked_trivial_bit_cast %27 : $Builtin.BridgeObject to $UInt64 // user: %30
+  %29 = struct_extract %26 : $UInt64, #UInt64._value // user: %31
+  %30 = struct_extract %28 : $UInt64, #UInt64._value // user: %31
+  %31 = builtin "cmp_eq_Int64"(%29 : $Builtin.Int64, %30 : $Builtin.Int64) : $Builtin.Int1 // user: %32
+  cond_br %31, bb7, bb8                           // id: %32
+
+bb6:                                              // Preds: bb3
+  br bb11                                         // id: %33
+
+bb7:                                              // Preds: bb5
+  br bb9                                          // id: %34
+
+bb8:                                              // Preds: bb5
+  br bb11                                         // id: %35
+
+bb9:                                              // Preds: bb12 bb7
+  %36 = integer_literal $Builtin.Int1, -1         // user: %37
+  br bb10(%36 : $Builtin.Int1)                    // id: %37
+
+// %38                                            // user: %39
+bb10(%38 : $Builtin.Int1):                        // Preds: bb18 bb17 bb14 bb13 bb9
+  %39 = struct $Bool (%38 : $Builtin.Int1)        // user: %40
+  return %39 : $Bool                              // id: %40
+
+bb11:                                             // Preds: bb6 bb8
+  %41 = enum $_StringComparisonResult, #_StringComparisonResult.equal!enumelt // user: %43
+  // function_ref _stringCompareWithSmolCheck(_:_:expecting:)
+  %42 = function_ref @$ss27_stringCompareWithSmolCheck__9expectingSbs11_StringGutsV_ADs01_G16ComparisonResultOtF : $@convention(thin) (@guaranteed _StringGuts, @guaranteed _StringGuts, _StringComparisonResult) -> Bool // user: %43
+  %43 = apply %42(%14, %15, %41) : $@convention(thin) (@guaranteed _StringGuts, @guaranteed _StringGuts, _StringComparisonResult) -> Bool // user: %44
+  %44 = struct_extract %43 : $Bool, #Bool._value  // user: %45
+  cond_br %44, bb12, bb13                         // id: %45
+
+bb12:                                             // Preds: bb11
+  br bb9                                          // id: %46
+
+bb13:                                             // Preds: bb11
+  %47 = integer_literal $Builtin.Int1, 0          // user: %48
+  br bb10(%47 : $Builtin.Int1)                    // id: %48
+
+bb14:                                             // Preds: bb16 bb4
+  %49 = integer_literal $Builtin.Int1, 0          // user: %50
+  br bb10(%49 : $Builtin.Int1)                    // id: %50
+
+// %51                                            // user: %54
+bb15(%51 : $Int):                                 // Preds: bb2
+  debug_value %10 : $Int, let, name "l0"          // id: %52
+  %53 = struct_extract %10 : $Int, #Int._value    // user: %55
+  %54 = struct_extract %51 : $Int, #Int._value    // user: %55
+  %55 = builtin "cmp_eq_Int64"(%53 : $Builtin.Int64, %54 : $Builtin.Int64) : $Builtin.Int1 // user: %56
+  cond_br %55, bb17, bb18                         // id: %56
+
+bb16:                                             // Preds: bb2
+  br bb14                                         // id: %57
+
+bb17:                                             // Preds: bb15
+  %58 = integer_literal $Builtin.Int1, -1         // user: %59
+  br bb10(%58 : $Builtin.Int1)                    // id: %59
+
+bb18:                                             // Preds: bb15
+  %60 = integer_literal $Builtin.Int1, 0          // user: %61
+  br bb10(%60 : $Builtin.Int1)                    // id: %61
 } // end sil function '$s6source10IdentifierOSQAASQ2eeoiySbx_xtFZTW'
 
-// String.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:)
-sil [always_inline] [readonly] [_semantics "string.makeUTF8"] @$sSS21_builtinStringLiteral17utf8CodeUnitCount7isASCIISSBp_BwBi1_tcfC : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String
+// AnyHashable.init<A>(_:)
+sil @$ss11AnyHashableVyABxcSHRzlufC : $@convention(method) <τ_0_0 where τ_0_0 : Hashable> (@in τ_0_0, @thin AnyHashable.Type) -> @out AnyHashable
 
-// _convertToAnyHashable<A>(_:)
-sil @$ss21_convertToAnyHashableys0cD0VxSHRzlF : $@convention(thin) <τ_0_0 where τ_0_0 : Hashable> (@in_guaranteed τ_0_0) -> @out AnyHashable
+// _stringCompareWithSmolCheck(_:_:expecting:)
+sil [readonly] @$ss27_stringCompareWithSmolCheck__9expectingSbs11_StringGutsV_ADs01_G16ComparisonResultOtF : $@convention(thin) (@guaranteed _StringGuts, @guaranteed _StringGuts, _StringComparisonResult) -> Bool
+
+// Hasher.init(_seed:)
+sil [releasenone] @$ss6HasherV5_seedABSi_tcfC : $@convention(method) (Int, @thin Hasher.Type) -> Hasher
+
+// Hasher._finalize()
+sil [releasenone] @$ss6HasherV9_finalizeSiyF : $@convention(method) (@inout Hasher) -> Int
+
+// String.hash(into:)
+sil @$sSS4hash4intoys6HasherVz_tF : $@convention(method) (@inout Hasher, @guaranteed String) -> ()
+
+// Hasher._combine(_:)
+sil [releasenone] @$ss6HasherV8_combineyySuF : $@convention(method) (UInt, @inout Hasher) -> ()
 
 sil_witness_table hidden Identifier: Hashable module source {
   base_protocol Equatable: Identifier: Equatable module source

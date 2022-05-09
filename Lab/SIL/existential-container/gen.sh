@@ -1,3 +1,3 @@
 #! bin/sh
 
-swiftc -emit-sil source.swift > source-sil
+swiftc -O -emit-sil source.swift > source-sil
