@@ -30,5 +30,6 @@
         <page name='UIImage+template'/>
         <page name='capture-list'/>
         <page name='TypedHashable'/>
+        <page name='ContiguousArray'/>
     </pages>
 </playground>

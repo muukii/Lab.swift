@@ -1,17 +1,13 @@
-struct MyStruct: Hashable {
-  let value = 1
-}
 
-enum Identifier: Hashable {
+public enum PrimitiveIdentifier: Hashable {
+  
   case string(String)
-  case integer(Int)
+  case int64(Int64)
+  case uint64(UInt64)
+  case int(Int)
+  
 }
 
-MemoryLayout<String>.size
-
-MemoryLayout<Identifier>.size
-
+MemoryLayout<PrimitiveIdentifier>.size
 MemoryLayout<AnyHashable>.size
 
-dump("" as AnyHashable)
-dump(MyStruct() as AnyHashable)
