@@ -4,7 +4,11 @@ import SwiftUI
 struct ContentView: View {
   
   private let items: [BookSelectionView] = [
+        
+    BookSelectionView(title: "DynamicProperty", destination: BookDynamicPropertyView()),
+    
     BookSelectionView(title: "BookPrivacyView", destination: BookPrivacyView()),
+    
     BookPlaceholderView().build(),
     BookGridView().build(),
     BookMessengerAppView().build(),

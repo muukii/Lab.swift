@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B01C2B924A52E4700F514B7 /* BookMatchedAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B01C2B824A52E4700F514B7 /* BookMatchedAnimationView.swift */; };
+		4B1057C92832B41900888685 /* BookDynamicPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1057C82832B41900888685 /* BookDynamicPropertyView.swift */; };
 		4B30FCE424B235C600C46FFD /* BookMessengerAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30FCE324B235C600C46FFD /* BookMessengerAppView.swift */; };
 		4B30FCE624B2361100C46FFD /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30FCE524B2361100C46FFD /* Mocks.swift */; };
 		4B31017D2300643E006788EF /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B31017C2300643E006788EF /* CustomButtonView.swift */; };
@@ -66,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		4B01C2B824A52E4700F514B7 /* BookMatchedAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMatchedAnimationView.swift; sourceTree = "<group>"; };
+		4B1057C82832B41900888685 /* BookDynamicPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDynamicPropertyView.swift; sourceTree = "<group>"; };
 		4B30FCE324B235C600C46FFD /* BookMessengerAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMessengerAppView.swift; sourceTree = "<group>"; };
 		4B30FCE524B2361100C46FFD /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		4B31017C2300643E006788EF /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				4BCA228324B2C08000C29B1E /* BookTransitionShapeView.swift */,
 				4B961CAE24C2E30000EEA49A /* BookGridView.swift */,
 				4BC2E93924CD3361006A241D /* BookPlaceholderView.swift */,
+				4B1057C82832B41900888685 /* BookDynamicPropertyView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				4B30FCE424B235C600C46FFD /* BookMessengerAppView.swift in Sources */,
 				4BCA228424B2C08000C29B1E /* BookTransitionShapeView.swift in Sources */,
 				4BF98F8322EDF84500227849 /* MultipleModalView.swift in Sources */,
+				4B1057C92832B41900888685 /* BookDynamicPropertyView.swift in Sources */,
 				4BF98F7122EDF81700227849 /* ContentView.swift in Sources */,
 				4BA6491823DCA9B600F3CCEB /* MountUnmountTransitionView.swift in Sources */,
 				4B5F6A3B282C05390067D44A /* BookPrivacyView.swift in Sources */,
