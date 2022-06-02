@@ -1,61 +1,59 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Files",
-        "repositoryURL": "git@github.com:JohnSundell/Files.git",
-        "state": {
-          "branch": null,
-          "revision": "d273b5b7025d386feef79ef6bad7de762e106eaf",
-          "version": "4.2.0"
-        }
-      },
-      {
-        "package": "MondrianLayout",
-        "repositoryURL": "https://github.com/muukii/MondrianLayout.git",
-        "state": {
-          "branch": null,
-          "revision": "3d94b2524f4f237899b8cc802e907bca2924e154",
-          "version": "0.0.11"
-        }
-      },
-      {
-        "package": "RxSwift",
-        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
-        "state": {
-          "branch": null,
-          "revision": "7c17a6ccca06b5c107cfa4284e634562ddaf5951",
-          "version": "6.2.0"
-        }
-      },
-      {
-        "package": "swift-log",
-        "repositoryURL": "git@github.com:apple/swift-log.git",
-        "state": {
-          "branch": null,
-          "revision": "5d66f7ba25daf4f94100e7022febf3c75e37a6c7",
-          "version": "1.4.2"
-        }
-      },
-      {
-        "package": "TinyConstraints",
-        "repositoryURL": "git@github.com:roberthein/TinyConstraints.git",
-        "state": {
-          "branch": null,
-          "revision": "f413ea53b886de81b925eeb37a14538fe6ae4912",
-          "version": "4.0.1"
-        }
-      },
-      {
-        "package": "Verge",
-        "repositoryURL": "https://github.com/VergeGroup/Verge.git",
-        "state": {
-          "branch": null,
-          "revision": "3f9dca1d48d9381f4d05a923dd4ca59d77d1b4a6",
-          "version": "8.13.0"
-        }
+  "pins" : [
+    {
+      "identity" : "files",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:JohnSundell/Files.git",
+      "state" : {
+        "revision" : "d273b5b7025d386feef79ef6bad7de762e106eaf",
+        "version" : "4.2.0"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "mondrianlayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/muukii/MondrianLayout.git",
+      "state" : {
+        "revision" : "239bc0b02b8abbc211720476d1554b736832bb9c",
+        "version" : "0.9.0"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
+        "version" : "6.5.0"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:apple/swift-log.git",
+      "state" : {
+        "revision" : "5d66f7ba25daf4f94100e7022febf3c75e37a6c7",
+        "version" : "1.4.2"
+      }
+    },
+    {
+      "identity" : "tinyconstraints",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:roberthein/TinyConstraints.git",
+      "state" : {
+        "revision" : "3262e5c591d4ab6272255df2087a01bbebd138dc",
+        "version" : "4.0.2"
+      }
+    },
+    {
+      "identity" : "verge",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/VergeGroup/Verge.git",
+      "state" : {
+        "revision" : "c55c4afb189f7ffc0fd8733c41471b1868651aa5",
+        "version" : "8.16.0"
+      }
+    }
+  ],
+  "version" : 2
 }

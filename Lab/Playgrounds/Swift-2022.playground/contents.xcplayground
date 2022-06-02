@@ -31,5 +31,8 @@
         <page name='capture-list'/>
         <page name='TypedHashable'/>
         <page name='ContiguousArray'/>
+        <page name='CoW'/>
+        <page name='TreeRenderer'/>
+        <page name='HeapSize'/>
     </pages>
 </playground>

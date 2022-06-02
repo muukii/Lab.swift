@@ -3,5 +3,7 @@
     <pages>
         <page name='Untitled Page 2'/>
         <page name='Specifies global-actor in closure'/>
+        <page name='Defer'/>
+        <page name='Retain'/>
     </pages>
 </playground>
