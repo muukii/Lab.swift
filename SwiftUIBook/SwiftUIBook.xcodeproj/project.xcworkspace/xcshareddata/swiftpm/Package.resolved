@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftui-color",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FluidGroup/swiftui-color.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3af0f124eb1ce10668923786ea1bf67222b175cf"
+      }
+    }
+  ],
+  "version" : 2
+}

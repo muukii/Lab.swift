@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B01C2B924A52E4700F514B7 /* BookMatchedAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B01C2B824A52E4700F514B7 /* BookMatchedAnimationView.swift */; };
+		4B0C13B82858B0B800E6474C /* BookAbstractMovementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0C13B72858B0B800E6474C /* BookAbstractMovementView.swift */; };
 		4B1057C92832B41900888685 /* BookDynamicPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1057C82832B41900888685 /* BookDynamicPropertyView.swift */; };
 		4B30FCE424B235C600C46FFD /* BookMessengerAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30FCE324B235C600C46FFD /* BookMessengerAppView.swift */; };
 		4B30FCE624B2361100C46FFD /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30FCE524B2361100C46FFD /* Mocks.swift */; };
@@ -16,6 +17,7 @@
 		4B45AA5A24AC97F6003863AF /* BookDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B45AA5924AC97F6003863AF /* BookDragView.swift */; };
 		4B45AA5C24ACA187003863AF /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B45AA5B24ACA187003863AF /* Utility.swift */; };
 		4B5F6A3B282C05390067D44A /* BookPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F6A3A282C05390067D44A /* BookPrivacyView.swift */; };
+		4B7E90D12858FFC7005BC862 /* swiftui-color in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7E90D02858FFC7005BC862 /* swiftui-color */; };
 		4B93EC5A232F6312002BB30B /* PublishedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93EC59232F6312002BB30B /* PublishedContentView.swift */; };
 		4B93EC5D232F6898002BB30B /* FluxContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93EC5C232F6898002BB30B /* FluxContentView.swift */; };
 		4B93EC61232FED89002BB30B /* Verge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93EC60232FED89002BB30B /* Verge.swift */; };
@@ -67,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		4B01C2B824A52E4700F514B7 /* BookMatchedAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMatchedAnimationView.swift; sourceTree = "<group>"; };
+		4B0C13B72858B0B800E6474C /* BookAbstractMovementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAbstractMovementView.swift; sourceTree = "<group>"; };
 		4B1057C82832B41900888685 /* BookDynamicPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDynamicPropertyView.swift; sourceTree = "<group>"; };
 		4B30FCE324B235C600C46FFD /* BookMessengerAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMessengerAppView.swift; sourceTree = "<group>"; };
 		4B30FCE524B2361100C46FFD /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7E90D12858FFC7005BC862 /* swiftui-color in Frameworks */,
 				4BA3735B2495C23E00AE4F6C /* Component.framework in Frameworks */,
 				4BA585D8282C041000F2C1E1 /* RevealServer.xcframework in Frameworks */,
 			);
@@ -243,6 +247,7 @@
 				4B961CAE24C2E30000EEA49A /* BookGridView.swift */,
 				4BC2E93924CD3361006A241D /* BookPlaceholderView.swift */,
 				4B1057C82832B41900888685 /* BookDynamicPropertyView.swift */,
+				4B0C13B72858B0B800E6474C /* BookAbstractMovementView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -302,6 +307,9 @@
 				4BA3735A2495C23E00AE4F6C /* PBXTargetDependency */,
 			);
 			name = SwiftUIBook;
+			packageProductDependencies = (
+				4B7E90D02858FFC7005BC862 /* swiftui-color */,
+			);
 			productName = SwiftUIBook;
 			productReference = 4BF98F6922EDF81700227849 /* SwiftUIBook.app */;
 			productType = "com.apple.product-type.application";
@@ -334,6 +342,9 @@
 				Base,
 			);
 			mainGroup = 4BF98F6022EDF81700227849;
+			packageReferences = (
+				4B7E90CF2858FFC7005BC862 /* XCRemoteSwiftPackageReference "swiftui-color" */,
+			);
 			productRefGroup = 4BF98F6A22EDF81700227849 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -393,6 +404,7 @@
 				4BF98F8322EDF84500227849 /* MultipleModalView.swift in Sources */,
 				4B1057C92832B41900888685 /* BookDynamicPropertyView.swift in Sources */,
 				4BF98F7122EDF81700227849 /* ContentView.swift in Sources */,
+				4B0C13B82858B0B800E6474C /* BookAbstractMovementView.swift in Sources */,
 				4BA6491823DCA9B600F3CCEB /* MountUnmountTransitionView.swift in Sources */,
 				4B5F6A3B282C05390067D44A /* BookPrivacyView.swift in Sources */,
 				4B01C2B924A52E4700F514B7 /* BookMatchedAnimationView.swift in Sources */,
@@ -679,6 +691,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B7E90CF2858FFC7005BC862 /* XCRemoteSwiftPackageReference "swiftui-color" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FluidGroup/swiftui-color.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B7E90D02858FFC7005BC862 /* swiftui-color */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B7E90CF2858FFC7005BC862 /* XCRemoteSwiftPackageReference "swiftui-color" */;
+			productName = "swiftui-color";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BF98F6122EDF81700227849 /* Project object */;
 }
