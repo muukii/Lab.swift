@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import PreviewLogger
 
 enum RainbowAttribute: CodableAttributedStringKey, MarkdownDecodableAttributedStringKey {
   enum Value: String, Codable, Hashable {
@@ -35,9 +36,16 @@ struct BookAttributedStrings: View, PreviewProvider {
   
   var body: some View {
     
-    let string = try! AttributedString(markdown: "Good morning sir", including: \.caffeApp)
+    let string = try! AttributedString(markdown: "Good morning.", including: \.caffeApp)
     
-    return Text(string)
+    PreviewLog.debug(string)
+        
+    return VStack {
+      
+      Text(string)
+      LogView()
+    }    
+    
   }
   
 }
