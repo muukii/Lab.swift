@@ -14,7 +14,7 @@ struct BookAbstractMovementView: View, PreviewProvider {
       Color.black
       Text("Hello")
       Circle()
-        .foregroundColor(Color(hexInt: 0xFFFFFF))
+        .foregroundColor(Color(hexInt: 0x440FFC))
     }
     .ignoresSafeArea(.all)
   }
