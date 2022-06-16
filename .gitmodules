@@ -1,0 +1,3 @@
+[submodule "submodules/swiftui-preview-logger"]
+	path = submodules/swiftui-preview-logger
+	url = git@github.com:FluidGroup/swiftui-preview-logger.git
