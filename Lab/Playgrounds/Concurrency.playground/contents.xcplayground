@@ -6,5 +6,6 @@
         <page name='Defer'/>
         <page name='Retain'/>
         <page name='Thread'/>
+        <page name='Continuation'/>
     </pages>
 </playground>
