@@ -10,6 +10,12 @@
 		4B16554127304097003B930B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16554027304097003B930B /* Storage.swift */; };
 		4B165549273040F4003B930B /* AsyncVerge.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B165548273040F4003B930B /* AsyncVerge.h */; };
 		4B16554B273040F4003B930B /* AsyncVerge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B16554A273040F4003B930B /* AsyncVerge.m */; };
+		4B3F3143285D63BF0056D89F /* ConcurrencyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F3142285D63BF0056D89F /* ConcurrencyAppApp.swift */; };
+		4B3F3145285D63BF0056D89F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F3144285D63BF0056D89F /* ContentView.swift */; };
+		4B3F3147285D63C00056D89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3F3146285D63C00056D89F /* Assets.xcassets */; };
+		4B3F314A285D63C00056D89F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3F3149285D63C00056D89F /* Preview Assets.xcassets */; };
+		4B3F3150285D64BA0056D89F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F314F285D64BA0056D89F /* Book.swift */; };
+		4B3F3152285D66C10056D89F /* BookContinuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F3151285D66C10056D89F /* BookContinuation.swift */; };
 		4B93659A272C4DA500100D60 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B936599272C4DA500100D60 /* main.swift */; };
 		4B9365A7272C4F4000100D60 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9365A6272C4F4000100D60 /* Test.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +37,14 @@
 		4B165546273040F4003B930B /* libAsyncVerge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAsyncVerge.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B165548273040F4003B930B /* AsyncVerge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncVerge.h; sourceTree = "<group>"; };
 		4B16554A273040F4003B930B /* AsyncVerge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncVerge.m; sourceTree = "<group>"; };
+		4B3F3140285D63BF0056D89F /* ConcurrencyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcurrencyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3F3142285D63BF0056D89F /* ConcurrencyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyAppApp.swift; sourceTree = "<group>"; };
+		4B3F3144285D63BF0056D89F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B3F3146285D63C00056D89F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B3F3149285D63C00056D89F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B3F314B285D63C00056D89F /* ConcurrencyApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConcurrencyApp.entitlements; sourceTree = "<group>"; };
+		4B3F314F285D64BA0056D89F /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		4B3F3151285D66C10056D89F /* BookContinuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContinuation.swift; sourceTree = "<group>"; };
 		4B936596272C4DA500100D60 /* Concurrency */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Concurrency; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B936599272C4DA500100D60 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4B9365A4272C4F4000100D60 /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +53,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		4B165544273040F4003B930B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3F313D285D63BF0056D89F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,9 +92,32 @@
 			path = AsyncVerge;
 			sourceTree = "<group>";
 		};
+		4B3F3141285D63BF0056D89F /* ConcurrencyApp */ = {
+			isa = PBXGroup;
+			children = (
+				4B3F3142285D63BF0056D89F /* ConcurrencyAppApp.swift */,
+				4B3F3144285D63BF0056D89F /* ContentView.swift */,
+				4B3F314F285D64BA0056D89F /* Book.swift */,
+				4B3F3151285D66C10056D89F /* BookContinuation.swift */,
+				4B3F3146285D63C00056D89F /* Assets.xcassets */,
+				4B3F314B285D63C00056D89F /* ConcurrencyApp.entitlements */,
+				4B3F3148285D63C00056D89F /* Preview Content */,
+			);
+			path = ConcurrencyApp;
+			sourceTree = "<group>";
+		};
+		4B3F3148285D63C00056D89F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4B3F3149285D63C00056D89F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		4B93658D272C4DA500100D60 = {
 			isa = PBXGroup;
 			children = (
+				4B3F3141285D63BF0056D89F /* ConcurrencyApp */,
 				4B936598272C4DA500100D60 /* Concurrency */,
 				4B9365A5272C4F4000100D60 /* Test */,
 				4B165547273040F4003B930B /* AsyncVerge */,
@@ -87,6 +131,7 @@
 				4B936596272C4DA500100D60 /* Concurrency */,
 				4B9365A4272C4F4000100D60 /* Test.xctest */,
 				4B165546273040F4003B930B /* libAsyncVerge.a */,
+				4B3F3140285D63BF0056D89F /* ConcurrencyApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +184,23 @@
 			productReference = 4B165546273040F4003B930B /* libAsyncVerge.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		4B3F313F285D63BF0056D89F /* ConcurrencyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B3F314E285D63C00056D89F /* Build configuration list for PBXNativeTarget "ConcurrencyApp" */;
+			buildPhases = (
+				4B3F313C285D63BF0056D89F /* Sources */,
+				4B3F313D285D63BF0056D89F /* Frameworks */,
+				4B3F313E285D63BF0056D89F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConcurrencyApp;
+			productName = ConcurrencyApp;
+			productReference = 4B3F3140285D63BF0056D89F /* ConcurrencyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		4B936595272C4DA500100D60 /* Concurrency */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B93659D272C4DA500100D60 /* Build configuration list for PBXNativeTarget "Concurrency" */;
@@ -180,11 +242,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					4B165545273040F4003B930B = {
 						CreatedOnToolsVersion = 13.2;
+					};
+					4B3F313F285D63BF0056D89F = {
+						CreatedOnToolsVersion = 13.4.1;
 					};
 					4B936595272C4DA500100D60 = {
 						CreatedOnToolsVersion = 13.2;
@@ -210,11 +275,21 @@
 				4B936595272C4DA500100D60 /* Concurrency */,
 				4B9365A3272C4F4000100D60 /* Test */,
 				4B165545273040F4003B930B /* AsyncVerge */,
+				4B3F313F285D63BF0056D89F /* ConcurrencyApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4B3F313E285D63BF0056D89F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3F314A285D63C00056D89F /* Preview Assets.xcassets in Resources */,
+				4B3F3147285D63C00056D89F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B9365A2272C4F4000100D60 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,6 +305,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B16554B273040F4003B930B /* AsyncVerge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3F313C285D63BF0056D89F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3F3145285D63BF0056D89F /* ContentView.swift in Sources */,
+				4B3F3143285D63BF0056D89F /* ConcurrencyAppApp.swift in Sources */,
+				4B3F3150285D64BA0056D89F /* Book.swift in Sources */,
+				4B3F3152285D66C10056D89F /* BookContinuation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +356,64 @@
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4B3F314C285D63C00056D89F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ConcurrencyApp/ConcurrencyApp.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ConcurrencyApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.muukii.ConcurrencyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4B3F314D285D63C00056D89F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ConcurrencyApp/ConcurrencyApp.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ConcurrencyApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.muukii.ConcurrencyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -442,6 +586,15 @@
 			buildConfigurations = (
 				4B16554D273040F4003B930B /* Debug */,
 				4B16554E273040F4003B930B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B3F314E285D63C00056D89F /* Build configuration list for PBXNativeTarget "ConcurrencyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3F314C285D63C00056D89F /* Debug */,
+				4B3F314D285D63C00056D89F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
