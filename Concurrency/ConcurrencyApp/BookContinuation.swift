@@ -24,35 +24,38 @@ fileprivate class Controller: ObservableObject {
   }
   
   deinit {
-    print("Deinit, \(self)")
+    PreviewLog.debug("deinit", self)
   }
   
   init() {
-    print("Init, \(self)")
+    PreviewLog.debug("deinit", self)
   }
   
   var a: CheckedContinuation<Void, Never>? = nil
   
   func run() {
-    let r = Resource()
+    PreviewLog.debug("Run", self)
     
-    let task = Task { [weak self] in
-      
-      print("Start")
-      
-      await withTaskCancellationHandler {
-        
-        _ = r
-        
-        await withCheckedContinuation { (c: CheckedContinuation<Void, _>) in
-          a = c
-        }
-        
-      } onCancel: {
-        print("on-cancel")
-      }
+    let c = TransientController()
+    
+    c.run()
+    
+  }
+    
+}
+
+fileprivate final class TransientController {
+  
+  deinit {
+    PreviewLog.debug("deinit", self)
+  }
+  
+  func run() {
+    
+    let task = Task {
       
     }
+    
   }
     
 }

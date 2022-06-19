@@ -10,6 +10,7 @@
 		4B01A43B285ED79800C83BF5 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 4B01A43A285ED79800C83BF5 /* AsyncAlgorithms */; };
 		4B01A448285EDA1800C83BF5 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4B01A447285EDA1800C83BF5 /* RxSwift */; };
 		4B01A68A285EDC2600C83BF5 /* BookAsyncSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B01A689285EDC2600C83BF5 /* BookAsyncSequence.swift */; };
+		4B01A68F285EEDD900C83BF5 /* PreviewLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 4B01A68E285EEDD900C83BF5 /* PreviewLogger */; };
 		4B16554127304097003B930B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16554027304097003B930B /* Storage.swift */; };
 		4B165549273040F4003B930B /* AsyncVerge.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B165548273040F4003B930B /* AsyncVerge.h */; };
 		4B16554B273040F4003B930B /* AsyncVerge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B16554A273040F4003B930B /* AsyncVerge.m */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		4B01A689285EDC2600C83BF5 /* BookAsyncSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAsyncSequence.swift; sourceTree = "<group>"; };
+		4B01A68D285EEDA700C83BF5 /* swiftui-preview-logger */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swiftui-preview-logger"; path = "../submodules/swiftui-preview-logger"; sourceTree = "<group>"; };
 		4B16554027304097003B930B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		4B165546273040F4003B930B /* libAsyncVerge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAsyncVerge.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B165548273040F4003B930B /* AsyncVerge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncVerge.h; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B01A448285EDA1800C83BF5 /* RxSwift in Frameworks */,
+				4B01A68F285EEDD900C83BF5 /* PreviewLogger in Frameworks */,
 				4B01A43B285ED79800C83BF5 /* AsyncAlgorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +109,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B01A68C285EEDA100C83BF5 /* LocalPackages */ = {
+			isa = PBXGroup;
+			children = (
+				4B01A68D285EEDA700C83BF5 /* swiftui-preview-logger */,
+			);
+			name = LocalPackages;
 			sourceTree = "<group>";
 		};
 		4B165547273040F4003B930B /* AsyncVerge */ = {
@@ -145,6 +156,7 @@
 		4B93658D272C4DA500100D60 = {
 			isa = PBXGroup;
 			children = (
+				4B01A68C285EEDA100C83BF5 /* LocalPackages */,
 				4B3F3141285D63BF0056D89F /* ConcurrencyApp */,
 				4B936598272C4DA500100D60 /* Concurrency */,
 				4B9365A5272C4F4000100D60 /* Test */,
@@ -229,6 +241,7 @@
 			packageProductDependencies = (
 				4B01A43A285ED79800C83BF5 /* AsyncAlgorithms */,
 				4B01A447285EDA1800C83BF5 /* RxSwift */,
+				4B01A68E285EEDD900C83BF5 /* PreviewLogger */,
 			);
 			productName = ConcurrencyApp;
 			productReference = 4B3F3140285D63BF0056D89F /* ConcurrencyApp.app */;
@@ -703,6 +716,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4B01A446285EDA1800C83BF5 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		4B01A68E285EEDD900C83BF5 /* PreviewLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PreviewLogger;
 		};
 		4B3F3156285ED5070056D89F /* AsyncAlgorithms */ = {
 			isa = XCSwiftPackageProductDependency;

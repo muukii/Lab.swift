@@ -1,10 +1,13 @@
 import SwiftUI
+import PreviewLogger
+
+let PreviewLog = PreviewLogger.PreviewLog.self
 
 struct Book: View {
 
   var body: some View {
-
-    NavigationView {
+    VSplitView {
+      NavigationView {
       
       List {
         
@@ -32,6 +35,10 @@ struct Book: View {
         }
       }
       
+    }
+      .frame(width: 800, height: 400)
+      LogView()
+        .frame(minHeight: 50)
     }
 
   }
