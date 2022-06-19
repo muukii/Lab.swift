@@ -236,6 +236,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4B01A691285F5C1B00C83BF5 /* PBXTargetDependency */,
 			);
 			name = ConcurrencyApp;
 			packageProductDependencies = (
@@ -396,6 +397,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B01A691285F5C1B00C83BF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4B01A690285F5C1B00C83BF5 /* PreviewLogger */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4B16554D273040F4003B930B /* Debug */ = {
@@ -718,6 +726,10 @@
 			productName = RxSwift;
 		};
 		4B01A68E285EEDD900C83BF5 /* PreviewLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PreviewLogger;
+		};
+		4B01A690285F5C1B00C83BF5 /* PreviewLogger */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PreviewLogger;
 		};

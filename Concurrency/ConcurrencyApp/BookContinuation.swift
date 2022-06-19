@@ -1,5 +1,11 @@
 import SwiftUI
 import Foundation
+import PreviewLogger
+
+extension PreviewLogger.Log {
+  
+  fileprivate static let continuation = Self(subsystem: "Continuation", category: "Debug")
+}
 
 struct BookContiunation: View {
   
@@ -24,17 +30,17 @@ fileprivate class Controller: ObservableObject {
   }
   
   deinit {
-    PreviewLog.debug("deinit", self)
+    PreviewLog.debug(.continuation, "deinit \(self)")
   }
   
   init() {
-    PreviewLog.debug("deinit", self)
+    PreviewLog.debug(.continuation, "init \(self)")
   }
   
   var a: CheckedContinuation<Void, Never>? = nil
   
   func run() {
-    PreviewLog.debug("Run", self)
+    PreviewLog.debug(.continuation, "Run \(self)")
     
     let c = TransientController()
     
@@ -47,15 +53,91 @@ fileprivate class Controller: ObservableObject {
 fileprivate final class TransientController {
   
   deinit {
-    PreviewLog.debug("deinit", self)
+    PreviewLog.debug(.continuation, "🔥 deinit \(self)")
   }
   
   func run() {
-    
+        
     let task = Task {
-      
+            
+      await withTaskCancellationHandler {
+        print("cancel root")
+      } operation: {
+        try? await Task.sleep(nanoseconds: 1_000_000_000)
+        
+        print(self)
+                
+//        try? await throwingNever()
+        await never()
+        
+      }
+                        
+    
     }
     
+    print(task)
+    
+//    task.cancel()
+    
+    Task {
+      
+      try! await Task.sleep(nanoseconds: 1_000_000_000)
+      
+      task.cancel()
+      
+    }
+            
   }
     
+}
+
+fileprivate func never() async {
+  
+  final class Box<T>: @unchecked Sendable {
+    var continuation: CheckedContinuation<T, Never>?
+  }
+  
+  let box: Box<Void> = .init()
+  
+  await withTaskCancellationHandler {
+//    box.continuation!.resume(returning: ())
+
+  } operation: {
+    await withCheckedContinuation { (c: CheckedContinuation<Void, _>) in
+      
+      print(Task.isCancelled)
+      
+      box.continuation = c
+      
+      // Dare to do nothing
+    }
+  }
+}
+
+fileprivate func throwingNever() async throws {
+  
+  final class Box<T>: @unchecked Sendable {
+    var continuation: CheckedContinuation<Void, Error>?
+  }
+  
+  let box: Box<Void> = .init()
+  
+  try await withTaskCancellationHandler {
+    
+    box.continuation?.resume(throwing: CancellationError())
+    
+  } operation: {
+    
+    try await withCheckedThrowingContinuation { (c: CheckedContinuation<Void, Error>) in
+      
+      guard Task.isCancelled == false else {
+        c.resume(throwing: CancellationError())
+        return
+      }
+      
+      box.continuation = c
+      
+    }
+   
+  }
 }
