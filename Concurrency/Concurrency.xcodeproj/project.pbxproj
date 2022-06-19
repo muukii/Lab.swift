@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B01A43B285ED79800C83BF5 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 4B01A43A285ED79800C83BF5 /* AsyncAlgorithms */; };
+		4B01A448285EDA1800C83BF5 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4B01A447285EDA1800C83BF5 /* RxSwift */; };
+		4B01A68A285EDC2600C83BF5 /* BookAsyncSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B01A689285EDC2600C83BF5 /* BookAsyncSequence.swift */; };
 		4B16554127304097003B930B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16554027304097003B930B /* Storage.swift */; };
 		4B165549273040F4003B930B /* AsyncVerge.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B165548273040F4003B930B /* AsyncVerge.h */; };
 		4B16554B273040F4003B930B /* AsyncVerge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B16554A273040F4003B930B /* AsyncVerge.m */; };
@@ -16,6 +19,12 @@
 		4B3F314A285D63C00056D89F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3F3149285D63C00056D89F /* Preview Assets.xcassets */; };
 		4B3F3150285D64BA0056D89F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F314F285D64BA0056D89F /* Book.swift */; };
 		4B3F3152285D66C10056D89F /* BookContinuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F3151285D66C10056D89F /* BookContinuation.swift */; };
+		4B3F3154285ED2DB0056D89F /* BookContinuationCancel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F3153285ED2DB0056D89F /* BookContinuationCancel.swift */; };
+		4B3F3157285ED5070056D89F /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 4B3F3156285ED5070056D89F /* AsyncAlgorithms */; };
+		4B3F3159285ED5070056D89F /* AsyncAlgorithms_XCTest in Frameworks */ = {isa = PBXBuildFile; productRef = 4B3F3158285ED5070056D89F /* AsyncAlgorithms_XCTest */; };
+		4B3F315B285ED5070056D89F /* AsyncSequenceValidation in Frameworks */ = {isa = PBXBuildFile; productRef = 4B3F315A285ED5070056D89F /* AsyncSequenceValidation */; };
+		4B3F315D285ED5070056D89F /* _CAsyncSequenceValidationSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 4B3F315C285ED5070056D89F /* _CAsyncSequenceValidationSupport */; };
+		4B3F315F285ED6710056D89F /* BookAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F315E285ED6710056D89F /* BookAlgorithms.swift */; };
 		4B93659A272C4DA500100D60 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B936599272C4DA500100D60 /* main.swift */; };
 		4B9365A7272C4F4000100D60 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9365A6272C4F4000100D60 /* Test.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B01A689285EDC2600C83BF5 /* BookAsyncSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAsyncSequence.swift; sourceTree = "<group>"; };
 		4B16554027304097003B930B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		4B165546273040F4003B930B /* libAsyncVerge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAsyncVerge.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B165548273040F4003B930B /* AsyncVerge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncVerge.h; sourceTree = "<group>"; };
@@ -45,6 +55,8 @@
 		4B3F314B285D63C00056D89F /* ConcurrencyApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConcurrencyApp.entitlements; sourceTree = "<group>"; };
 		4B3F314F285D64BA0056D89F /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		4B3F3151285D66C10056D89F /* BookContinuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContinuation.swift; sourceTree = "<group>"; };
+		4B3F3153285ED2DB0056D89F /* BookContinuationCancel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContinuationCancel.swift; sourceTree = "<group>"; };
+		4B3F315E285ED6710056D89F /* BookAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAlgorithms.swift; sourceTree = "<group>"; };
 		4B936596272C4DA500100D60 /* Concurrency */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Concurrency; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B936599272C4DA500100D60 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4B9365A4272C4F4000100D60 /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B01A448285EDA1800C83BF5 /* RxSwift in Frameworks */,
+				4B01A43B285ED79800C83BF5 /* AsyncAlgorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B3F3159285ED5070056D89F /* AsyncAlgorithms_XCTest in Frameworks */,
+				4B3F315B285ED5070056D89F /* AsyncSequenceValidation in Frameworks */,
+				4B3F315D285ED5070056D89F /* _CAsyncSequenceValidationSupport in Frameworks */,
+				4B3F3157285ED5070056D89F /* AsyncAlgorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B01A437285ED79800C83BF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4B165547273040F4003B930B /* AsyncVerge */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +124,9 @@
 				4B3F3144285D63BF0056D89F /* ContentView.swift */,
 				4B3F314F285D64BA0056D89F /* Book.swift */,
 				4B3F3151285D66C10056D89F /* BookContinuation.swift */,
+				4B3F3153285ED2DB0056D89F /* BookContinuationCancel.swift */,
+				4B3F315E285ED6710056D89F /* BookAlgorithms.swift */,
+				4B01A689285EDC2600C83BF5 /* BookAsyncSequence.swift */,
 				4B3F3146285D63C00056D89F /* Assets.xcassets */,
 				4B3F314B285D63C00056D89F /* ConcurrencyApp.entitlements */,
 				4B3F3148285D63C00056D89F /* Preview Content */,
@@ -122,6 +150,7 @@
 				4B9365A5272C4F4000100D60 /* Test */,
 				4B165547273040F4003B930B /* AsyncVerge */,
 				4B936597272C4DA500100D60 /* Products */,
+				4B01A437285ED79800C83BF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +226,10 @@
 			dependencies = (
 			);
 			name = ConcurrencyApp;
+			packageProductDependencies = (
+				4B01A43A285ED79800C83BF5 /* AsyncAlgorithms */,
+				4B01A447285EDA1800C83BF5 /* RxSwift */,
+			);
 			productName = ConcurrencyApp;
 			productReference = 4B3F3140285D63BF0056D89F /* ConcurrencyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -214,6 +247,12 @@
 			dependencies = (
 			);
 			name = Concurrency;
+			packageProductDependencies = (
+				4B3F3156285ED5070056D89F /* AsyncAlgorithms */,
+				4B3F3158285ED5070056D89F /* AsyncAlgorithms_XCTest */,
+				4B3F315A285ED5070056D89F /* AsyncSequenceValidation */,
+				4B3F315C285ED5070056D89F /* _CAsyncSequenceValidationSupport */,
+			);
 			productName = Concurrency;
 			productReference = 4B936596272C4DA500100D60 /* Concurrency */;
 			productType = "com.apple.product-type.tool";
@@ -268,6 +307,10 @@
 				Base,
 			);
 			mainGroup = 4B93658D272C4DA500100D60;
+			packageReferences = (
+				4B3F3155285ED5070056D89F /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+				4B01A446285EDA1800C83BF5 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 4B936597272C4DA500100D60 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -312,7 +355,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B01A68A285EDC2600C83BF5 /* BookAsyncSequence.swift in Sources */,
+				4B3F315F285ED6710056D89F /* BookAlgorithms.swift in Sources */,
 				4B3F3145285D63BF0056D89F /* ContentView.swift in Sources */,
+				4B3F3154285ED2DB0056D89F /* BookContinuationCancel.swift in Sources */,
 				4B3F3143285D63BF0056D89F /* ConcurrencyAppApp.swift in Sources */,
 				4B3F3150285D64BA0056D89F /* Book.swift in Sources */,
 				4B3F3152285D66C10056D89F /* BookContinuation.swift in Sources */,
@@ -627,6 +673,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B01A446285EDA1800C83BF5 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		4B3F3155285ED5070056D89F /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B01A43A285ED79800C83BF5 /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B3F3155285ED5070056D89F /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
+		4B01A447285EDA1800C83BF5 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B01A446285EDA1800C83BF5 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		4B3F3156285ED5070056D89F /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B3F3155285ED5070056D89F /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
+		4B3F3158285ED5070056D89F /* AsyncAlgorithms_XCTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B3F3155285ED5070056D89F /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms_XCTest;
+		};
+		4B3F315A285ED5070056D89F /* AsyncSequenceValidation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B3F3155285ED5070056D89F /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncSequenceValidation;
+		};
+		4B3F315C285ED5070056D89F /* _CAsyncSequenceValidationSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B3F3155285ED5070056D89F /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = _CAsyncSequenceValidationSupport;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B93658E272C4DA500100D60 /* Project object */;
 }

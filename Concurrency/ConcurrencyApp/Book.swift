@@ -18,7 +18,18 @@ struct Book: View {
 
           BookContiunation()
         }
+        
+        NavigationLink("ContinuationCancel") {
+          BookContiunationCancel()
+        }
 
+        NavigationLink("Algorithms") {
+          BookAlgorithms()
+        }
+        
+        NavigationLink("BookAsyncSequence") {
+          BookAsyncSequence()
+        }
       }
       
     }

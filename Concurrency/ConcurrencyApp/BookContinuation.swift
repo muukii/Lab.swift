@@ -27,6 +27,10 @@ fileprivate class Controller: ObservableObject {
     print("Deinit, \(self)")
   }
   
+  init() {
+    print("Init, \(self)")
+  }
+  
   var a: CheckedContinuation<Void, Never>? = nil
   
   func run() {
