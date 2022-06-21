@@ -36,5 +36,6 @@
         <page name='HeapSize'/>
         <page name='Untitled Page 7'/>
         <page name='PropertyWrapper'/>
+        <page name='Attributes'/>
     </pages>
 </playground>
