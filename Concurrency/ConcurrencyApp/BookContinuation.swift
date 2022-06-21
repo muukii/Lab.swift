@@ -47,7 +47,7 @@ fileprivate class Controller: ObservableObject {
     c.run()
     
   }
-    
+ 
 }
 
 fileprivate final class TransientController {
@@ -58,11 +58,12 @@ fileprivate final class TransientController {
   
   func run() {
         
-    let task = Task {
-            
+    let task = Task { [weak self] in
+                      
       await withTaskCancellationHandler {
         print("cancel root")
       } operation: {
+                        
         try? await Task.sleep(nanoseconds: 1_000_000_000)
         
         print(self)
@@ -88,7 +89,7 @@ fileprivate final class TransientController {
     }
             
   }
-    
+     
 }
 
 fileprivate func never() async {

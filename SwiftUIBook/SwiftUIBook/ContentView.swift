@@ -27,9 +27,18 @@ struct ContentView: View {
     NavigationView {
       ScrollView {
         VStack {
+          
+          Group {
+            BookSelectionView(title: "AttributedString") {
+              BookAttributedStrings()
+            }
+
+          }
+          
           ForEach(items) { page in
             page
           }
+                    
         }
       }
       .navigationBarTitle("SwiftUIBook")

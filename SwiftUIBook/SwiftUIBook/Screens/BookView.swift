@@ -35,6 +35,11 @@ struct BookSelectionView: View, Identifiable {
     self.title = title
     self.destination = AnyView(destination)
   }
+  
+  init<D: View>(title: String, @ViewBuilder destination: () -> D) {
+    self.title = title
+    self.destination = AnyView(destination())
+  }
 
   var body: some View {
     NavigationLink(destination: destination) {
