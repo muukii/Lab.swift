@@ -1,12 +1,30 @@
 {
   "pins" : [
     {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
+        "version" : "6.5.0"
+      }
+    },
+    {
       "identity" : "swiftui-color",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/FluidGroup/swiftui-color.git",
       "state" : {
         "branch" : "main",
         "revision" : "3af0f124eb1ce10668923786ea1bf67222b175cf"
+      }
+    },
+    {
+      "identity" : "verge",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/VergeGroup/Verge.git",
+      "state" : {
+        "revision" : "c55c4afb189f7ffc0fd8733c41471b1868651aa5",
+        "version" : "8.16.0"
       }
     }
   ],

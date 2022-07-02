@@ -1,8 +1,13 @@
-//
-//  File.swift
-//  
-//
-//  Created by Muukii on 2022/06/30.
-//
+import SwiftUI
 
-import Foundation
+struct MyView: View {
+  var body: some View {
+    Text("Hello")
+  }
+}
+
+struct MyView_Previews: PreviewProvider {
+  static var previews: some View {
+    MyView()
+  }
+}

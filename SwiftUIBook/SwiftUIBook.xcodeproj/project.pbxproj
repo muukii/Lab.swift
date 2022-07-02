@@ -74,6 +74,7 @@
 		4B01C2B824A52E4700F514B7 /* BookMatchedAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMatchedAnimationView.swift; sourceTree = "<group>"; };
 		4B0C13B72858B0B800E6474C /* BookAbstractMovementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAbstractMovementView.swift; sourceTree = "<group>"; };
 		4B1057C82832B41900888685 /* BookDynamicPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDynamicPropertyView.swift; sourceTree = "<group>"; };
+		4B2A23FD286DDCCB00FD1E98 /* LocalPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LocalPackage; sourceTree = "<group>"; };
 		4B30FCE324B235C600C46FFD /* BookMessengerAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMessengerAppView.swift; sourceTree = "<group>"; };
 		4B30FCE524B2361100C46FFD /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		4B31017C2300643E006788EF /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
@@ -202,6 +203,7 @@
 		4BF98F6022EDF81700227849 = {
 			isa = PBXGroup;
 			children = (
+				4B2A23FD286DDCCB00FD1E98 /* LocalPackage */,
 				4B6E7B5A285BA0F90010CF85 /* swiftui-preview-logger */,
 				4BA585D6282C040A00F2C1E1 /* RevealServer.xcframework */,
 				4BF98F6B22EDF81700227849 /* SwiftUIBook */,
@@ -306,6 +308,8 @@
 			dependencies = (
 			);
 			name = Component;
+			packageProductDependencies = (
+			);
 			productName = Component;
 			productReference = 4BA373542495C23E00AE4F6C /* Component.framework */;
 			productType = "com.apple.product-type.framework";
@@ -365,6 +369,7 @@
 			mainGroup = 4BF98F6022EDF81700227849;
 			packageReferences = (
 				4B7E90CF2858FFC7005BC862 /* XCRemoteSwiftPackageReference "swiftui-color" */,
+				4BD8ADBE286DE52E00730CA2 /* XCRemoteSwiftPackageReference "Verge" */,
 			);
 			productRefGroup = 4BF98F6A22EDF81700227849 /* Products */;
 			projectDirPath = "";
@@ -730,6 +735,14 @@
 			requirement = {
 				branch = main;
 				kind = branch;
+			};
+		};
+		4BD8ADBE286DE52E00730CA2 /* XCRemoteSwiftPackageReference "Verge" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VergeGroup/Verge.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

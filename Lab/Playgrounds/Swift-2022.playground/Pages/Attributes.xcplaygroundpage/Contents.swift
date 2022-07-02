@@ -5,19 +5,7 @@ NSSetUncaughtExceptionHandler { e in
 }
 
 public struct Run {
-  public let text: String
-  public let rawAttributes: String
-}
-
-func parse(
-  _ markdownString: String,
-  handler: (Run) -> NSAttributedString
-) -> NSMutableAttributedString {
-
-  enum Expressions {
-    static let custom = try! NSRegularExpression(pattern: #"\^\[(.*?)\]\((.*?)\)"#, options: [])
-  }
-
+    
   enum Static {
     static let decoder: JSONDecoder = {
       let decoder = JSONDecoder()
@@ -27,60 +15,73 @@ func parse(
       return decoder
     }()
   }
-
-  let nsMarkdownString = (markdownString as NSString)
-
-  let results = Expressions.custom.matches(
-    in: markdownString,
-    range: NSRange(0..<markdownString.count)
-  )
-
-  let mutableString = NSMutableAttributedString(string: markdownString)
-
-  var runs: [Run] = []
-  var index = 0
   
-  for markdownString
-  
-  
-//  for result in results {
-//
-//    if result.numberOfRanges == 3 {
-//
-//      let range = result.range
-//
-//      runs.append(
-//        Run(
-//          text: nsMarkdownString.substring(
-//            with: NSRange(location: index, length: range.lowerBound - 1)
-//          ),
-//          rawAttributes: ""
-//        )
-//      )
-//
-//      index = range.upperBound + 1
-//
-//      let label = nsMarkdownString.substring(with: result.range(at: 1))
-//      let attributesRawString = nsMarkdownString.substring(with: result.range(at: 2))
-//
-//      runs.append(
-//        Run(text: label, rawAttributes: attributesRawString)
-//      )
-//
-//    } else {
-//
-//      // error
-//    }
-//
-//  }
-//
-  print(runs)
-
-  return mutableString
+  public let text: String
+  public let rawAttributes: String
 }
 
-let result = parse("Hello ^[John](action) ^[John](help)") { run in
+func parse(
+  _ markdownString: String,
+  handler: (Run) -> NSAttributedString
+) {
+
+  let scanner = Scanner(string: markdownString)
+  
+  var runs: [Run] = [] {
+    didSet {
+      print(runs)
+    }
+  }
+  
+  CharacterSet()
+
+  while scanner.isAtEnd == false {
+    
+//    print(scanner.currentIndex.utf16Offset(in: markdownString))
+    
+    print(scanner.scanCharacter() ?? "")
+//
+//    if let string = scanner.scanUpToString("^[") {
+//      // move cursor
+//      scanner.scanString("^[")
+//
+//      runs.append(
+//        Run(text: string, rawAttributes: "")
+//      )
+//
+//      if let attributedText = scanner.scanUpToString("](") {
+//        // move cursor
+//        scanner.scanString("](")
+//
+//        if let attributesData = scanner.scanUpToString(")") {
+//
+//          print(scanner.currentIndex.utf16Offset(in: markdownString))
+//
+//          scanner.scanCharacters(from: .init(charactersIn: ")"))
+//
+//          runs.append(
+//            Run(text: attributedText, rawAttributes: attributesData)
+//          )
+//
+//        }
+//
+//      }
+//
+//    } else {
+//      sleep(2)
+//    }
+
+  }
+  
+  print(runs.map { String(describing: $0)}.joined(separator: "\n"))
+
+  print("done")
+}
+
+parse("Hello ? & % Hey^[John](action) ^[John](help) How are you?") { run in
   NSAttributedString(string: run.text)
 }
 
-result
+//parse("    ") { run in
+//  NSAttributedString(string: run.text)
+//}

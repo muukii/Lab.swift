@@ -1,7 +1,3 @@
-//: [Previous](@previous)
-
 import Foundation
 
-var greeting = "Hello, playground"
-
-//: [Next](@next)
+let progress: Float = Int(8) / Int(3)

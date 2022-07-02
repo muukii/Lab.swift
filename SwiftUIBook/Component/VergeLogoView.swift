@@ -1,5 +1,7 @@
 import SwiftUI
 
+import Verge
+
 struct VergeLogoView: View {
 
   var body: some View {

@@ -14,7 +14,7 @@ struct ThrowingGroup<SuccessView: View, ErrorView: View>: View {
   }
   
   var body: some View {
-    if let successView {
+    if let successView = successView {
       successView
     } else {
       errorView

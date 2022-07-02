@@ -37,5 +37,6 @@
         <page name='Untitled Page 7'/>
         <page name='PropertyWrapper'/>
         <page name='Attributes'/>
+        <page name='Float'/>
     </pages>
 </playground>
