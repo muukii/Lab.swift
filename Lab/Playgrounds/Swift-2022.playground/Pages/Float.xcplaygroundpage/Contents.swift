@@ -1,3 +1,19 @@
-import Foundation
+import Combine
+import _Concurrency
 
-let progress: Float = Int(8) / Int(3)
+extension _Concurrency.Task {
+  public func makeFuture() -> Future<Success, Failure>
+  where Failure == Swift.Error {
+    return Future { promise in
+      Task<Void, Failure> {
+        do {
+          let value = try await self.value
+          promise(.success(value))
+        } catch {          
+          promise(.failure(error))
+        }
+      }
+    }
+  }
+
+}

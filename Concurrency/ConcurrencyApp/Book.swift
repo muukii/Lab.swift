@@ -16,6 +16,16 @@ struct Book: View {
             Text("BBB")
 
           }
+          
+          NavigationLink("BookWeakify") {
+            
+            BookWeakify()
+          }
+          
+          NavigationLink("BookRetrying") {
+            
+            BookRetrying()
+          }
 
           NavigationLink("Continuation") {
 
