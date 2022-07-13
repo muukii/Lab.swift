@@ -26,6 +26,7 @@
 		4B6E7B5C285BA1070010CF85 /* PreviewLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 4B6E7B5B285BA1070010CF85 /* PreviewLogger */; };
 		4B73C6582860BB3E00BFFCCE /* ThrowingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73C6572860BB3E00BFFCCE /* ThrowingGroup.swift */; };
 		4B7E90D12858FFC7005BC862 /* swiftui-color in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7E90D02858FFC7005BC862 /* swiftui-color */; };
+		4B8D388C287F072C006380F3 /* BookLozenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D388B287F072C006380F3 /* BookLozenge.swift */; };
 		4B93EC5A232F6312002BB30B /* PublishedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93EC59232F6312002BB30B /* PublishedContentView.swift */; };
 		4B93EC5D232F6898002BB30B /* FluxContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93EC5C232F6898002BB30B /* FluxContentView.swift */; };
 		4B93EC61232FED89002BB30B /* Verge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93EC60232FED89002BB30B /* Verge.swift */; };
@@ -102,6 +103,7 @@
 		4B5F6A3A282C05390067D44A /* BookPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPrivacyView.swift; sourceTree = "<group>"; };
 		4B6E7B5A285BA0F90010CF85 /* swiftui-preview-logger */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swiftui-preview-logger"; path = "../submodules/swiftui-preview-logger"; sourceTree = "<group>"; };
 		4B73C6572860BB3E00BFFCCE /* ThrowingGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowingGroup.swift; sourceTree = "<group>"; };
+		4B8D388B287F072C006380F3 /* BookLozenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookLozenge.swift; sourceTree = "<group>"; };
 		4B93EC59232F6312002BB30B /* PublishedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedContentView.swift; sourceTree = "<group>"; };
 		4B93EC5C232F6898002BB30B /* FluxContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluxContentView.swift; sourceTree = "<group>"; };
 		4B93EC60232FED89002BB30B /* Verge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verge.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 				4BEDA879285B07CF00E69954 /* BookAttributedStrings.swift */,
 				4B3480F928795F9000446AC4 /* BookDonuts.swift */,
 				4B3480FB287968C600446AC4 /* BookTinySwitch.swift */,
+				4B8D388B287F072C006380F3 /* BookLozenge.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				4B30FCE424B235C600C46FFD /* BookMessengerAppView.swift in Sources */,
 				4BCA228424B2C08000C29B1E /* BookTransitionShapeView.swift in Sources */,
 				4BF98F8322EDF84500227849 /* MultipleModalView.swift in Sources */,
+				4B8D388C287F072C006380F3 /* BookLozenge.swift in Sources */,
 				4B1057C92832B41900888685 /* BookDynamicPropertyView.swift in Sources */,
 				4BF98F7122EDF81700227849 /* ContentView.swift in Sources */,
 				4B0C13B82858B0B800E6474C /* BookAbstractMovementView.swift in Sources */,

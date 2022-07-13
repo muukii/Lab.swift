@@ -26,6 +26,7 @@
 		4B3F315B285ED5070056D89F /* AsyncSequenceValidation in Frameworks */ = {isa = PBXBuildFile; productRef = 4B3F315A285ED5070056D89F /* AsyncSequenceValidation */; };
 		4B3F315D285ED5070056D89F /* _CAsyncSequenceValidationSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 4B3F315C285ED5070056D89F /* _CAsyncSequenceValidationSupport */; };
 		4B3F315F285ED6710056D89F /* BookAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F315E285ED6710056D89F /* BookAlgorithms.swift */; };
+		4B583931287EAA5200F0131C /* BookClosureActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B583930287EAA5200F0131C /* BookClosureActor.swift */; };
 		4B5A687E287D281800C3237A /* BookWeakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A687D287D281800C3237A /* BookWeakify.swift */; };
 		4B64D6D1287C64EE00B1EF3B /* BookRetrying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64D6D0287C64EE00B1EF3B /* BookRetrying.swift */; };
 		4B93659A272C4DA500100D60 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B936599272C4DA500100D60 /* main.swift */; };
@@ -61,6 +62,7 @@
 		4B3F3151285D66C10056D89F /* BookContinuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContinuation.swift; sourceTree = "<group>"; };
 		4B3F3153285ED2DB0056D89F /* BookContinuationCancel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContinuationCancel.swift; sourceTree = "<group>"; };
 		4B3F315E285ED6710056D89F /* BookAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAlgorithms.swift; sourceTree = "<group>"; };
+		4B583930287EAA5200F0131C /* BookClosureActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookClosureActor.swift; sourceTree = "<group>"; };
 		4B5A687D287D281800C3237A /* BookWeakify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWeakify.swift; sourceTree = "<group>"; };
 		4B64D6D0287C64EE00B1EF3B /* BookRetrying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRetrying.swift; sourceTree = "<group>"; };
 		4B936596272C4DA500100D60 /* Concurrency */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Concurrency; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 				4B01A689285EDC2600C83BF5 /* BookAsyncSequence.swift */,
 				4B64D6D0287C64EE00B1EF3B /* BookRetrying.swift */,
 				4B5A687D287D281800C3237A /* BookWeakify.swift */,
+				4B583930287EAA5200F0131C /* BookClosureActor.swift */,
 				4B3F3146285D63C00056D89F /* Assets.xcassets */,
 				4B3F314B285D63C00056D89F /* ConcurrencyApp.entitlements */,
 				4B3F3148285D63C00056D89F /* Preview Content */,
@@ -377,6 +380,7 @@
 			files = (
 				4B5A687E287D281800C3237A /* BookWeakify.swift in Sources */,
 				4B01A68A285EDC2600C83BF5 /* BookAsyncSequence.swift in Sources */,
+				4B583931287EAA5200F0131C /* BookClosureActor.swift in Sources */,
 				4B3F315F285ED6710056D89F /* BookAlgorithms.swift in Sources */,
 				4B3F3145285D63BF0056D89F /* ContentView.swift in Sources */,
 				4B3F3154285ED2DB0056D89F /* BookContinuationCancel.swift in Sources */,

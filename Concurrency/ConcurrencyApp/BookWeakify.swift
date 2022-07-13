@@ -11,10 +11,15 @@ struct BookWeakify: View {
     Text(message)
     Button("Action") {
       
-      let object = Object()
+//      let t = Task {
+//        let object = Object()
+//        await object.run()
+//      }
+            
+      let t = Object().makeTask()
       
-      Task {
-        await object.run()
+      DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        t.cancel()
       }
       
     }
@@ -24,23 +29,38 @@ struct BookWeakify: View {
   final class Object {
     
     func run() async {
-      
-      PreviewLog.debug(.default, "Start")
-      
-      await Task { [weak self] in
-        print(self)
-        try? await Task.sleep(nanoseconds: 1_000_000_000)
-      }
-      .value
-      
-      await Task { [weak self] in
-        print(self)
-        try? await Task.sleep(nanoseconds: 1_000_000_000)
-      }
-      .value
             
-      PreviewLog.debug(.default, "End")
+      PreviewLog.debug(.default, "0: \(Task.isCancelled)")
+      
+      await simulateNetworkRequest()
+      
+      PreviewLog.debug(.default, "1: \(Task.isCancelled)")
+      hoge()
+      
+      await simulateNetworkRequest()
+                       
+      PreviewLog.debug(.default, "2: \(Task.isCancelled)")
+            
     }
+    
+    func makeTask() -> Task<Void, Error> {
+      
+      Task.init {
+        PreviewLog.debug(.default, "0: \(Task.isCancelled)")
+        
+        await simulateNetworkRequest()
+        
+        PreviewLog.debug(.default, "1: \(Task.isCancelled)")
+        hoge()
+        
+        await simulateNetworkRequest()
+        
+        PreviewLog.debug(.default, "2: \(Task.isCancelled)")
+      }
+      
+    }
+   
+    func hoge() {}
     
     deinit {
       PreviewLog.debug(.default, "deinit \(self)")
@@ -48,5 +68,28 @@ struct BookWeakify: View {
     
   }
     
+}
+
+func simulateNetworkRequest() async {
+  await withCheckedContinuation { c in
+    DispatchQueue.global(qos: .default).asyncAfter(deadline: .now() + 1) {
+      c.resume(returning: ())
+    }
+  }
+}
+
+extension Task {
+  
+  static func foo(operation: @escaping @Sendable () async -> Success) -> Task<Success, Never> {
+    Task<Success, Never>.init {
+      await operation()
+    }
+  }
+  
+  static func foo(operation: @escaping @Sendable () async throws -> Success) -> Task<Success, Error> {
+    Task<Success, Error>.init {
+      try await operation()
+    }
+  }
 }
 
