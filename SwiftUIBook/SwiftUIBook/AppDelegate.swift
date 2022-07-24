@@ -7,6 +7,8 @@
 //
 
 import UIKit
+@_exported import SwiftUI
+@_exported import PreviewLogger
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

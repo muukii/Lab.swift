@@ -24,6 +24,8 @@
 		4B5A3118287352FB00DC7619 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A3117287352FB00DC7619 /* SwiftUIView.swift */; };
 		4B5B3B53288C616E00F514E2 /* BookJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B3B52288C616E00F514E2 /* BookJoystick.swift */; };
 		4B5B3B55288C739200F514E2 /* CGGeometry+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B3B54288C739200F514E2 /* CGGeometry+.swift */; };
+		4B5B3B58288D08E000F514E2 /* SwiftUIKitView in Frameworks */ = {isa = PBXBuildFile; productRef = 4B5B3B57288D08E000F514E2 /* SwiftUIKitView */; };
+		4B5B3B5A288D213D00F514E2 /* GestureVelocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B3B59288D213D00F514E2 /* GestureVelocity.swift */; };
 		4B5F6A3B282C05390067D44A /* BookPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F6A3A282C05390067D44A /* BookPrivacyView.swift */; };
 		4B6E7B5C285BA1070010CF85 /* PreviewLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 4B6E7B5B285BA1070010CF85 /* PreviewLogger */; };
 		4B73C6582860BB3E00BFFCCE /* ThrowingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73C6572860BB3E00BFFCCE /* ThrowingGroup.swift */; };
@@ -104,6 +106,7 @@
 		4B5A3117287352FB00DC7619 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		4B5B3B52288C616E00F514E2 /* BookJoystick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookJoystick.swift; sourceTree = "<group>"; };
 		4B5B3B54288C739200F514E2 /* CGGeometry+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGGeometry+.swift"; sourceTree = "<group>"; };
+		4B5B3B59288D213D00F514E2 /* GestureVelocity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureVelocity.swift; sourceTree = "<group>"; };
 		4B5F6A3A282C05390067D44A /* BookPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPrivacyView.swift; sourceTree = "<group>"; };
 		4B6E7B5A285BA0F90010CF85 /* swiftui-preview-logger */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swiftui-preview-logger"; path = "../submodules/swiftui-preview-logger"; sourceTree = "<group>"; };
 		4B73C6572860BB3E00BFFCCE /* ThrowingGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowingGroup.swift; sourceTree = "<group>"; };
@@ -159,6 +162,7 @@
 				4B5A3112287352E800DC7619 /* MyStaticFramework.framework in Frameworks */,
 				4BA3735B2495C23E00AE4F6C /* Component.framework in Frameworks */,
 				4BA585D8282C041000F2C1E1 /* RevealServer.xcframework in Frameworks */,
+				4B5B3B58288D08E000F514E2 /* SwiftUIKitView in Frameworks */,
 				4B6E7B5C285BA1070010CF85 /* PreviewLogger in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +208,7 @@
 			children = (
 				4B73C6572860BB3E00BFFCCE /* ThrowingGroup.swift */,
 				4B5B3B54288C739200F514E2 /* CGGeometry+.swift */,
+				4B5B3B59288D213D00F514E2 /* GestureVelocity.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 			packageProductDependencies = (
 				4B7E90D02858FFC7005BC862 /* swiftui-color */,
 				4B6E7B5B285BA1070010CF85 /* PreviewLogger */,
+				4B5B3B57288D08E000F514E2 /* SwiftUIKitView */,
 			);
 			productName = SwiftUIBook;
 			productReference = 4BF98F6922EDF81700227849 /* SwiftUIBook.app */;
@@ -451,6 +457,7 @@
 			packageReferences = (
 				4B7E90CF2858FFC7005BC862 /* XCRemoteSwiftPackageReference "swiftui-color" */,
 				4BD8ADBE286DE52E00730CA2 /* XCRemoteSwiftPackageReference "Verge" */,
+				4B5B3B56288D08E000F514E2 /* XCRemoteSwiftPackageReference "SwiftUIKitView" */,
 			);
 			productRefGroup = 4BF98F6A22EDF81700227849 /* Products */;
 			projectDirPath = "";
@@ -535,6 +542,7 @@
 				4B1057C92832B41900888685 /* BookDynamicPropertyView.swift in Sources */,
 				4BF98F7122EDF81700227849 /* ContentView.swift in Sources */,
 				4B0C13B82858B0B800E6474C /* BookAbstractMovementView.swift in Sources */,
+				4B5B3B5A288D213D00F514E2 /* GestureVelocity.swift in Sources */,
 				4BA6491823DCA9B600F3CCEB /* MountUnmountTransitionView.swift in Sources */,
 				4B5F6A3B282C05390067D44A /* BookPrivacyView.swift in Sources */,
 				4B01C2B924A52E4700F514B7 /* BookMatchedAnimationView.swift in Sources */,
@@ -914,6 +922,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4B5B3B56288D08E000F514E2 /* XCRemoteSwiftPackageReference "SwiftUIKitView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AvdLee/SwiftUIKitView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		4B7E90CF2858FFC7005BC862 /* XCRemoteSwiftPackageReference "swiftui-color" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FluidGroup/swiftui-color.git";
@@ -945,6 +961,11 @@
 		4B5B27B1285BA1D60052529F /* PreviewLoggerTests */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PreviewLoggerTests;
+		};
+		4B5B3B57288D08E000F514E2 /* SwiftUIKitView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B5B3B56288D08E000F514E2 /* XCRemoteSwiftPackageReference "SwiftUIKitView" */;
+			productName = SwiftUIKitView;
 		};
 		4B6E7B5B285BA1070010CF85 /* PreviewLogger */ = {
 			isa = XCSwiftPackageProductDependency;

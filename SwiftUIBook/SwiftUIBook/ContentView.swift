@@ -5,6 +5,7 @@ struct ContentView: View {
   
   private let items: [BookSelectionView] = [
         
+    BookSelectionView(title: "Joystick", destination: BookJoystick()),
     BookSelectionView(title: "DynamicProperty", destination: BookDynamicPropertyView()),
     
     BookSelectionView(title: "BookPrivacyView", destination: BookPrivacyView()),
