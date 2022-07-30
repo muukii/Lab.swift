@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "lettercase",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rwbutler/LetterCase",
+      "state" : {
+        "revision" : "03589da8c6554655b276ba187cfc1cd35ad711d2",
+        "version" : "1.6.1"
+      }
+    },
+    {
       "identity" : "mondrianlayout",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/muukii/MondrianLayout.git",
@@ -23,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/VergeGroup/Verge.git",
       "state" : {
-        "revision" : "c55c4afb189f7ffc0fd8733c41471b1868651aa5",
-        "version" : "8.16.0"
+        "revision" : "22044b5be20187394f659734059be84e4b90642c",
+        "version" : "8.17.0"
       }
     }
   ],

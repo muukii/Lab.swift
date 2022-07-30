@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios'>
+<playground version='6.0' target-platform='macos' buildActiveScheme='true'>
     <pages>
         <page name='Mask-transform'/>
         <page name='Untitled Page'/>
@@ -38,5 +38,9 @@
         <page name='PropertyWrapper'/>
         <page name='Attributes'/>
         <page name='Float'/>
+        <page name='retrying'/>
+        <page name='Tabular'/>
+        <page name='protocol'/>
+        <page name='Event'/>
     </pages>
 </playground>

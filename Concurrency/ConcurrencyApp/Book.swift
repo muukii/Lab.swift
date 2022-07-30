@@ -43,6 +43,14 @@ struct Book: View {
           NavigationLink("BookAsyncSequence") {
             BookAsyncSequence()
           }
+          
+          NavigationLink("Blocking") {
+            BookBlocking()
+          }
+          
+          NavigationLink("Hop") {
+            BookHop()
+          }
         }
 
       }

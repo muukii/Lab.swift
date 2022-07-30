@@ -6,6 +6,8 @@
 //
 
 import Foundation
+
+#if canImport(UIKit)
 import UIKit
 
 extension TimeInterval {
@@ -114,6 +116,8 @@ extension CALayer {
 
   }
 }
+
+#endif
 
 extension String {
 
