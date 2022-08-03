@@ -6,7 +6,9 @@ let PreviewLog = PreviewLogger.PreviewLog.self
 struct Book: View {
 
   var body: some View {
-    VSplitView {
+    VStack {
+      BlockingVisualizer()
+      VSplitView {
       NavigationView {
 
         List {
@@ -51,6 +53,10 @@ struct Book: View {
           NavigationLink("Hop") {
             BookHop()
           }
+          
+          NavigationLink("Compile") {
+            BookCompile()
+          }
         }
 
       }
@@ -58,7 +64,7 @@ struct Book: View {
       LogView()
         .frame(minHeight: 50)
     }
-
+    }
   }
 
 }

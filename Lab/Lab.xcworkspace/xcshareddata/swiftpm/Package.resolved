@@ -19,21 +19,12 @@
       }
     },
     {
-      "identity" : "rxswift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ReactiveX/RxSwift.git",
-      "state" : {
-        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
-        "version" : "6.5.0"
-      }
-    },
-    {
       "identity" : "verge",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/VergeGroup/Verge.git",
       "state" : {
-        "revision" : "22044b5be20187394f659734059be84e4b90642c",
-        "version" : "8.17.0"
+        "revision" : "f0b10546bcc45354e6f6d5909f109690a70828db",
+        "version" : "8.0.2"
       }
     }
   ],
