@@ -29,6 +29,7 @@
 		4B3F315B285ED5070056D89F /* AsyncSequenceValidation in Frameworks */ = {isa = PBXBuildFile; productRef = 4B3F315A285ED5070056D89F /* AsyncSequenceValidation */; };
 		4B3F315D285ED5070056D89F /* _CAsyncSequenceValidationSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 4B3F315C285ED5070056D89F /* _CAsyncSequenceValidationSupport */; };
 		4B3F315F285ED6710056D89F /* BookAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F315E285ED6710056D89F /* BookAlgorithms.swift */; };
+		4B4E372B28A1081000735DF3 /* BookNonIsolated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E372A28A1081000735DF3 /* BookNonIsolated.swift */; };
 		4B583931287EAA5200F0131C /* BookClosureActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B583930287EAA5200F0131C /* BookClosureActor.swift */; };
 		4B5A687E287D281800C3237A /* BookWeakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A687D287D281800C3237A /* BookWeakify.swift */; };
 		4B64D6D1287C64EE00B1EF3B /* BookRetrying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64D6D0287C64EE00B1EF3B /* BookRetrying.swift */; };
@@ -36,6 +37,9 @@
 		4B9365A7272C4F4000100D60 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9365A6272C4F4000100D60 /* Test.swift */; };
 		4BA794CE289A77BB00C27680 /* BookCompile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA794CD289A77BB00C27680 /* BookCompile.swift */; };
 		4BAC7013289A75DE0015D598 /* CompilerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC7012289A75DE0015D598 /* CompilerTest.swift */; };
+		4BC4ECD128A16FFD005E3285 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4ECD028A16FFD005E3285 /* Utilities.swift */; };
+		4BC4ECD428A17044005E3285 /* ResultBuilderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC4ECD328A17044005E3285 /* ResultBuilderKit */; };
+		4BC4ECD628A17084005E3285 /* ResultBuilderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC4ECD528A17084005E3285 /* ResultBuilderKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +74,7 @@
 		4B3F3151285D66C10056D89F /* BookContinuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContinuation.swift; sourceTree = "<group>"; };
 		4B3F3153285ED2DB0056D89F /* BookContinuationCancel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContinuationCancel.swift; sourceTree = "<group>"; };
 		4B3F315E285ED6710056D89F /* BookAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAlgorithms.swift; sourceTree = "<group>"; };
+		4B4E372A28A1081000735DF3 /* BookNonIsolated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNonIsolated.swift; sourceTree = "<group>"; };
 		4B583930287EAA5200F0131C /* BookClosureActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookClosureActor.swift; sourceTree = "<group>"; };
 		4B5A687D287D281800C3237A /* BookWeakify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWeakify.swift; sourceTree = "<group>"; };
 		4B64D6D0287C64EE00B1EF3B /* BookRetrying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRetrying.swift; sourceTree = "<group>"; };
@@ -79,6 +84,7 @@
 		4B9365A6272C4F4000100D60 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		4BA794CD289A77BB00C27680 /* BookCompile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCompile.swift; sourceTree = "<group>"; };
 		4BAC7012289A75DE0015D598 /* CompilerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompilerTest.swift; sourceTree = "<group>"; };
+		4BC4ECD028A16FFD005E3285 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,7 @@
 			files = (
 				4B01A448285EDA1800C83BF5 /* RxSwift in Frameworks */,
 				4B01A68F285EEDD900C83BF5 /* PreviewLogger in Frameworks */,
+				4BC4ECD628A17084005E3285 /* ResultBuilderKit in Frameworks */,
 				4B01A43B285ED79800C83BF5 /* AsyncAlgorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +114,7 @@
 				4B3F315B285ED5070056D89F /* AsyncSequenceValidation in Frameworks */,
 				4B3F315D285ED5070056D89F /* _CAsyncSequenceValidationSupport in Frameworks */,
 				4B3F3157285ED5070056D89F /* AsyncAlgorithms in Frameworks */,
+				4BC4ECD428A17044005E3285 /* ResultBuilderKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,10 +168,12 @@
 				4B5A687D287D281800C3237A /* BookWeakify.swift */,
 				4B583930287EAA5200F0131C /* BookClosureActor.swift */,
 				4BA794CD289A77BB00C27680 /* BookCompile.swift */,
+				4B4E372A28A1081000735DF3 /* BookNonIsolated.swift */,
 				4B3F3146285D63C00056D89F /* Assets.xcassets */,
 				4B3F314B285D63C00056D89F /* ConcurrencyApp.entitlements */,
 				4B3F3148285D63C00056D89F /* Preview Content */,
 				4B17C118289AD3DE0062A168 /* BlockingVisualizer.swift */,
+				4BC4ECD028A16FFD005E3285 /* Utilities.swift */,
 			);
 			path = ConcurrencyApp;
 			sourceTree = "<group>";
@@ -267,6 +277,7 @@
 				4B01A43A285ED79800C83BF5 /* AsyncAlgorithms */,
 				4B01A447285EDA1800C83BF5 /* RxSwift */,
 				4B01A68E285EEDD900C83BF5 /* PreviewLogger */,
+				4BC4ECD528A17084005E3285 /* ResultBuilderKit */,
 			);
 			productName = ConcurrencyApp;
 			productReference = 4B3F3140285D63BF0056D89F /* ConcurrencyApp.app */;
@@ -290,6 +301,7 @@
 				4B3F3158285ED5070056D89F /* AsyncAlgorithms_XCTest */,
 				4B3F315A285ED5070056D89F /* AsyncSequenceValidation */,
 				4B3F315C285ED5070056D89F /* _CAsyncSequenceValidationSupport */,
+				4BC4ECD328A17044005E3285 /* ResultBuilderKit */,
 			);
 			productName = Concurrency;
 			productReference = 4B936596272C4DA500100D60 /* Concurrency */;
@@ -348,6 +360,7 @@
 			packageReferences = (
 				4B3F3155285ED5070056D89F /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
 				4B01A446285EDA1800C83BF5 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				4BC4ECD228A17044005E3285 /* XCRemoteSwiftPackageReference "ResultBuilderKit" */,
 			);
 			productRefGroup = 4B936597272C4DA500100D60 /* Products */;
 			projectDirPath = "";
@@ -399,6 +412,7 @@
 				4B197A322895004400937DD5 /* BookHop.swift in Sources */,
 				4B583931287EAA5200F0131C /* BookClosureActor.swift in Sources */,
 				4B3F315F285ED6710056D89F /* BookAlgorithms.swift in Sources */,
+				4BC4ECD128A16FFD005E3285 /* Utilities.swift in Sources */,
 				4B3F3145285D63BF0056D89F /* ContentView.swift in Sources */,
 				4B3F3154285ED2DB0056D89F /* BookContinuationCancel.swift in Sources */,
 				4B64D6D1287C64EE00B1EF3B /* BookRetrying.swift in Sources */,
@@ -406,6 +420,7 @@
 				4B197A302894FFD600937DD5 /* BookBlocking.swift in Sources */,
 				4B3F3143285D63BF0056D89F /* ConcurrencyAppApp.swift in Sources */,
 				4B3F3150285D64BA0056D89F /* Book.swift in Sources */,
+				4B4E372B28A1081000735DF3 /* BookNonIsolated.swift in Sources */,
 				4B3F3152285D66C10056D89F /* BookContinuation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -744,6 +759,14 @@
 				version = 0.0.1;
 			};
 		};
+		4BC4ECD228A17044005E3285 /* XCRemoteSwiftPackageReference "ResultBuilderKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FluidGroup/ResultBuilderKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -784,6 +807,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4B3F3155285ED5070056D89F /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
 			productName = _CAsyncSequenceValidationSupport;
+		};
+		4BC4ECD328A17044005E3285 /* ResultBuilderKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BC4ECD228A17044005E3285 /* XCRemoteSwiftPackageReference "ResultBuilderKit" */;
+			productName = ResultBuilderKit;
+		};
+		4BC4ECD528A17084005E3285 /* ResultBuilderKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BC4ECD228A17044005E3285 /* XCRemoteSwiftPackageReference "ResultBuilderKit" */;
+			productName = ResultBuilderKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

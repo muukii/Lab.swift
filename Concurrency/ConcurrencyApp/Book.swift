@@ -1,7 +1,25 @@
 import PreviewLogger
 import SwiftUI
+import ResultBuilderKit
 
 let PreviewLog = PreviewLogger.PreviewLog.self
+
+struct AnyNavigationLink: View {
+  
+  let title: String
+  let destination: AnyView
+  
+  init<Destination: View>(_ title: String, @ViewBuilder content: () -> Destination) {
+    self.title = title
+    self.destination = AnyView(content())
+  }
+  
+  var body: some View {
+    NavigationLink(title) {
+      destination
+    }
+  }
+}
 
 struct Book: View {
 
@@ -12,51 +30,61 @@ struct Book: View {
       NavigationView {
 
         List {
-
-          NavigationLink("Reset") {
-
-            Text("BBB")
-
-          }
           
-          NavigationLink("BookWeakify") {
+          ForEach.inefficient(items: buildArray(elementType: AnyNavigationLink.self, {
+            AnyNavigationLink("Reset") {
+              
+              Text("BBB")
+              
+            }
             
-            BookWeakify()
-          }
-          
-          NavigationLink("BookRetrying") {
+            AnyNavigationLink("BookWeakify") {
+              
+              BookWeakify()
+            }
             
-            BookRetrying()
+            AnyNavigationLink("BookRetrying") {
+              
+              BookRetrying()
+            }
+            
+            AnyNavigationLink("Continuation") {
+              
+              BookContiunation()
+            }
+            
+            AnyNavigationLink("ContinuationCancel") {
+              BookContiunationCancel()
+            }
+            
+            AnyNavigationLink("Algorithms") {
+              BookAlgorithms()
+            }
+            
+            AnyNavigationLink("BookAsyncSequence") {
+              BookAsyncSequence()
+            }
+            
+            AnyNavigationLink("Blocking") {
+              BookBlocking()
+            }
+            
+            AnyNavigationLink("Hop") {
+              BookHop()
+            }
+            
+            AnyNavigationLink("Compile") {
+              BookCompile()
+            }
+            
+            AnyNavigationLink("BookNonIsolated") {
+              BookNonIsolated()
+            }
+            
+          })) { view in
+            view
           }
-
-          NavigationLink("Continuation") {
-
-            BookContiunation()
-          }
-
-          NavigationLink("ContinuationCancel") {
-            BookContiunationCancel()
-          }
-
-          NavigationLink("Algorithms") {
-            BookAlgorithms()
-          }
-
-          NavigationLink("BookAsyncSequence") {
-            BookAsyncSequence()
-          }
-          
-          NavigationLink("Blocking") {
-            BookBlocking()
-          }
-          
-          NavigationLink("Hop") {
-            BookHop()
-          }
-          
-          NavigationLink("Compile") {
-            BookCompile()
-          }
+        
         }
 
       }
