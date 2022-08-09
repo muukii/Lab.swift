@@ -2,7 +2,7 @@ import SwiftUI
 
 let frames = ["⣾", "⣽", "⣻", "⢿", "⡿", "⣟", "⣯", "⣷"]
 
-struct BlockingVisualizer: View {
+struct Spinner: View {
 
   @State var index = 0
 

@@ -25,7 +25,7 @@ struct Book: View {
 
   var body: some View {
     VStack {
-      BlockingVisualizer()
+      Spinner()
       VSplitView {
       NavigationView {
 
