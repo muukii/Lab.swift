@@ -40,6 +40,7 @@
 		4BC4ECD128A16FFD005E3285 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4ECD028A16FFD005E3285 /* Utilities.swift */; };
 		4BC4ECD428A17044005E3285 /* ResultBuilderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC4ECD328A17044005E3285 /* ResultBuilderKit */; };
 		4BC4ECD628A17084005E3285 /* ResultBuilderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC4ECD528A17084005E3285 /* ResultBuilderKit */; };
+		4BC8F39428A6AE56001E70F8 /* BookTrackProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC8F39328A6AE56001E70F8 /* BookTrackProcessing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -85,6 +86,7 @@
 		4BA794CD289A77BB00C27680 /* BookCompile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCompile.swift; sourceTree = "<group>"; };
 		4BAC7012289A75DE0015D598 /* CompilerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompilerTest.swift; sourceTree = "<group>"; };
 		4BC4ECD028A16FFD005E3285 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		4BC8F39328A6AE56001E70F8 /* BookTrackProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTrackProcessing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				4B583930287EAA5200F0131C /* BookClosureActor.swift */,
 				4BA794CD289A77BB00C27680 /* BookCompile.swift */,
 				4B4E372A28A1081000735DF3 /* BookNonIsolated.swift */,
+				4BC8F39328A6AE56001E70F8 /* BookTrackProcessing.swift */,
 				4B3F3146285D63C00056D89F /* Assets.xcassets */,
 				4B3F314B285D63C00056D89F /* ConcurrencyApp.entitlements */,
 				4B3F3148285D63C00056D89F /* Preview Content */,
@@ -406,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC8F39428A6AE56001E70F8 /* BookTrackProcessing.swift in Sources */,
 				4B5A687E287D281800C3237A /* BookWeakify.swift in Sources */,
 				4B01A68A285EDC2600C83BF5 /* BookAsyncSequence.swift in Sources */,
 				4B17C119289AD3DE0062A168 /* Spinner.swift in Sources */,
@@ -498,6 +502,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = targeted;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -527,6 +532,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = targeted;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
