@@ -38,7 +38,7 @@ private func runUI() {
 
 }
 
-func perform() {
+private func perform() {
   Task {
     print(Thread.current)
     await runUI()
