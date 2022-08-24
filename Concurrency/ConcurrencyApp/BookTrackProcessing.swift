@@ -32,3 +32,8 @@ struct BookTrackProcessing: View {
 private func withTaskProcessingHandler(handler: (Bool) async -> Void, operation: () async throws -> Void) rethrows -> Void {
   fatalError()
 }
+
+@Sendable
+func run() {
+  
+}
