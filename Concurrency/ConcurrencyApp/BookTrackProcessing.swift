@@ -34,6 +34,6 @@ private func withTaskProcessingHandler(handler: (Bool) async -> Void, operation:
 }
 
 @Sendable
-func run() {
+private func run() {
   
 }

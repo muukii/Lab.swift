@@ -32,6 +32,11 @@ struct Book: View {
         List {
           
           ForEach.inefficient(items: buildArray(elementType: AnyNavigationLink.self, {
+            
+            AnyNavigationLink("BookDispatchToActor") {
+              BookDispatchToActor()
+            }
+            
             AnyNavigationLink("Reset") {
               
               Text("BBB")
