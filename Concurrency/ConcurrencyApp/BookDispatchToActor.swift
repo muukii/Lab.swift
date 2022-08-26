@@ -64,14 +64,7 @@ private func thunk(_ closure: @escaping @Sendable () -> Void) {
 @preconcurrency
 @inline(__always)
 func thunkToMainActor(_ run: @MainActor () throws -> Void) rethrows {
-  assert(Thread.isMainThread)
-  withUnsafeThrowingContinuation { (c: UnsafeContinuation<Void, Error>) in
-    do {
-      try run()
-    } catch {
-      
-    }
-  }
+  
 }
 
 @MainActor

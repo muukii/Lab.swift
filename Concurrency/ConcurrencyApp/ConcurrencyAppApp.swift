@@ -9,7 +9,7 @@ import SwiftUI
 
 let register: Void = {
   _ = RunLoopActivityObserver.addObserver(acitivity: .entry) {
-    print("RunLoop - Entry", CACurrentMediaTime())
+//    print("RunLoop - Entry", CACurrentMediaTime())
   }
 }()
 

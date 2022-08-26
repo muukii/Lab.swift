@@ -17,6 +17,7 @@
 		4B17C119289AD3DE0062A168 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17C118289AD3DE0062A168 /* Spinner.swift */; };
 		4B197A302894FFD600937DD5 /* BookBlocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B197A2F2894FFD600937DD5 /* BookBlocking.swift */; };
 		4B197A322895004400937DD5 /* BookHop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B197A312895004400937DD5 /* BookHop.swift */; };
+		4B3BFB4028B936BA00A64ADC /* BookInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3BFB3F28B936BA00A64ADC /* BookInheritance.swift */; };
 		4B3F3143285D63BF0056D89F /* ConcurrencyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F3142285D63BF0056D89F /* ConcurrencyAppApp.swift */; };
 		4B3F3145285D63BF0056D89F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F3144285D63BF0056D89F /* ContentView.swift */; };
 		4B3F3147285D63C00056D89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3F3146285D63C00056D89F /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		4B17C118289AD3DE0062A168 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		4B197A2F2894FFD600937DD5 /* BookBlocking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookBlocking.swift; sourceTree = "<group>"; };
 		4B197A312895004400937DD5 /* BookHop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHop.swift; sourceTree = "<group>"; };
+		4B3BFB3F28B936BA00A64ADC /* BookInheritance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInheritance.swift; sourceTree = "<group>"; };
 		4B3F3140285D63BF0056D89F /* ConcurrencyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcurrencyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3F3142285D63BF0056D89F /* ConcurrencyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyAppApp.swift; sourceTree = "<group>"; };
 		4B3F3144285D63BF0056D89F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				4B4E372A28A1081000735DF3 /* BookNonIsolated.swift */,
 				4BC8F39328A6AE56001E70F8 /* BookTrackProcessing.swift */,
 				4B965EAC28B65A4800F2DEC0 /* BookDispatchToActor.swift */,
+				4B3BFB3F28B936BA00A64ADC /* BookInheritance.swift */,
 				4B3F3146285D63C00056D89F /* Assets.xcassets */,
 				4B3F314B285D63C00056D89F /* ConcurrencyApp.entitlements */,
 				4B3F3148285D63C00056D89F /* Preview Content */,
@@ -418,6 +421,7 @@
 				4B17C119289AD3DE0062A168 /* Spinner.swift in Sources */,
 				4B197A322895004400937DD5 /* BookHop.swift in Sources */,
 				4B583931287EAA5200F0131C /* BookClosureActor.swift in Sources */,
+				4B3BFB4028B936BA00A64ADC /* BookInheritance.swift in Sources */,
 				4B3F315F285ED6710056D89F /* BookAlgorithms.swift in Sources */,
 				4BC4ECD128A16FFD005E3285 /* Utilities.swift in Sources */,
 				4B3F3145285D63BF0056D89F /* ContentView.swift in Sources */,

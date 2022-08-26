@@ -33,6 +33,10 @@ struct Book: View {
           
           ForEach.inefficient(items: buildArray(elementType: AnyNavigationLink.self, {
             
+            AnyNavigationLink("BookInheritance") {
+              BookInheritance()
+            }
+            
             AnyNavigationLink("BookDispatchToActor") {
               BookDispatchToActor()
             }
