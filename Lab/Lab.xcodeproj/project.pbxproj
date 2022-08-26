@@ -74,6 +74,7 @@
 		4BDAB5D525BFBBA600E6CC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BDAB5DE25BFBBBE00E6CC35 /* Swift-2020.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Swift-2020.playground"; sourceTree = "<group>"; };
 		4BE0AAC5277FE15D0086FD7E /* Swift-2022.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Swift-2022.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4BF4105B28B7A29E00B5AA54 /* SyntaxDesign.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SyntaxDesign.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4C9EB2A0E48E437D20C1B512 /* Pods_Lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D668A8CFBA65CE2AC300FF3 /* Pods-Lab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab.release.xcconfig"; path = "Target Support Files/Pods-Lab/Pods-Lab.release.xcconfig"; sourceTree = "<group>"; };
 		853739952066864B292A55FC /* Pods-Lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab.debug.xcconfig"; path = "Target Support Files/Pods-Lab/Pods-Lab.debug.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +216,7 @@
 				4BB3670725CEF807001C5B7E /* RxSwift.playground */,
 				4BB786B627C8DFC000ED3D51 /* SlackEmojiRenderer.playground */,
 				4B44A41B27E1278D00E54B95 /* Concurrency.playground */,
+				4BF4105B28B7A29E00B5AA54 /* SyntaxDesign.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";

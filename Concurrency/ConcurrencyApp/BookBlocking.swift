@@ -41,11 +41,11 @@ private func runHeavyOperation() {
   sleep(1)
 }
 
-func thunk_runUIOperation() {
+private func thunk_runUIOperation() {
 //  runUIOperation()
 }
 
 @MainActor
-func runUIOperation() {
+private func runUIOperation() {
   
 }
