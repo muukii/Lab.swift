@@ -31,69 +31,22 @@ struct Book: View {
 
         List {
           
-          ForEach.inefficient(items: buildArray(elementType: AnyNavigationLink.self, {
-            
-            AnyNavigationLink("BookInheritance") {
-              BookInheritance()
-            }
-            
-            AnyNavigationLink("BookDispatchToActor") {
-              BookDispatchToActor()
-            }
-            
-            AnyNavigationLink("Reset") {
-              
-              Text("BBB")
-              
-            }
-            
-            AnyNavigationLink("BookWeakify") {
-              
-              BookWeakify()
-            }
-            
-            AnyNavigationLink("BookRetrying") {
-              
-              BookRetrying()
-            }
-            
-            AnyNavigationLink("Continuation") {
-              
-              BookContiunation()
-            }
-            
-            AnyNavigationLink("ContinuationCancel") {
-              BookContiunationCancel()
-            }
-            
-            AnyNavigationLink("Algorithms") {
-              BookAlgorithms()
-            }
-            
-            AnyNavigationLink("BookAsyncSequence") {
-              BookAsyncSequence()
-            }
-            
-            AnyNavigationLink("Blocking") {
-              BookBlocking()
-            }
-            
-            AnyNavigationLink("Hop") {
-              BookHop()
-            }
-            
-            AnyNavigationLink("Compile") {
-              BookCompile()
-            }
-            
-            AnyNavigationLink("BookNonIsolated") {
-              BookNonIsolated()
-            }
-            
-          })) { view in
-            view
-          }
-        
+          ForEach.inefficient(items: build({
+            BookUnsafeTask()
+            BookInheritance()
+            BookDispatchToActor()
+            BookWeakify()
+            BookRetrying()
+            BookContiunation()
+            BookContiunationCancel()
+            BookAlgorithms()
+            BookAsyncSequence()
+            BookBlocking()
+            BookHop()
+            BookCompile()
+            BookNonIsolated()
+          }), body: { $0 })
+                          
         }
 
       }
@@ -102,6 +55,26 @@ struct Book: View {
         .frame(minHeight: 50)
     }
     }
+  }
+
+}
+
+
+func build(@BookLinksBuilder _ build: () -> [AnyNavigationLink]) -> [AnyNavigationLink] {
+  build()
+}
+
+@resultBuilder
+struct BookLinksBuilder {
+  
+  static func buildExpression<Content: View>(_ content: Content) -> AnyNavigationLink {
+    .init(String(describing: type(of: content))) {
+      content
+    }
+  }
+  
+  static func buildBlock(_ components: AnyNavigationLink...) -> [AnyNavigationLink] {
+    components
   }
 
 }
