@@ -8,7 +8,6 @@
 import XCTest
 
 final class Test: XCTestCase {
-
   func test_reentrancy() async {
 
     actor MyActor {

@@ -1,16 +1,25 @@
 
 @propertyWrapper
-struct Edge<T> {
+struct Edge<T>: Equatable {
+  
+  static func == (lhs: Edge<T>, rhs: Edge<T>) -> Bool {
+    print("A")
+    return false
+  }
 
   var wrappedValue: T
 
-  init(wrappedValue: T, options: Int) {
+  init(wrappedValue: T) {
     self.wrappedValue = wrappedValue
   }
 }
 
-struct State {
-
-  @Edge(options: 0) var hello: Int = 0
-  
+extension Edge where T: Equatable {
+  static func == (lhs: Edge<T>, rhs: Edge<T>) -> Bool {
+    print("B")
+    return false
+  }
 }
+
+let a = Edge<Int>(wrappedValue: 1)
+a == a

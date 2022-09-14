@@ -1,4 +1,4 @@
+import Foundation
 
-
-1000 % 8
-999 % 8
+ObjectIdentifier(String.self) == ObjectIdentifier(String.self) 
+ObjectIdentifier(Int.self)
