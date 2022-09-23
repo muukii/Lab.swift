@@ -7,16 +7,16 @@ struct BookTrackProcessing: View {
     
     Button("Action") {
       
-      Task {
-        withTaskProcessingHandler { isProcessing in
+      Task { @Sendable in
+        await withTaskProcessingHandler { isProcessing in
           
         } operation: {
           
         }
         
-        await withTaskCancellationHandler {
+        await withTaskCancellationHandler { @Sendable in
           
-        } operation: {
+        } operation: { @Sendable in
           
         }
 
@@ -29,7 +29,7 @@ struct BookTrackProcessing: View {
 }
 
 /// [Custom]
-private func withTaskProcessingHandler(handler: (Bool) async -> Void, operation: () async throws -> Void) rethrows -> Void {
+private func withTaskProcessingHandler(handler: (Bool) async -> Void, operation: () async throws -> Void) async rethrows -> Void {
   fatalError()
 }
 

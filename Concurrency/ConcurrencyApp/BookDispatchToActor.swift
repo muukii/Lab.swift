@@ -53,7 +53,7 @@ private func main_isolated_entrypoint() {
   // main-actor-isolated-context here
   
   thunk {
-    runUIOperation()
+//    runUIOperation()
   }
 }
 
