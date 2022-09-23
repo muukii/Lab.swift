@@ -48,5 +48,7 @@
         <page name='build-partial-block'/>
         <page name='Untitled Page 8'/>
         <page name='Gen'/>
+        <page name='regex'/>
+        <page name='never'/>
     </pages>
 </playground>
