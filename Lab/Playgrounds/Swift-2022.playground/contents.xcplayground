@@ -51,5 +51,6 @@
         <page name='regex'/>
         <page name='never'/>
         <page name='Differences apply map'/>
+        <page name='Diff'/>
     </pages>
 </playground>
