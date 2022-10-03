@@ -50,5 +50,6 @@
         <page name='Gen'/>
         <page name='regex'/>
         <page name='never'/>
+        <page name='Differences apply map'/>
     </pages>
 </playground>

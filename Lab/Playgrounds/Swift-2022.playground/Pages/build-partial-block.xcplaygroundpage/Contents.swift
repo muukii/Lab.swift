@@ -36,10 +36,10 @@ func run<Box: BoxType>(@PartialBlockBuilder _ closure: () -> Box) -> Box {
 
 let type = run {
   Box<String>()
-  Box<String>()
-  Box<String>()
-  Box<String>()
-  Box<String>()
-  Box<String>()
+//  Box<String>()
+//  Box<String>()
+//  Box<String>()
+//  Box<String>()
+//  Box<String>()
 //  Box<String>()
 }
