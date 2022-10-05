@@ -33,6 +33,10 @@ private func nonisolated_thunkMain_entrypoint() {
       runUIOperation()
     }
   }
+
+  thunkToMainActor {
+    runUIOperation()
+  }
 }
 
 @MainActor
@@ -61,10 +65,16 @@ private func thunk(_ closure: @escaping @Sendable () -> Void) {
   closure()
 }
 
-@preconcurrency
 @inline(__always)
-func thunkToMainActor(_ run: @MainActor () throws -> Void) rethrows {
-  
+func thunkToMainActor(_ run: @MainActor () throws -> Void) rethrows {  
+  try _thunkToMainActor { @MainActor(unsafe) in
+    try run()
+  }
+}
+
+@inline(__always)
+func _thunkToMainActor(_ run: () throws -> Void) rethrows {
+  try run()
 }
 
 @MainActor
