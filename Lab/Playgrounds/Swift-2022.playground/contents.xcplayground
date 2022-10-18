@@ -52,5 +52,8 @@
         <page name='never'/>
         <page name='Differences apply map'/>
         <page name='Diff'/>
+        <page name='injection'/>
+        <page name='JSONDSL'/>
+        <page name='View'/>
     </pages>
 </playground>
