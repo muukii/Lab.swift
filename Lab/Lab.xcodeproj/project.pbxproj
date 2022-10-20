@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1EF65400D674173B7813C4A1 /* Pods_Lab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9EB2A0E48E437D20C1B512 /* Pods_Lab.framework */; };
+		4B3C469E28FEF23F0068164E /* SerialDSL in Frameworks */ = {isa = PBXBuildFile; productRef = 4B3C469D28FEF23F0068164E /* SerialDSL */; };
+		4B3C46A128FEF28E0068164E /* SerialDSL in Frameworks */ = {isa = PBXBuildFile; productRef = 4B3C46A028FEF28E0068164E /* SerialDSL */; };
 		4B6C250826711D0200D73D55 /* PlayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6C250726711D0200D73D55 /* PlayList.swift */; };
 		4B6C250A267123E300D73D55 /* PlayAttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6C2509267123E300D73D55 /* PlayAttributedText.swift */; };
 		4B76829F2630532000AC3575 /* AnimationTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76829E2630532000AC3575 /* AnimationTemplate.swift */; };
@@ -38,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B3C469F28FEF2640068164E /* OpenAPI.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OpenAPI.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B44A41B27E1278D00E54B95 /* Concurrency.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Concurrency.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B55834526706EEB001ED3A8 /* Xcode13.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Xcode13.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B6102DA25C991F20058D264 /* SwiftUI.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftUI.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -85,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B3C46A128FEF28E0068164E /* SerialDSL in Frameworks */,
 				4B8A68572891097A0047FAA2 /* LetterCase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +115,7 @@
 				4BC6D47826FDCF2B00E7D5C0 /* VergeTiny in Frameworks */,
 				4BC6D47626FDCF2B00E7D5C0 /* VergeRx in Frameworks */,
 				4BC6D47426FDCF2B00E7D5C0 /* VergeORM in Frameworks */,
+				4B3C469E28FEF23F0068164E /* SerialDSL in Frameworks */,
 				1EF65400D674173B7813C4A1 /* Pods_Lab.framework in Frameworks */,
 				4B98666A28910761002912A4 /* LetterCase in Frameworks */,
 				4BC64F6A26B1A0D80091CE9A /* MondrianLayout in Frameworks */,
@@ -217,6 +222,7 @@
 				4BB786B627C8DFC000ED3D51 /* SlackEmojiRenderer.playground */,
 				4B44A41B27E1278D00E54B95 /* Concurrency.playground */,
 				4BF4105B28B7A29E00B5AA54 /* SyntaxDesign.playground */,
+				4B3C469F28FEF2640068164E /* OpenAPI.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 			name = Umbrella;
 			packageProductDependencies = (
 				4B8A68562891097A0047FAA2 /* LetterCase */,
+				4B3C46A028FEF28E0068164E /* SerialDSL */,
 			);
 			productName = Umbrella;
 			productReference = 4B8A684F289109710047FAA2 /* Umbrella.framework */;
@@ -355,6 +362,7 @@
 				4BC6D47526FDCF2B00E7D5C0 /* VergeRx */,
 				4BC6D47726FDCF2B00E7D5C0 /* VergeTiny */,
 				4B98666928910761002912A4 /* LetterCase */,
+				4B3C469D28FEF23F0068164E /* SerialDSL */,
 			);
 			productName = Lab;
 			productReference = 4BDAB5D125BFBBA600E6CC35 /* Lab.framework */;
@@ -398,6 +406,7 @@
 				4BC64F6826B1A0D80091CE9A /* XCRemoteSwiftPackageReference "MondrianLayout" */,
 				4BC6D47026FDCF2B00E7D5C0 /* XCRemoteSwiftPackageReference "Verge" */,
 				4B98666828910761002912A4 /* XCRemoteSwiftPackageReference "LetterCase" */,
+				4B3C469C28FEF23F0068164E /* XCRemoteSwiftPackageReference "swift-SerialDSL" */,
 			);
 			productRefGroup = 4BDAB5D225BFBBA600E6CC35 /* Products */;
 			projectDirPath = "";
@@ -896,6 +905,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4B3C469C28FEF23F0068164E /* XCRemoteSwiftPackageReference "swift-SerialDSL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/muukii/swift-SerialDSL";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		4B98666828910761002912A4 /* XCRemoteSwiftPackageReference "LetterCase" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rwbutler/LetterCase";
@@ -923,6 +940,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4B3C469D28FEF23F0068164E /* SerialDSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B3C469C28FEF23F0068164E /* XCRemoteSwiftPackageReference "swift-SerialDSL" */;
+			productName = SerialDSL;
+		};
+		4B3C46A028FEF28E0068164E /* SerialDSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B3C469C28FEF23F0068164E /* XCRemoteSwiftPackageReference "swift-SerialDSL" */;
+			productName = SerialDSL;
+		};
 		4B8A68562891097A0047FAA2 /* LetterCase */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4B98666828910761002912A4 /* XCRemoteSwiftPackageReference "LetterCase" */;

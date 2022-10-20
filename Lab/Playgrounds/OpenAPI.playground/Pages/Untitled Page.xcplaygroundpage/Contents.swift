@@ -1,9 +1,9 @@
 import SerialDSL
 
 public struct Endpoint: SerialView {
-
+  
   public var methods: [Method]
-
+  
   public var body: some SerialView {
     Object {
       for method in methods {
@@ -16,7 +16,7 @@ public struct Endpoint: SerialView {
 }
 
 public struct Method: SerialView {
-
+  
   public enum HTTPMethod: String {
     case get
     case post
@@ -29,7 +29,7 @@ public struct Method: SerialView {
   public var description: String
   public var operationID: String
   public var tags: [String]
-
+      
   public var body: some SerialView {
     Object {
       Member("operationId") { operationID }
@@ -41,16 +41,7 @@ public struct Method: SerialView {
 }
 
 let endpoint = Endpoint(methods: [
-  .init(
-    method: .get,
-    summary: "Hello",
-    description: "Hello Get Method",
-    operationID: "id",
-    tags: ["Awesome API"]
-  )
+  .init(method: .get, summary: "Hello", description: "Hello Get Method", operationID: "id", tags: ["Awesome API"])
 ])
 
-let json = endpoint.renderJSON()
-
-print("===")
-print(json)
+print(endpoint.renderJSON())

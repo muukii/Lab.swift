@@ -61,19 +61,20 @@ fileprivate final class TransientController {
     let task = Task { [weak self] in
                       
       await withTaskCancellationHandler {
-        print("cancel root")
-      } operation: {
-                        
+        
+        
         try? await Task.sleep(nanoseconds: 1_000_000_000)
         
         print(self)
-                
-//        try? await throwingNever()
+        
+        //        try? await throwingNever()
         await never()
         
+      } onCancel: {
+     
+        print("cancel root")
       }
-                        
-    
+                            
     }
     
     print(task)
@@ -101,9 +102,6 @@ fileprivate func never() async {
   let box: Box<Void> = .init()
   
   await withTaskCancellationHandler {
-//    box.continuation!.resume(returning: ())
-
-  } operation: {
     await withCheckedContinuation { (c: CheckedContinuation<Void, _>) in
       
       print(Task.isCancelled)
@@ -112,6 +110,9 @@ fileprivate func never() async {
       
       // Dare to do nothing
     }
+    
+  } onCancel: {
+   
   }
 }
 
@@ -125,10 +126,6 @@ fileprivate func throwingNever() async throws {
   
   try await withTaskCancellationHandler {
     
-    box.continuation?.resume(throwing: CancellationError())
-    
-  } operation: {
-    
     try await withCheckedThrowingContinuation { (c: CheckedContinuation<Void, Error>) in
       
       guard Task.isCancelled == false else {
@@ -139,6 +136,10 @@ fileprivate func throwingNever() async throws {
       box.continuation = c
       
     }
+    
+  } onCancel: {
+    
+    box.continuation?.resume(throwing: CancellationError())
    
   }
 }

@@ -14,8 +14,26 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/muukii/MondrianLayout.git",
       "state" : {
-        "revision" : "239bc0b02b8abbc211720476d1554b736832bb9c",
-        "version" : "0.9.0"
+        "revision" : "5f00b13984fe08316fc5b5be06e2f41c14a3befa",
+        "version" : "0.10.0"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
+        "version" : "6.5.0"
+      }
+    },
+    {
+      "identity" : "swift-serialdsl",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/muukii/swift-SerialDSL",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ba46ebca143a0f220c816006359edf06def3aea1"
       }
     },
     {
@@ -23,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/VergeGroup/Verge.git",
       "state" : {
-        "revision" : "f0b10546bcc45354e6f6d5909f109690a70828db",
-        "version" : "8.0.2"
+        "revision" : "e066eb7dbaa9b55d2285af27dad2000cd905938d",
+        "version" : "8.19.0"
       }
     }
   ],
