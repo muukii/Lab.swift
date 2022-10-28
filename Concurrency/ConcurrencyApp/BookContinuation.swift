@@ -17,6 +17,16 @@ struct BookContiunation: View {
       controller.run()
     }
     
+    Button("Run") {
+      
+      Task { @MainActor () -> Void in
+        await withCheckedContinuation { _ in
+          print(Thread.current)
+        }
+      }
+      
+    }
+    
   }
   
 }
