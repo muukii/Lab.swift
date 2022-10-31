@@ -55,7 +55,26 @@ private enum Inheritance {
         instance.perform_nonisolated()
       }
     }
-        
+    
+    Task {
+      
+      let i = await InheritedClass()
+      await i.run()
+      
+    }
+    
   }
   
+}
+
+@MainActor
+protocol ActorIsolatedProtocol {
+  
+}
+
+class InheritedClass: ActorIsolatedProtocol {
+  
+  func run() {
+    // this should run on main-actor-isolated context
+  }
 }

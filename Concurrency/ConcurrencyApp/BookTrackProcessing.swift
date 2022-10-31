@@ -2,38 +2,35 @@ import Foundation
 import SwiftUI
 
 struct BookTrackProcessing: View {
-  
+
   var body: some View {
-    
+
     Button("Action") {
-      
-      Task { @Sendable in
+
+      Task { @MainActor in
         await withTaskProcessingHandler { isProcessing in
-          
+
         } operation: {
-          
-        }
-        
-        await withTaskCancellationHandler { @Sendable in
-          
-        } operation: { @Sendable in
-          
+
         }
 
       }
 
     }
-    
+
   }
-  
+
 }
 
 /// [Custom]
-private func withTaskProcessingHandler(handler: (Bool) async -> Void, operation: () async throws -> Void) async rethrows -> Void {
+private func withTaskProcessingHandler(
+  handler: @MainActor (Bool) async -> Void,
+  operation: @MainActor () async throws -> Void
+) async rethrows {
   fatalError()
 }
 
 @Sendable
 private func run() {
-  
+
 }

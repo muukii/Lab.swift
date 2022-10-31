@@ -14,36 +14,35 @@ struct BookContiunationCancel: View {
         print("start")
         
         await withTaskCancellationHandler(
-          handler: {
-            print("cancelled 1")
-          },
           operation: {
-            
+          },
+          onCancel: {
+            print("cancelled 1")
           }
         )
         
         print("1")
         
         await withTaskCancellationHandler(
-          handler: {
-            print("cancelled 2")
-          },
           operation: {
             await withCheckedContinuation { (c: CheckedContinuation<Void, _>) in
               c.resume(returning: ())
             }
+          },
+          onCancel: {
+            print("cancelled 2")
           }
         )
         
         print("2")
         
         await withTaskCancellationHandler(
-          handler: {
-            print("cancelled 3")
-          },
           operation: {
             await withCheckedContinuation { (c: CheckedContinuation<Void, _>) in
             }
+          },
+          onCancel: {
+            print("cancelled 3")
           }
         )
         

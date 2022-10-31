@@ -16,6 +16,7 @@
 		4B16554B273040F4003B930B /* AsyncVerge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B16554A273040F4003B930B /* AsyncVerge.m */; };
 		4B17C119289AD3DE0062A168 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17C118289AD3DE0062A168 /* Spinner.swift */; };
 		4B19496B28B9EA60006C9E24 /* BookUnsafeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19496A28B9EA60006C9E24 /* BookUnsafeTask.swift */; };
+		4B195FB929103F780059E57F /* BookWarnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B195FB829103F780059E57F /* BookWarnings.swift */; };
 		4B197A302894FFD600937DD5 /* BookBlocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B197A2F2894FFD600937DD5 /* BookBlocking.swift */; };
 		4B197A322895004400937DD5 /* BookHop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B197A312895004400937DD5 /* BookHop.swift */; };
 		4B3BFB4028B936BA00A64ADC /* BookInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3BFB3F28B936BA00A64ADC /* BookInheritance.swift */; };
@@ -67,6 +68,7 @@
 		4B16554A273040F4003B930B /* AsyncVerge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncVerge.m; sourceTree = "<group>"; };
 		4B17C118289AD3DE0062A168 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		4B19496A28B9EA60006C9E24 /* BookUnsafeTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookUnsafeTask.swift; sourceTree = "<group>"; };
+		4B195FB829103F780059E57F /* BookWarnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWarnings.swift; sourceTree = "<group>"; };
 		4B197A2F2894FFD600937DD5 /* BookBlocking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookBlocking.swift; sourceTree = "<group>"; };
 		4B197A312895004400937DD5 /* BookHop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHop.swift; sourceTree = "<group>"; };
 		4B3BFB3F28B936BA00A64ADC /* BookInheritance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInheritance.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				4B3F3148285D63C00056D89F /* Preview Content */,
 				4B17C118289AD3DE0062A168 /* Spinner.swift */,
 				4BC4ECD028A16FFD005E3285 /* Utilities.swift */,
+				4B195FB829103F780059E57F /* BookWarnings.swift */,
 			);
 			path = ConcurrencyApp;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				4B3F3152285D66C10056D89F /* BookContinuation.swift in Sources */,
 				4B965EAD28B65A4800F2DEC0 /* BookDispatchToActor.swift in Sources */,
 				4B19496B28B9EA60006C9E24 /* BookUnsafeTask.swift in Sources */,
+				4B195FB929103F780059E57F /* BookWarnings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
