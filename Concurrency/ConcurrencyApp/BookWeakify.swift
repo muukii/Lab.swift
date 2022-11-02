@@ -10,23 +10,27 @@ struct BookWeakify: View {
     
     Text(message)
     Button("Action") {
-      
-//      let t = Task {
-//        let object = Object()
-//        await object.run()
-//      }
-            
-      let t = Object().makeTask()
-      
-      DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-        t.cancel()
-      }
+      Object().runWithHodlingTask()
       
     }
     
   }
   
   final class Object {
+    
+    var task: Task<Void, Never>?
+    
+    func runWithHodlingTask() {
+      task = Task { [self] in
+        
+        try? await Task.sleep(nanoseconds: 1_000_000_000)
+        print(self)
+        
+        Task.detached {
+          print(await self.task?.result)
+        }
+      }
+    }
     
     func run() async {
             
@@ -63,7 +67,7 @@ struct BookWeakify: View {
     func hoge() {}
     
     deinit {
-      PreviewLog.debug(.default, "deinit \(self)")
+      PreviewLog.debug(.default, "🔥 deinit \(self)")
     }
     
   }

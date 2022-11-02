@@ -32,6 +32,7 @@ struct Book: View {
         List {
           
           ForEach.inefficient(items: build({
+            BookClosure()
             BookUnsafeTask()
             BookInheritance()
             BookDispatchToActor()

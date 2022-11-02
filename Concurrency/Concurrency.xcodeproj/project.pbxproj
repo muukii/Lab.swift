@@ -17,6 +17,7 @@
 		4B17C119289AD3DE0062A168 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17C118289AD3DE0062A168 /* Spinner.swift */; };
 		4B19496B28B9EA60006C9E24 /* BookUnsafeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19496A28B9EA60006C9E24 /* BookUnsafeTask.swift */; };
 		4B195FB929103F780059E57F /* BookWarnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B195FB829103F780059E57F /* BookWarnings.swift */; };
+		4B195FF3291139ED0059E57F /* BookClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B195FF2291139ED0059E57F /* BookClosure.swift */; };
 		4B197A302894FFD600937DD5 /* BookBlocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B197A2F2894FFD600937DD5 /* BookBlocking.swift */; };
 		4B197A322895004400937DD5 /* BookHop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B197A312895004400937DD5 /* BookHop.swift */; };
 		4B3BFB4028B936BA00A64ADC /* BookInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3BFB3F28B936BA00A64ADC /* BookInheritance.swift */; };
@@ -32,10 +33,12 @@
 		4B3F315B285ED5070056D89F /* AsyncSequenceValidation in Frameworks */ = {isa = PBXBuildFile; productRef = 4B3F315A285ED5070056D89F /* AsyncSequenceValidation */; };
 		4B3F315D285ED5070056D89F /* _CAsyncSequenceValidationSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 4B3F315C285ED5070056D89F /* _CAsyncSequenceValidationSupport */; };
 		4B3F315F285ED6710056D89F /* BookAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3F315E285ED6710056D89F /* BookAlgorithms.swift */; };
+		4B40F8B82911655E0068648B /* BookTaskBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B40F8B72911655E0068648B /* BookTaskBag.swift */; };
 		4B4E372B28A1081000735DF3 /* BookNonIsolated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E372A28A1081000735DF3 /* BookNonIsolated.swift */; };
 		4B583931287EAA5200F0131C /* BookClosureActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B583930287EAA5200F0131C /* BookClosureActor.swift */; };
 		4B5A687E287D281800C3237A /* BookWeakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A687D287D281800C3237A /* BookWeakify.swift */; };
 		4B64D6D1287C64EE00B1EF3B /* BookRetrying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64D6D0287C64EE00B1EF3B /* BookRetrying.swift */; };
+		4B66EB3329118E0600D06A8B /* BookActorIsolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66EB3229118E0600D06A8B /* BookActorIsolation.swift */; };
 		4B93659A272C4DA500100D60 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B936599272C4DA500100D60 /* main.swift */; };
 		4B9365A7272C4F4000100D60 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9365A6272C4F4000100D60 /* Test.swift */; };
 		4B965EAD28B65A4800F2DEC0 /* BookDispatchToActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B965EAC28B65A4800F2DEC0 /* BookDispatchToActor.swift */; };
@@ -69,6 +72,7 @@
 		4B17C118289AD3DE0062A168 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		4B19496A28B9EA60006C9E24 /* BookUnsafeTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookUnsafeTask.swift; sourceTree = "<group>"; };
 		4B195FB829103F780059E57F /* BookWarnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWarnings.swift; sourceTree = "<group>"; };
+		4B195FF2291139ED0059E57F /* BookClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookClosure.swift; sourceTree = "<group>"; };
 		4B197A2F2894FFD600937DD5 /* BookBlocking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookBlocking.swift; sourceTree = "<group>"; };
 		4B197A312895004400937DD5 /* BookHop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHop.swift; sourceTree = "<group>"; };
 		4B3BFB3F28B936BA00A64ADC /* BookInheritance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInheritance.swift; sourceTree = "<group>"; };
@@ -82,10 +86,12 @@
 		4B3F3151285D66C10056D89F /* BookContinuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContinuation.swift; sourceTree = "<group>"; };
 		4B3F3153285ED2DB0056D89F /* BookContinuationCancel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContinuationCancel.swift; sourceTree = "<group>"; };
 		4B3F315E285ED6710056D89F /* BookAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAlgorithms.swift; sourceTree = "<group>"; };
+		4B40F8B72911655E0068648B /* BookTaskBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTaskBag.swift; sourceTree = "<group>"; };
 		4B4E372A28A1081000735DF3 /* BookNonIsolated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNonIsolated.swift; sourceTree = "<group>"; };
 		4B583930287EAA5200F0131C /* BookClosureActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookClosureActor.swift; sourceTree = "<group>"; };
 		4B5A687D287D281800C3237A /* BookWeakify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWeakify.swift; sourceTree = "<group>"; };
 		4B64D6D0287C64EE00B1EF3B /* BookRetrying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRetrying.swift; sourceTree = "<group>"; };
+		4B66EB3229118E0600D06A8B /* BookActorIsolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookActorIsolation.swift; sourceTree = "<group>"; };
 		4B936596272C4DA500100D60 /* Concurrency */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Concurrency; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B936599272C4DA500100D60 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4B9365A4272C4F4000100D60 /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +195,9 @@
 				4B17C118289AD3DE0062A168 /* Spinner.swift */,
 				4BC4ECD028A16FFD005E3285 /* Utilities.swift */,
 				4B195FB829103F780059E57F /* BookWarnings.swift */,
+				4B195FF2291139ED0059E57F /* BookClosure.swift */,
+				4B40F8B72911655E0068648B /* BookTaskBag.swift */,
+				4B66EB3229118E0600D06A8B /* BookActorIsolation.swift */,
 			);
 			path = ConcurrencyApp;
 			sourceTree = "<group>";
@@ -423,11 +432,14 @@
 			files = (
 				4BC8F39428A6AE56001E70F8 /* BookTrackProcessing.swift in Sources */,
 				4B5A687E287D281800C3237A /* BookWeakify.swift in Sources */,
+				4B195FF3291139ED0059E57F /* BookClosure.swift in Sources */,
+				4B40F8B82911655E0068648B /* BookTaskBag.swift in Sources */,
 				4B01A68A285EDC2600C83BF5 /* BookAsyncSequence.swift in Sources */,
 				4B17C119289AD3DE0062A168 /* Spinner.swift in Sources */,
 				4B197A322895004400937DD5 /* BookHop.swift in Sources */,
 				4B583931287EAA5200F0131C /* BookClosureActor.swift in Sources */,
 				4B3BFB4028B936BA00A64ADC /* BookInheritance.swift in Sources */,
+				4B66EB3329118E0600D06A8B /* BookActorIsolation.swift in Sources */,
 				4B3F315F285ED6710056D89F /* BookAlgorithms.swift in Sources */,
 				4BC4ECD128A16FFD005E3285 /* Utilities.swift in Sources */,
 				4B3F3145285D63BF0056D89F /* ContentView.swift in Sources */,
@@ -522,7 +534,6 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -557,7 +568,6 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -621,6 +631,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
 			};
 			name = Debug;
 		};
@@ -675,6 +686,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
 			};
 			name = Release;
 		};
