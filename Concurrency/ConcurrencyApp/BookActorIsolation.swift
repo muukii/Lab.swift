@@ -4,9 +4,11 @@ final class MyClass {
   
   nonisolated init() {
     self.child = .init()
+    self._child = .init()
   }
   
   nonisolated let child: Child
+  let _child: Child
   var child2: Child { fatalError() }
   nonisolated var child3: Child { fatalError() }
   
@@ -38,4 +40,13 @@ fileprivate func run() {
   }
 }
 
+@MainActor
+fileprivate final class _1 {
 
+  let myClass: MyClass = .init()
+  
+  nonisolated func _1() {
+    myClass._child
+  }
+  
+}

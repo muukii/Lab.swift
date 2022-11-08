@@ -39,11 +39,13 @@
 		4B5A687E287D281800C3237A /* BookWeakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A687D287D281800C3237A /* BookWeakify.swift */; };
 		4B64D6D1287C64EE00B1EF3B /* BookRetrying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64D6D0287C64EE00B1EF3B /* BookRetrying.swift */; };
 		4B66EB3329118E0600D06A8B /* BookActorIsolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66EB3229118E0600D06A8B /* BookActorIsolation.swift */; };
+		4B76B7D22918D791005EAB14 /* BookSendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76B7D12918D791005EAB14 /* BookSendable.swift */; };
 		4B93659A272C4DA500100D60 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B936599272C4DA500100D60 /* main.swift */; };
 		4B9365A7272C4F4000100D60 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9365A6272C4F4000100D60 /* Test.swift */; };
 		4B965EAD28B65A4800F2DEC0 /* BookDispatchToActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B965EAC28B65A4800F2DEC0 /* BookDispatchToActor.swift */; };
 		4BA794CE289A77BB00C27680 /* BookCompile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA794CD289A77BB00C27680 /* BookCompile.swift */; };
 		4BAC7013289A75DE0015D598 /* CompilerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC7012289A75DE0015D598 /* CompilerTest.swift */; };
+		4BB5777029150082005A2955 /* BookAssureMainContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5776F29150082005A2955 /* BookAssureMainContext.swift */; };
 		4BC4ECD128A16FFD005E3285 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4ECD028A16FFD005E3285 /* Utilities.swift */; };
 		4BC4ECD428A17044005E3285 /* ResultBuilderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC4ECD328A17044005E3285 /* ResultBuilderKit */; };
 		4BC4ECD628A17084005E3285 /* ResultBuilderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC4ECD528A17084005E3285 /* ResultBuilderKit */; };
@@ -92,6 +94,7 @@
 		4B5A687D287D281800C3237A /* BookWeakify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWeakify.swift; sourceTree = "<group>"; };
 		4B64D6D0287C64EE00B1EF3B /* BookRetrying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRetrying.swift; sourceTree = "<group>"; };
 		4B66EB3229118E0600D06A8B /* BookActorIsolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookActorIsolation.swift; sourceTree = "<group>"; };
+		4B76B7D12918D791005EAB14 /* BookSendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSendable.swift; sourceTree = "<group>"; };
 		4B936596272C4DA500100D60 /* Concurrency */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Concurrency; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B936599272C4DA500100D60 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4B9365A4272C4F4000100D60 /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +102,7 @@
 		4B965EAC28B65A4800F2DEC0 /* BookDispatchToActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDispatchToActor.swift; sourceTree = "<group>"; };
 		4BA794CD289A77BB00C27680 /* BookCompile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCompile.swift; sourceTree = "<group>"; };
 		4BAC7012289A75DE0015D598 /* CompilerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompilerTest.swift; sourceTree = "<group>"; };
+		4BB5776F29150082005A2955 /* BookAssureMainContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAssureMainContext.swift; sourceTree = "<group>"; };
 		4BC4ECD028A16FFD005E3285 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		4BC8F39328A6AE56001E70F8 /* BookTrackProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTrackProcessing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +202,8 @@
 				4B195FF2291139ED0059E57F /* BookClosure.swift */,
 				4B40F8B72911655E0068648B /* BookTaskBag.swift */,
 				4B66EB3229118E0600D06A8B /* BookActorIsolation.swift */,
+				4BB5776F29150082005A2955 /* BookAssureMainContext.swift */,
+				4B76B7D12918D791005EAB14 /* BookSendable.swift */,
 			);
 			path = ConcurrencyApp;
 			sourceTree = "<group>";
@@ -434,6 +440,7 @@
 				4B5A687E287D281800C3237A /* BookWeakify.swift in Sources */,
 				4B195FF3291139ED0059E57F /* BookClosure.swift in Sources */,
 				4B40F8B82911655E0068648B /* BookTaskBag.swift in Sources */,
+				4B76B7D22918D791005EAB14 /* BookSendable.swift in Sources */,
 				4B01A68A285EDC2600C83BF5 /* BookAsyncSequence.swift in Sources */,
 				4B17C119289AD3DE0062A168 /* Spinner.swift in Sources */,
 				4B197A322895004400937DD5 /* BookHop.swift in Sources */,
@@ -450,6 +457,7 @@
 				4B3F3143285D63BF0056D89F /* ConcurrencyAppApp.swift in Sources */,
 				4B3F3150285D64BA0056D89F /* Book.swift in Sources */,
 				4B4E372B28A1081000735DF3 /* BookNonIsolated.swift in Sources */,
+				4BB5777029150082005A2955 /* BookAssureMainContext.swift in Sources */,
 				4B3F3152285D66C10056D89F /* BookContinuation.swift in Sources */,
 				4B965EAD28B65A4800F2DEC0 /* BookDispatchToActor.swift in Sources */,
 				4B19496B28B9EA60006C9E24 /* BookUnsafeTask.swift in Sources */,
